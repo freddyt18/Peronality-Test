@@ -38,7 +38,7 @@ public class test {
                             tempD = " | D - high | ";
                             tempD = tempD.concat(tempC);
                         } else {
-                            tempD = " | d- low | ";
+                            tempD = " | d - low | ";
                             tempD = tempD.concat(tempC);
                         }   
                         for(int e = 0; e < 2; e++){
