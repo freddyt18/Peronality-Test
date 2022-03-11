@@ -89,11 +89,11 @@ public class test {
             } else {
                 temp = temp.concat("||-e detail high");
             }
-
+            temp = temp.replace("||", "\n").replace("-", "\t");
             personality_type_result.add(temp);
         }
         //result of personality 1
         System.out.println("\n\nPersonality type #1: ");
-        System.out.println(personality_type_result.get(0).toString().replace("||", "\n").replace("-", "\t"));
+        System.out.println(personality_type_result.get(0));
     }
 }
