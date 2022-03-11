@@ -60,22 +60,10 @@ public class test {
 
         for(int i = 0; i < personality_type.size(); i++){
             String temp = "";
-            if(personality_type.get(i).toString().contains("e - low")){
-                temp = temp.concat("||e detail low");
+            if(personality_type.get(i).toString().contains("a - low")){
+                temp = temp.concat("||a detail low");
             } else {
-                temp = temp.concat("||e detail high");
-            }
-
-            if(personality_type.get(i).toString().contains("d - low")){
-                temp = temp.concat("||d detail low");
-            } else {
-                temp = temp.concat("||d detail high");
-            }
-
-            if(personality_type.get(i).toString().contains("c - low")){
-                temp = temp.concat("||c detail low");
-            } else {
-                temp = temp.concat("||c detail high");
+                temp = temp.concat("||a detail high");
             }
 
             if(personality_type.get(i).toString().contains("b - low")){
@@ -84,10 +72,22 @@ public class test {
                 temp = temp.concat("||b detail high");
             }
 
-            if(personality_type.get(i).toString().contains("a - low")){
-                temp = temp.concat("||a detail low");
+            if(personality_type.get(i).toString().contains("c - low")){
+                temp = temp.concat("||c detail low");
             } else {
-                temp = temp.concat("||a detail high");
+                temp = temp.concat("||c detail high");
+            }
+
+            if(personality_type.get(i).toString().contains("d - low")){
+                temp = temp.concat("||d detail low");
+            } else {
+                temp = temp.concat("||d detail high");
+            }
+
+            if(personality_type.get(i).toString().contains("e - low")){
+                temp = temp.concat("||e detail low");
+            } else {
+                temp = temp.concat("||e detail high");
             }
 
             personality_type_result.add(temp);
