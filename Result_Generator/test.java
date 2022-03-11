@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 public class test {
     static LinkedList<String> personality_type = new LinkedList<String>();
-
+    static LinkedList<String> personality_type_result = new LinkedList<String>();
     public static void main(String[] args) {
         for(int a = 0; a < 2; a++){
             String tempA = "";
@@ -57,5 +57,42 @@ public class test {
             }
         }
         System.out.println(personality_type.get(3).toString());
+
+        for(int i = 0; i < personality_type.size(); i++){
+            String temp = "";
+            if(personality_type.get(i).toString().contains("e - low")){
+                temp = temp.concat("||e detail low");
+            } else {
+                temp = temp.concat("||e detail high");
+            }
+
+            if(personality_type.get(i).toString().contains("d - low")){
+                temp = temp.concat("||d detail low");
+            } else {
+                temp = temp.concat("||d detail high");
+            }
+
+            if(personality_type.get(i).toString().contains("c - low")){
+                temp = temp.concat("||c detail low");
+            } else {
+                temp = temp.concat("||c detail high");
+            }
+
+            if(personality_type.get(i).toString().contains("b - low")){
+                temp = temp.concat("||b detail low");
+            } else {
+                temp = temp.concat("||b detail high");
+            }
+
+            if(personality_type.get(i).toString().contains("a - low")){
+                temp = temp.concat("||a detail low");
+            } else {
+                temp = temp.concat("||a detail high");
+            }
+
+            personality_type_result.add(temp);
+        }
+
+        System.out.println(personality_type_result.get(0).toString());
     }
 }
