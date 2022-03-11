@@ -92,7 +92,7 @@ public class test {
 
             personality_type_result.add(temp);
         }
-        //result
+        //result of personality 1
         System.out.println(personality_type_result.get(0).toString());
     }
 }
