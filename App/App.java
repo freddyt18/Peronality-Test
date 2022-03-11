@@ -30,7 +30,6 @@ public class App extends Application {
     public static int CURRENT_USER_ID = -1;
 
     public static void main(String[] args) throws IOException {
-        //test
         DataHandling.main(args);
         launch(args);
         // if all of the windows are closed, the program will output this
