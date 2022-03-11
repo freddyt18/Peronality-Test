@@ -5,7 +5,6 @@ import java.util.LinkedList;
 public class test {
     public static void main(String[] args) {
         LinkedList<String> personality_type = new LinkedList<String>();
-        int i = 0;
         for(int a = 0; a < 2; a++){
             String tempA = "";
             if(a==0){
