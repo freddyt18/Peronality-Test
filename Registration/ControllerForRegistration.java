@@ -59,7 +59,7 @@ public class ControllerForRegistration {
         //-------------------------------------------------------
 
         Pattern W = Pattern.compile("\\W"); //1 //  \W <- non-character ":" "-" "@"
-        Pattern s = Pattern.compile("\\s");     //  \s <- whitespace " " "\t" "\0x" ...
+        Pattern s = Pattern.compile("\\s");     //  \s <- whitespace " " "\t" "\x0" ...
         
 
         boolean userExists = false;
