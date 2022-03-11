@@ -1,0 +1,111 @@
+/* @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+ */
+* {
+    -fx-font-family: sans-serif;
+}
+
+#button1:hover {
+    -fx-background-color:  #254950; /* main when hover */
+    -fx-text-fill: rgb(202, 202, 202);
+}
+
+.fixed-size-18 {
+    -fx-font-size: 18px;
+}
+
+.fixed-size-14 {
+    -fx-font-size: 14px;
+}
+
+
+#register {
+    -fx-text-fill: #fff
+}
+
+#register:hover {
+    -fx-text-fill: rgb(202, 202, 202);
+}
+
+#pic1, #pic2 {
+    -fx-arc-width: 25;
+    -fx-arc-height: 25;
+}
+
+
+.maincolor {
+    -fx-background-color: #3f7c88;
+}
+.secondaryColor {
+    -fx-background-color: #a5dbdc;
+}
+
+.fill-main {
+    -fx-fill: #3f7c88;
+}
+.fill-secondary {
+    -fx-fill: #a5dbdc;
+}
+
+.loginContainer {
+    -fx-fill: #a5dbdc;
+}
+
+.loginText {
+    -fx-text-fill: #fff;
+}
+.loginTextBlack {
+    -fx-text-fill: #000000;
+}
+
+.fillWhite {
+    -fx-fill: #fff;
+}
+
+.weightBold {
+    -fx-font-weight: bold;
+}
+
+.radiusMedium {
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-background-radius: 5px 5px 5px 5px;
+}
+
+.radiusBig {
+    -fx-border-radius: 10px 10px 10px 10px;
+    -fx-background-radius: 10px 10px 10px 10px;
+}
+
+#signUp:hover {
+    -fx-background-color: #8eadad; /* Secondary when hover */
+}
+
+#hasAccount:hover {
+    -fx-text-fill: rgb(202, 202, 202); 
+}
+
+#invalid:hover {
+    -fx-background-color:  #254950; /* main when hover */
+    -fx-text-fill: rgb(202, 202, 202);
+}
+
+#passwordNotMatched:hover {
+    -fx-background-color:  #254950; /* main when hover */
+    -fx-text-fill: rgb(202, 202, 202);
+}
+
+.menu-nav-bar {
+    -fx-font-size: 48px;
+}
+
+.menu-nav-bar:hover {
+    -fx-background-color: #8eadad;
+}
+
+.hyperlink {
+    -fx-border-color: transparent;
+    -fx-padding: 4 0 4 0;
+}
+
+.invalid {
+    -fx-text-fill: red;
+}

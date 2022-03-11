@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="500.0" prefWidth="835.0" stylesheets="@../Design/CSS/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.ControllerForLogin">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" styleClass="maincolor" VBox.vgrow="ALWAYS">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="500.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="fill-secondary" width="200.0" />
+            <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#cdc4ad" height="222.0" layoutX="413.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" styleClass="loginContainer" width="389.0" />
+            <Button fx:id="button1" layoutX="563.0" layoutY="347.0" mnemonicParsing="false" onAction="#pressToLogin" prefHeight="39.0" prefWidth="88.0" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </opaqueInsets>
+               <styleClass>
+                  <String fx:value="maincolor" />
+                  <String fx:value="weightBold" />
+                  <String fx:value="radiusBig" />
+                  <String fx:value="fixed-size-18" />
+               </styleClass>
+            </Button>
+            <Label layoutX="446.0" layoutY="94.0" text="Personality Test" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="43.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="loginHeader" />
+                  <String fx:value="weightBold" />
+               </styleClass>
+            </Label>
+            <Label fx:id="usernameLabel" layoutX="436.0" layoutY="225.0" text="Username:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="passwordLabel" layoutX="438.0" layoutY="299.0" text="Password:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="543.0" layoutY="225.0" onAction="#pressToLogin" onMouseClicked="#usernameClear" prefHeight="39.0" prefWidth="235.0" promptText="Username">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="maincolor" />
+                  <String fx:value="loginText" />
+                  <String fx:value="fixed-size-18" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <ImageView fitHeight="233.0" fitWidth="289.0" layoutX="106.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+               <image>
+                  <Image url="@../Design/Img/colorfulplanets.jpg" />
+               </image>
+               <effect>
+                  <Glow level="0.71" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="188.0" fitWidth="281.0" layoutX="113.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Design/Img/p3.jpg" />
+               </image>
+               <effect>
+                  <Glow level="0.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="174.0" fitWidth="226.0" layoutX="39.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+               <image>
+                  <Image url="@../Design/Img/p2.jpg" />
+               </image>
+               <effect>
+                  <Glow level="0.17" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="607.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Design/Img/personality.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="661.0" layoutY="49.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.2" styleClass="loginText" text="Find The Real You">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Hyperlink fx:id="register" layoutX="570.0" layoutY="409.0" onAction="#pressToRegister" styleClass="fixed-size-18" text="Register" underline="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Hyperlink>
+            <PasswordField fx:id="password" layoutX="544.0" layoutY="293.0" onAction="#pressToLogin" onMouseClicked="#passwordClear" prefHeight="39.0" prefWidth="235.0" promptText="Password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="maincolor" />
+                  <String fx:value="loginText" />
+                  <String fx:value="fixed-size-18" />
+               </styleClass>
+            </PasswordField>
+            <Label fx:id="invalidLabel" layoutX="548.0" layoutY="191.0" prefHeight="27.0" prefWidth="179.0" styleClass="weightBold" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

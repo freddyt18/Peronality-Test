@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="835.0" styleClass="secondaryColor" stylesheets="@../Design/CSS/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Registration.ControllerForRegistration">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="500.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="fill-main" width="373.0" />
+      <Text layoutX="85.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <styleClass>
+            <String fx:value="fillWhite" />
+            <String fx:value="weightBold" />
+         </styleClass>
+      </Text>
+      <TextField fx:id="email" alignment="CENTER" layoutX="91.0" layoutY="159.0" onAction="#afterEmail" prefHeight="40.0" prefWidth="195.0" promptText="Email">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="secondaryColor" />
+            <String fx:value="loginTextBlack" />
+            <String fx:value="fixed-size-18" />
+         </styleClass>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Button fx:id="signUp" layoutX="135.0" layoutY="323.0" mnemonicParsing="false" onAction="#signUpWhenPressed" prefHeight="40.0" prefWidth="111.0" text="Sign Up">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="secondaryColor" />
+            <String fx:value="weightBold" />
+            <String fx:value="radiusBig" />
+            <String fx:value="fixed-size-18" />
+         </styleClass>
+      </Button>
+      <TextField fx:id="newUsername" alignment="CENTER" layoutX="91.0" layoutY="213.0" onAction="#afterUsername" prefHeight="40.0" prefWidth="195.0" promptText="New Username">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="secondaryColor" />
+            <String fx:value="loginTextBlack" />
+            <String fx:value="fixed-size-18" />
+         </styleClass>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <PasswordField fx:id="retypedPassword" alignment="CENTER" layoutX="191.0" layoutY="265.0" onMouseClicked="#afterRetypedPasswordClicked" prefHeight="40.0" prefWidth="158.0" promptText="Retype Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="secondaryColor" />
+            <String fx:value="loginTextBlack" />
+            <String fx:value="fixed-size-18" />
+         </styleClass>
+      </PasswordField>
+      <PasswordField fx:id="newPassword" alignment="CENTER" layoutX="25.0" layoutY="265.0" onMouseClicked="#afterPasswordClicked" prefHeight="40.0" prefWidth="158.0" promptText="New Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="secondaryColor" />
+            <String fx:value="loginTextBlack" />
+            <String fx:value="fixed-size-18" />
+         </styleClass>
+      </PasswordField>
+      <Hyperlink fx:id="hasAccount" layoutX="108.0" layoutY="370.0" onAction="#alreadyHasAnAccount" text="Already Has An Account?" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="loginText" />
+            <String fx:value="fixed-size-14" />
+         </styleClass>
+      </Hyperlink>
+      <Pane layoutX="500.0" layoutY="196.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="329.0" fitWidth="412.0" layoutX="-121.0" layoutY="-121.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Design/Img/pic.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="alertRegistration" alignment="CENTER" layoutX="13.0" layoutY="129.0" prefHeight="21.0" prefWidth="354.0" styleClass="fixed-size-18" />
+   </children>
+</Pane>
