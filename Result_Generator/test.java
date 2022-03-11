@@ -2,9 +2,11 @@ package Result_Generator;
 
 import java.util.LinkedList;
 
+
 public class test {
+    static LinkedList<String> personality_type = new LinkedList<String>();
+
     public static void main(String[] args) {
-        LinkedList<String> personality_type = new LinkedList<String>();
         for(int a = 0; a < 2; a++){
             String tempA = "";
             if(a==0){
@@ -54,8 +56,6 @@ public class test {
                 }
             }
         }
-        if(!personality_type.get(0).toString().contains("e - low")){
-            System.out.println("TRUE");
-        }
+        System.out.println(personality_type.get(3).toString());
     }
 }
