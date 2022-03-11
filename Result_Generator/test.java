@@ -61,38 +61,39 @@ public class test {
         for(int i = 0; i < personality_type.size(); i++){
             String temp = "";
             if(personality_type.get(i).toString().contains("a - low")){
-                temp = temp.concat("||a detail low");
+                temp = temp.concat("-a detail low");
             } else {
-                temp = temp.concat("||a detail high");
+                temp = temp.concat("-a detail high");
             }
 
             if(personality_type.get(i).toString().contains("b - low")){
-                temp = temp.concat("||b detail low");
+                temp = temp.concat("||-b detail low");
             } else {
-                temp = temp.concat("||b detail high");
+                temp = temp.concat("||-b detail high");
             }
 
             if(personality_type.get(i).toString().contains("c - low")){
-                temp = temp.concat("||c detail low");
+                temp = temp.concat("||-c detail low");
             } else {
-                temp = temp.concat("||c detail high");
+                temp = temp.concat("||-c detail high");
             }
 
             if(personality_type.get(i).toString().contains("d - low")){
-                temp = temp.concat("||d detail low");
+                temp = temp.concat("||-d detail low");
             } else {
-                temp = temp.concat("||d detail high");
+                temp = temp.concat("||-d detail high");
             }
 
             if(personality_type.get(i).toString().contains("e - low")){
-                temp = temp.concat("||e detail low");
+                temp = temp.concat("||-e detail low");
             } else {
-                temp = temp.concat("||e detail high");
+                temp = temp.concat("||-e detail high");
             }
 
             personality_type_result.add(temp);
         }
         //result of personality 1
-        System.out.println(personality_type_result.get(0).toString());
+        System.out.println("\n\nPersonality type #1: ");
+        System.out.println(personality_type_result.get(0).toString().replace("||", "\n").replace("-", "\t"));
     }
 }
