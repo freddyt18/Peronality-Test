@@ -181,4 +181,45 @@ public class DataHandling {
         file.close();
         dataToList();
     }
+
+    //BETA
+    public static void listToData() throws IOException{
+        resetDealWithFile();
+        line.set(0, Integer.toString(users.size()));
+        Files.write(path.toPath(), line);
+
+        for(int i = 0; i < users.size(); i++){
+            int tempLine = i*10 + 2;
+            line.set(tempLine++, Integer.toString(DataHandling.users.get(i).getID()));
+            Files.write(path.toPath(), line);
+
+            line.set(tempLine++, "Username: " + DataHandling.users.get(i).getUsername());
+            Files.write(path.toPath(), line);
+
+            line.set(tempLine++, "Password: " + DataHandling.users.get(i).getPassword());
+            Files.write(path.toPath(), line);
+
+            line.set(tempLine++, "Email: " + DataHandling.users.get(i).getEmail());
+            Files.write(path.toPath(), line);
+
+            line.set(tempLine++, "Personality: " + DataHandling.users.get(i).getPersonality());
+            Files.write(path.toPath(), line);
+
+            line.set(tempLine++, "Name: " + DataHandling.users.get(i).getName());
+            Files.write(path.toPath(), line);
+
+            line.set(tempLine++, "Age: " + DataHandling.users.get(i).getAge());
+            Files.write(path.toPath(), line);
+
+            line.set(tempLine++, "Sex: " + DataHandling.users.get(i).getSex());
+            Files.write(path.toPath(), line);
+
+            line.set(tempLine++, "Bio: " + DataHandling.users.get(i).getBio());
+            Files.write(path.toPath(), line);
+            
+        }
+
+        bWriter.close();
+        file.close();
+    }
 }
