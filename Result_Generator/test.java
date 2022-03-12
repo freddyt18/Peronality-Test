@@ -38,7 +38,7 @@ public class test {
                             tempD = " | D - high | ";
                             tempD = tempD.concat(tempC);
                         } else {
-                            tempD = " | d- low | ";
+                            tempD = " | d - low | ";
                             tempD = tempD.concat(tempC);
                         }   
                         for(int e = 0; e < 2; e++){
@@ -95,5 +95,8 @@ public class test {
         //result of personality 1
         System.out.println("\n\nPersonality type #1: ");
         System.out.println(personality_type_result.get(0));
+
+        System.out.println("\n\nPersonality type #2: ");
+        System.out.println(personality_type_result.get(1));
     }
 }
