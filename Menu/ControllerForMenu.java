@@ -10,10 +10,13 @@ import javafx.scene.layout.BorderPane;
 public class ControllerForMenu {
     
     @FXML
-    private Button personalities;
+    private Button explore;
 
     @FXML
     private Button test;
+
+    @FXML
+    private Button profile;
 
     @FXML
     private Button setting;
@@ -22,52 +25,78 @@ public class ControllerForMenu {
     private BorderPane scene;
 
     @FXML
-    private void whenPersonalitiesPressed() throws IOException {
-        scene.setCenter(FXMLLoader.load(getClass().getResource("../App/INVALID_INFO.fxml")));
-        if(containsMain(test) || containsMain(setting)){
+    private void whenExplorePressed() throws IOException {
+        scene.setCenter(FXMLLoader.load(getClass().getResource("../App/LOGIN_FORM.fxml")));
+        if(containsMain(test) || containsMain(setting) || containsMain(profile)){
             if(containsMain(test)){
-                buttonMainTOSecond(test);
+                mainToAlt(test);
+            } else if(containsMain(profile)){
+                mainToAlt(profile);
             } else {
-                buttonMainTOSecond(setting);
+                mainToAlt(setting);
             }
         }
-        buttonSecondToMain(personalities);
+        altToMain(explore);
     }
 
     @FXML
     private void whenTestPressed() throws IOException {
         scene.setCenter(FXMLLoader.load(getClass().getResource("../App/LOGIN_FORM.fxml")));
-        if(containsMain(personalities) || containsMain(setting)){
-            if(containsMain(personalities)){
-                buttonMainTOSecond(personalities);
+        if(containsMain(explore) || containsMain(setting) || containsMain(profile)){
+            if(containsMain(explore)){
+                mainToAlt(explore);
+            } else if(containsMain(profile)){
+                mainToAlt(profile);
             } else {
-                buttonMainTOSecond(setting);
+                mainToAlt(setting);
             }
         }
-        buttonSecondToMain(test);
+        altToMain(test);
+    }
+
+    @FXML
+    private void whenProfilePressed() throws IOException {
+        scene.setCenter(FXMLLoader.load(getClass().getResource("../App/LOGIN_FORM.fxml")));
+        if(containsMain(explore) || containsMain(setting) || containsMain(test)){
+            if(containsMain(explore)){
+                mainToAlt(explore);
+            } else if(containsMain(setting)){
+                mainToAlt(setting);
+            } else {
+                mainToAlt(test);
+            }
+        }
+        altToMain(profile);
     }
 
     @FXML
     private void whenSettingPressed() throws IOException {
         scene.setCenter(FXMLLoader.load(getClass().getResource("../App/LOGIN_FORM.fxml")));
-        if(containsMain(personalities) || containsMain(test)){
-            if(containsMain(personalities)){
-                buttonMainTOSecond(personalities);
+        if(containsMain(explore) || containsMain(test) || containsMain(profile)){
+            if(containsMain(explore)){
+                mainToAlt(explore);
+            } else if(containsMain(profile)){
+                mainToAlt(profile);
             } else {
-                buttonMainTOSecond(test);
+                mainToAlt(test);
             }
         }
-        buttonSecondToMain(setting);
+        altToMain(setting);
+    }
+
+    @FXML
+    private void whenLogOutPressed() throws IOException {
+        scene.setCenter(FXMLLoader.load(getClass().getResource("../App/LOGIN_FORM.fxml")));
     }
     
 
-    private void buttonMainTOSecond(Button b){
-        b.getStyleClass().removeAll("maincolor", "loginText");
-        b.getStyleClass().add("secondaryColor");
+    private void altToMain(Button b){
+        b.getStyleClass().remove("menu-main-alt");
+        b.getStyleClass().addAll("maincolor", "noBorderColorMenu");
     }
-    private void buttonSecondToMain(Button b){
-        b.getStyleClass().remove("secondaryColor");
-        b.getStyleClass().addAll("maincolor", "loginText");
+    private void mainToAlt(Button b){
+        b.getStyleClass().removeAll("maincolor", "noBorderColorMenu");
+        b.getStyleClass().add("menu-main-alt");
     }
     private boolean containsMain(Button b){
         if(b.getStyleClass().toString().contains("maincolor")){
