@@ -62,8 +62,11 @@ public class ControllerForRegistration {
         Pattern s = Pattern.compile("\\s");     //  \s <- whitespace " " "\t" "\x0" ...
         
 
+        Pattern email = Pattern.compile("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$");
+
         boolean userExists = false;
         boolean unacceptableUsername = false;
+        boolean unacceptableEmail = false;
         afterEmail();
         afterUsername();
         afterPassword();
@@ -71,21 +74,26 @@ public class ControllerForRegistration {
 
         Matcher usernameContainsNonCharacter = W.matcher(usernameTemp);//2
         Matcher usernameContainsWhiteSpace = s.matcher(usernameTemp);
+        Matcher emailValidator = email.matcher(emailTemp); 
 
         //3
         if(usernameContainsNonCharacter.find() || usernameContainsWhiteSpace.find()){
             unacceptableUsername = true;
         } else if(handle.containsUsername(usernameTemp)){
             userExists = true;
+        } else if(!emailValidator.find()){
+            unacceptableEmail = true;
         }
 
 
-        if(!passwordTemp.equals(rPasswordTemp) || userExists || unacceptableUsername){
 
+        if(!passwordTemp.equals(rPasswordTemp) || userExists || unacceptableUsername || unacceptableEmail){
             if(userExists){
                 alertRegistration.setText("User already exists");
             } else if(unacceptableUsername){
                 alertRegistration.setText("Username can only contain a-z A-Z 0-9");
+            } else if(unacceptableEmail){
+                alertRegistration.setText("Unacceptable Email");
             } else {
                 alertRegistration.setText("Mismatched Password");
                 newPassword.getStyleClass().addAll("invalid", "weightBold");
@@ -93,6 +101,9 @@ public class ControllerForRegistration {
             }
             alertRegistration.getStyleClass().addAll("invalid", "weightBold");
 
+        } else if(passwordTemp.equals("")&&rPasswordTemp.equals("")){
+            alertRegistration.setText("Password cannot be empty");
+            alertRegistration.getStyleClass().addAll("invalid", "weightBold");
         } else {
             handle.writeToFile(usernameTemp, passwordTemp, emailTemp);
             App.CURRENT_USER_ID = DataHandling.users.size()-1;
