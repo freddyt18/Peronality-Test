@@ -67,6 +67,8 @@ public class ControllerForRegistration {
         boolean userExists = false;
         boolean unacceptableUsername = false;
         boolean unacceptableEmail = false;
+        boolean unacceptablePassword = false;
+
         afterEmail();
         afterUsername();
         afterPassword();
@@ -74,11 +76,14 @@ public class ControllerForRegistration {
 
         Matcher usernameContainsNonCharacter = W.matcher(usernameTemp);//2
         Matcher usernameContainsWhiteSpace = s.matcher(usernameTemp);
+        Matcher passwordContainsNonCharacter = W.matcher(passwordTemp);
+        Matcher passwordContainsWhiteSpace = s.matcher(passwordTemp);
         Matcher emailValidator = email.matcher(emailTemp); 
-
         //3
         if(usernameContainsNonCharacter.find() || usernameContainsWhiteSpace.find()){
             unacceptableUsername = true;
+        } else if(passwordContainsNonCharacter.find() || passwordContainsWhiteSpace.find()){
+            unacceptablePassword = true;
         } else if(handle.containsUsername(usernameTemp)){
             userExists = true;
         } else if(!emailValidator.find()){
@@ -87,13 +92,15 @@ public class ControllerForRegistration {
 
 
 
-        if(!passwordTemp.equals(rPasswordTemp) || userExists || unacceptableUsername || unacceptableEmail){
+        if(!passwordTemp.equals(rPasswordTemp) || userExists || unacceptableUsername || unacceptableEmail || unacceptablePassword){
             if(userExists){
                 alertRegistration.setText("User already exists");
             } else if(unacceptableUsername){
                 alertRegistration.setText("Username can only contain a-z A-Z 0-9");
             } else if(unacceptableEmail){
                 alertRegistration.setText("Unacceptable Email");
+            } else if(unacceptablePassword){
+                alertRegistration.setText("Unacceptable Password");
             } else {
                 alertRegistration.setText("Mismatched Password");
                 newPassword.getStyleClass().addAll("invalid", "weightBold");
