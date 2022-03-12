@@ -125,6 +125,9 @@
 .hover:hover {
     -fx-background-color: #275a62;
     -fx-border-color: #275a62;
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+    -fx-timeline: 2s;
 }
 
 .noBorderColorMenu {
