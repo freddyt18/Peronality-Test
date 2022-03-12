@@ -38,6 +38,7 @@ public class App extends Application {
         the program.
          */
         System.out.println("ALL PROGRAM EXITS");
+        DataHandling.listToData();
     }
 
     @Override

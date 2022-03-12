@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 
 public class ControllerForMenu {
+    Menu menu = new Menu();
     
     @FXML
     private Button explore;
@@ -86,7 +87,7 @@ public class ControllerForMenu {
 
     @FXML
     private void whenLogOutPressed() throws IOException {
-        scene.setCenter(FXMLLoader.load(getClass().getResource("../App/LOGIN_FORM.fxml")));
+        menu.closeMenu();
     }
     
 
