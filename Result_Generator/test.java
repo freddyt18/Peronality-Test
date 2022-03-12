@@ -93,11 +93,12 @@ public class test {
         }
         //result of personality 1
         System.out.println(personality_type.get(0).toString());
-        System.out.println("\n\nPersonality type #1: ");
+        System.out.println("Personality type #1: ");
         System.out.println(personality_type_result.get(0));
+        System.out.println("\n\n");
 
         System.out.println(personality_type.get(1).toString());
-        System.out.println("\n\nPersonality type #2: ");
+        System.out.println("Personality type #2: ");
         System.out.println(personality_type_result.get(1));
     }
 }
