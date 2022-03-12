@@ -56,7 +56,6 @@ public class test {
                 }
             }
         }
-        System.out.println(personality_type.get(3).toString());
 
         for(int i = 0; i < personality_type.size(); i++){
             String temp = "";
@@ -93,9 +92,11 @@ public class test {
             personality_type_result.add(temp);
         }
         //result of personality 1
+        System.out.println(personality_type.get(0).toString());
         System.out.println("\n\nPersonality type #1: ");
         System.out.println(personality_type_result.get(0));
 
+        System.out.println(personality_type.get(1).toString());
         System.out.println("\n\nPersonality type #2: ");
         System.out.println(personality_type_result.get(1));
     }
