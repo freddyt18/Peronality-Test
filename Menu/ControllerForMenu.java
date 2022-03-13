@@ -2,6 +2,7 @@ package Menu;
 
 import java.io.IOException;
 
+import App.App;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
@@ -9,6 +10,7 @@ import javafx.scene.layout.BorderPane;
 
 public class ControllerForMenu {
     Menu menu = new Menu();
+    App main = new App();
     
     @FXML
     private Button explore;
@@ -88,6 +90,7 @@ public class ControllerForMenu {
     @FXML
     private void whenLogOutPressed() throws IOException {
         menu.closeMenu();
+        main.showLogin();
     }
     
 

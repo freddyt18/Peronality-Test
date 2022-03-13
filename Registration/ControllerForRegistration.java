@@ -92,11 +92,13 @@ public class ControllerForRegistration {
 
 
 
-        if(!passwordTemp.equals(rPasswordTemp) || userExists || unacceptableUsername || unacceptableEmail || unacceptablePassword){
+        if(!passwordTemp.equals(rPasswordTemp) || userExists || unacceptableUsername || unacceptableEmail || unacceptablePassword || usernameTemp.equals("")){
             if(userExists){
                 alertRegistration.setText("User already exists");
             } else if(unacceptableUsername){
                 alertRegistration.setText("Username can only contain a-z A-Z 0-9");
+            } else if(usernameTemp.equals("")){
+                alertRegistration.setText("Username cannot be empty");
             } else if(unacceptableEmail){
                 alertRegistration.setText("Unacceptable Email");
             } else if(unacceptablePassword){

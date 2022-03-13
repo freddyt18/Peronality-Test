@@ -179,7 +179,6 @@ public class DataHandling {
 
         bWriter.close();
         file.close();
-        dataToList();
     }
 
     //BETA
@@ -214,7 +213,7 @@ public class DataHandling {
             line.set(tempLine++, "Sex: " + DataHandling.users.get(i).getSex());
             Files.write(path.toPath(), line);
 
-            line.set(tempLine++, "Bio: " + DataHandling.users.get(i).getBio());
+            line.set(tempLine, "Bio: " + DataHandling.users.get(i).getBio());
             Files.write(path.toPath(), line);
             
         }
