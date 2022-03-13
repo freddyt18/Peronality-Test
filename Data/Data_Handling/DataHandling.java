@@ -68,7 +68,7 @@ public class DataHandling {
         fileRead = new FileReader(path);
         bWriter = new BufferedWriter(file);
         bReader = new BufferedReader(fileRead);
-        line = Files.readAllLines(path.toPath()); //n*10 + 3
+        line = Files.readAllLines(path.toPath()); //n*10 + 2
     }
     public static void resetDealWithFile() throws IOException {
         readFile.close();
