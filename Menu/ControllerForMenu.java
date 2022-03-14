@@ -3,12 +3,14 @@ package Menu;
 import java.io.IOException;
 
 import App.App;
+import Setting.Setting;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 
 public class ControllerForMenu {
+    Setting settingObject = new Setting();
     Menu menu = new Menu();
     App main = new App();
     
@@ -74,7 +76,11 @@ public class ControllerForMenu {
 
     @FXML
     private void whenSettingPressed() throws IOException {
-        scene.setCenter(FXMLLoader.load(getClass().getResource("../App/LOGIN_FORM.fxml")));
+         //set new stage for setting
+         menu.closeMenu();
+         settingObject.showSetting();
+         
+        //scene.setCenter(FXMLLoader.load(getClass().getResource("../App/LOGIN_FORM.fxml")));
         if(containsMain(explore) || containsMain(test) || containsMain(profile)){
             if(containsMain(explore)){
                 mainToAlt(explore);
