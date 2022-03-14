@@ -10,7 +10,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-
+import Data.BCrypt.BCrypt;
 
 public class DataHandling {
 
@@ -182,11 +182,17 @@ public class DataHandling {
     }
 
     //BETA
-    public static void listToData() throws IOException{
+    public static void listToData() throws IOException {
         resetDealWithFile();
         line.set(0, Integer.toString(users.size()));
         Files.write(path.toPath(), line);
 
+        //Password Hashing
+        /* String hash = BCrypt.hashpw("123", BCrypt.gensalt(12));
+        if(BCrypt.checkpw("123", hash)){
+            System.out.println(hash);
+        } else System.out.println("False"); */
+        
         for(int i = 0; i < users.size(); i++){
             int tempLine = i*10 + 2;
             line.set(tempLine++, Integer.toString(DataHandling.users.get(i).getID()));
@@ -195,7 +201,7 @@ public class DataHandling {
             line.set(tempLine++, "Username: " + DataHandling.users.get(i).getUsername());
             Files.write(path.toPath(), line);
 
-            line.set(tempLine++, "Password: " + DataHandling.users.get(i).getPassword());
+            line.set(tempLine++, "Password: " + BCrypt.hashpw(DataHandling.users.get(i).getPassword(), BCrypt.gensalt()));
             Files.write(path.toPath(), line);
 
             line.set(tempLine++, "Email: " + DataHandling.users.get(i).getEmail());
