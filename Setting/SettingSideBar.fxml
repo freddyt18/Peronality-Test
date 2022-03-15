@@ -13,14 +13,14 @@
    <children>
       <BorderPane fx:id="SettingBorderPane" layoutX="-4.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.53" prefWidth="1200.0">
          <left>
-            <VBox prefHeight="658.0" prefWidth="300.0" styleClass="maincolor" stylesheets="@../Design/CSS/main.css" BorderPane.alignment="CENTER">
+            <VBox alignment="CENTER" prefHeight="658.0" prefWidth="300.0" styleClass="maincolor" stylesheets="@../../../Project/src/Design/CSS/main.css" BorderPane.alignment="CENTER">
                <children>
                   <Hyperlink alignment="CENTER" prefHeight="130.0" prefWidth="361.0" text="Personality Test" textFill="#fcfcfc">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Hyperlink>
-                  <Button fx:id="EditProfileButton" mnemonicParsing="false" onAction="#goToEditProfile" prefHeight="72.0" prefWidth="333.0" stylesheets="@../../../Project11/src/Design/CSS/main.css" text="Edit Profile" textFill="WHITE">
+                  <Button fx:id="EditProfileButton" alignment="CENTER" mnemonicParsing="false" onAction="#goToEditProfile" prefHeight="72.0" prefWidth="250.0" stylesheets="@../Design/CSS/main.css" text="Edit Profile" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -29,12 +29,12 @@
                         <String fx:value="loginText" />
                         <String fx:value="menu-main-alt" />
                         <String fx:value="stroke" />
-                        <String fx:value="fixed-size-28" />
-                        <String fx:value="hover" />
+                        <String fx:value="fixed-size-18" />
+                        <String fx:value="hover-small" />
                      </styleClass>
                   </Button>
                   <Pane prefHeight="15.0" prefWidth="300.0" />
-                  <Button fx:id="ChangePasswordButton" mnemonicParsing="false" onAction="#goToChangePassword" prefHeight="72.0" prefWidth="447.0" stylesheets="@../../../Project11/src/Design/CSS/main.css" text="Change Password" textFill="WHITE">
+                  <Button fx:id="ChangePasswordButton" alignment="CENTER" mnemonicParsing="false" onAction="#goToChangePassword" prefHeight="72.0" prefWidth="250.0" stylesheets="@../Design/CSS/main.css" text="Change Password" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -43,12 +43,12 @@
                         <String fx:value="loginText" />
                         <String fx:value="menu-main-alt" />
                         <String fx:value="stroke" />
-                        <String fx:value="fixed-size-28" />
-                        <String fx:value="hover" />
+                        <String fx:value="fixed-size-18" />
+                        <String fx:value="hover-small" />
                      </styleClass>
                   </Button>
                   <Pane prefHeight="15.0" prefWidth="300.0" />
-                  <Button fx:id="TermButton" mnemonicParsing="false" onAction="#goToTerm" prefHeight="72.0" prefWidth="389.0" stylesheets="@../../../Project11/src/Design/CSS/main.css" text="Term" textFill="WHITE">
+                  <Button fx:id="TermButton" alignment="CENTER" mnemonicParsing="false" onAction="#goToTerm" prefHeight="72.0" prefWidth="250.0" stylesheets="@../Design/CSS/main.css" text="Term" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -57,12 +57,12 @@
                         <String fx:value="loginText" />
                         <String fx:value="menu-main-alt" />
                         <String fx:value="stroke" />
-                        <String fx:value="fixed-size-28" />
-                        <String fx:value="hover" />
+                        <String fx:value="fixed-size-18" />
+                        <String fx:value="hover-small" />
                      </styleClass>
                   </Button>
                   <Pane prefHeight="15.0" prefWidth="300.0" />
-                  <Button fx:id="PrivacyButton" mnemonicParsing="false" onAction="#goToPrivacy" prefHeight="72.0" prefWidth="438.0" stylesheets="@../../../Project11/src/Design/CSS/main.css" text="Privacy" textFill="WHITE">
+                  <Button fx:id="PrivacyButton" alignment="CENTER" mnemonicParsing="false" onAction="#goToPrivacy" prefHeight="72.0" prefWidth="250.0" stylesheets="@../Design/CSS/main.css" text="Privacy" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -71,12 +71,12 @@
                         <String fx:value="loginText" />
                         <String fx:value="menu-main-alt" />
                         <String fx:value="stroke" />
-                        <String fx:value="fixed-size-28" />
-                        <String fx:value="hover" />
+                        <String fx:value="fixed-size-18" />
+                        <String fx:value="hover-small" />
                      </styleClass>
                   </Button>
                   <Pane prefHeight="15.0" prefWidth="300.0" />
-                  <Button fx:id="AboutButton" mnemonicParsing="false" onAction="#goToAbout" prefHeight="72.0" prefWidth="385.0" stylesheets="@../../../Project11/src/Design/CSS/main.css" text="About" textFill="WHITE">
+                  <Button fx:id="AboutButton" alignment="CENTER" mnemonicParsing="false" onAction="#goToAbout" prefHeight="72.0" prefWidth="250.0" stylesheets="@../Design/CSS/main.css" text="About" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -85,8 +85,8 @@
                         <String fx:value="loginText" />
                         <String fx:value="menu-main-alt" />
                         <String fx:value="stroke" />
-                        <String fx:value="fixed-size-28" />
-                        <String fx:value="hover" />
+                        <String fx:value="fixed-size-18" />
+                        <String fx:value="hover-small" />
                      </styleClass>
                   </Button>
                   <Pane layoutX="10.0" layoutY="212.0" prefHeight="47.0" prefWidth="300.0" />

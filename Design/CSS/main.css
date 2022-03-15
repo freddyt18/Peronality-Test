@@ -129,6 +129,13 @@
     -fx-scale-y: 1.2;
 }
 
+.hover-small:hover {
+    -fx-background-color: #275a62;
+    -fx-border-color: #275a62;
+    -fx-scale-x: 1.07;
+    -fx-scale-y: 1.07;
+}
+
 .noBorderColorMenu {
     -fx-border-color: #3f7c88;
 }

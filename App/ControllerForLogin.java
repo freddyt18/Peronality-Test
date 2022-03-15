@@ -33,7 +33,6 @@ public class ControllerForLogin {
         int id = -1;
         if(handle.containsUsername(usernameTemp)){
             id = DataHandling.TEMPORARY_USER;
-            DataHandling.users.get(id).printInfo();
             flag = true;
         }
         //Verify USERNAME
@@ -85,9 +84,11 @@ public class ControllerForLogin {
         afterPassword();
         if(verifyInfo()){
             App.CURRENT_USER_ID = DataHandling.TEMPORARY_USER;
+            System.out.println(App.CURRENT_USER_ID);
+            System.out.println(DataHandling.users.get(App.CURRENT_USER_ID).getUsername().toString());
             main.exit();
             menu.showMenu();
-            System.out.println(App.CURRENT_USER_ID);
+
         } else {
             usernameLabel.getStyleClass().addAll("invalid", "weightBold");
             passwordLabel.getStyleClass().addAll("invalid", "weightBold");
