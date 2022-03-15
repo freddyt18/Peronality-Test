@@ -8,7 +8,7 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-// yoooooo
+// yooooookk
 public class Setting {
     FXMLLoader loader = new FXMLLoader();
     public static Stage current = new Stage();
