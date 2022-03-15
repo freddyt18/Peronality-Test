@@ -2,7 +2,7 @@
 
 1
 Username: Vortey
-Password: 123
+Password: $2a$10$S3VA6Gw.3.0EPxCKpbazmuwqDcRounv40E3t7nUiqdSXbyRgLEFz2
 Email: sovortey.ly@student.cadt.edu.kh
 Personality: #1
 Name: Vortey
@@ -12,7 +12,7 @@ Bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequu
 
 2
 Username: Pitou
-Password: 123
+Password: $2a$10$jpj7RIkKNZQBpCqV35jV/O2.ddzor1yFWwmYzb3jpOfOn0NzzCLbu
 Email: keopitou.doung@student.cadt.edu.kh
 Personality: #1
 Name: Freddy
@@ -22,7 +22,7 @@ Bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequu
 
 3
 Username: test
-Password: 123
+Password: $2a$10$SZ1BlCd98dVtyzIVukFGpuRMp6mgtXevuXHKOIOj0AaFRmcAC.lVK
 Email: test@test.com
 Personality:  
 Name:  
@@ -32,7 +32,7 @@ Bio:
 
 4
 Username: vatanak
-Password: 123
+Password: $2a$10$g.Z5v.9HV.tWcdtEMf2uUuGWGCiTha0NYOz.lncFM.YWZKewrep4q
 Email: vatanak.ouk@student.cadt.edu.kh
 Personality:  
 Name:  
@@ -42,7 +42,7 @@ Bio:
 
 5
 Username: 1234
-Password: a123@gmail.com
+Password: $2a$10$BdyqUTWcqYspz2i8X/RiY.PWo8eEL1gFEXbmEqYZrtZgH0T7Jt5jG
 Email: 1234
 Personality:  
 Name:  
@@ -52,7 +52,7 @@ Bio:
 
 6
 Username: whatanak
-Password: 123
+Password: $2a$10$TuHNQ2nbazvNnbjJKgvWGuAeSccZHrNKjWDckcwYMyo4s5V4MLGIW
 Email: whatanak.kean@student.cadt.edu.kh
 Personality:  
 Name:  
@@ -62,7 +62,7 @@ Bio:
 
 7
 Username: BenZyy_Tha
-Password: 123
+Password: $2a$10$qwgj4h0zezX2KaYb9B9FKOciyLVuQyEWD.6vrrQJHOdoDCklc5niW
 Email: setha.meanith@student.cadt.edu.kh
 Personality:  
 Name:  
@@ -72,7 +72,7 @@ Bio:
 
 8
 Username: richNoob
-Password: 123
+Password: $2a$10$j3m3Jwuevym.X0J2qyv0JOlRglxeSynBHrco3EQ03HQUgbmGHVULO
 Email: richNoob@google.com
 Personality:  
 Name:  
@@ -82,7 +82,7 @@ Bio:
 
 9
 Username: test123123
-Password: 123
+Password: $2a$10$1.QZSoyXveiOHaAMKwZ3v.vNaL9jSzqePmvZHepWPjMjdS2Hj8yNO
 Email: test@gmail.com
 Personality:  
 Name:  
@@ -92,7 +92,7 @@ Bio:
 
 10
 Username: aA1
-Password: a
+Password: $2a$10$zn0m5u5fZ6tVjinesNFpseZ5juGtrru8t8WYsvuFPm8IlTowGPg.y
 Email: adasd@test.com
 Personality:  
 Name:  
@@ -102,7 +102,7 @@ Bio:
 
 11
 Username: testgmail
-Password: 123
+Password: $2a$10$vFo1kTMnGXG0X0UnULjc3uGNcrg8bCoz6Sq4Gb43wfGbtU2003OpO
 Email: test@gmail.com
 Personality:  
 Name:  
@@ -112,7 +112,7 @@ Bio:
 
 12
 Username: 123
-Password: 123
+Password: $2a$10$ItPiYaNdxhMnJ.RoboXJyuUcTX8a/QdHAoXREfHHFOUv1HZcqxV0.
 Email: 123@123.123
 Personality:  
 Name:  
@@ -122,7 +122,7 @@ Bio:
 
 13
 Username: 1
-Password: 1
+Password: $2a$10$MmW7Q3gNpBwepogQ7F9dh.7shncUPFbKbgz1d09hzd1PqOCWWvzrG
 Email: nak@gmail.com
 Personality:  
 Name:  
@@ -132,7 +132,7 @@ Bio:
 
 14
 Username: freddy
-Password: 123
+Password: $2a$10$qQ5I5L.c4Epj5A3RwCw6cutSp.d6Hzspd4mXINeICcmX7NAhwEhPy
 Email: freddy123@gmail.com
 Personality:  
 Name:  
