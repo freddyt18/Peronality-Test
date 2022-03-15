@@ -201,8 +201,12 @@ public class DataHandling {
             line.set(tempLine++, "Username: " + DataHandling.users.get(i).getUsername());
             Files.write(path.toPath(), line);
 
-            line.set(tempLine++, "Password: " + BCrypt.hashpw(DataHandling.users.get(i).getPassword(), BCrypt.gensalt()));
-            Files.write(path.toPath(), line);
+            if(!DataHandling.users.get(i).getPassword().contains("$2a$10$")){
+                line.set(tempLine++, "Password: " + BCrypt.hashpw(DataHandling.users.get(i).getPassword(), BCrypt.gensalt()));
+                Files.write(path.toPath(), line);
+            } else {
+                tempLine++;
+            }
 
             line.set(tempLine++, "Email: " + DataHandling.users.get(i).getEmail());
             Files.write(path.toPath(), line);

@@ -47,7 +47,7 @@ public class ControllerForLogin {
                 System.out.println(id);
                 return false;
             }
-            if(!BCrypt.checkpw(passwordTemp, DataHandling.users.get(id).getPassword().toString())){
+            if(!BCrypt.checkpw(passwordTemp, DataHandling.users.get(id).getPassword())){
                 System.out.println("WRONG PASSWORD");
                 return false;
             } else {
