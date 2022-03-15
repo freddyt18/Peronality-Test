@@ -13,7 +13,7 @@
    <children>
       <BorderPane fx:id="SettingBorderPane" layoutX="-4.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.53" prefWidth="1200.0">
          <left>
-            <VBox alignment="CENTER" prefHeight="658.0" prefWidth="300.0" styleClass="maincolor" stylesheets="@../../../Project/src/Design/CSS/main.css" BorderPane.alignment="CENTER">
+            <VBox alignment="CENTER" prefHeight="658.0" prefWidth="300.0" styleClass="maincolor" BorderPane.alignment="CENTER">
                <children>
                   <Hyperlink alignment="CENTER" prefHeight="130.0" prefWidth="361.0" text="Personality Test" textFill="#fcfcfc">
                      <font>
