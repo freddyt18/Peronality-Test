@@ -7,6 +7,7 @@ import java.nio.file.Files;
 import java.util.List;
 import java.util.Scanner;
 
+import Data.BCrypt.BCrypt;
 import Data.Data_Handling.DataHandling;
 import Menu.Menu;
 import Registration.Registration;
@@ -46,7 +47,7 @@ public class ControllerForLogin {
                 System.out.println(id);
                 return false;
             }
-            if(!DataHandling.users.get(id).getPassword().equals(passwordTemp)){
+            if(!BCrypt.checkpw(passwordTemp, DataHandling.users.get(id).getPassword().toString())){
                 System.out.println("WRONG PASSWORD");
                 return false;
             } else {
