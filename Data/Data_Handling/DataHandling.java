@@ -159,7 +159,7 @@ public class DataHandling {
         Person newUser = new Person();
         newUser.setID(id);
         newUser.setUsername(username);
-        newUser.setPassword(password);
+        newUser.setPassword(BCrypt.hashpw(password, BCrypt.gensalt()));
         newUser.setEmail(email);
         users.add(newUser);
 
