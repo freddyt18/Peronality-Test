@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 public class Setting {
     FXMLLoader loader = new FXMLLoader();
     public static Stage current = new Stage();
-    static AnchorPane root;
+    static Parent root;
     static Scene scene;
     private boolean firstTime = true;
 

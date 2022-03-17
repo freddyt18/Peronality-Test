@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import App.App;
 import Data.Data_Handling.DataHandling;
+import Menu.Menu;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,7 +15,9 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class ControllerForSetting {
+    Setting setting = new Setting();
     App app = new App();
+    Menu menu = new Menu();
     DataHandling dataHandling = new DataHandling();
 
     //new cshanges
@@ -79,7 +82,13 @@ public class ControllerForSetting {
     private TextField NewUsername;
     @FXML
     void btnSubmitChangeProfile(ActionEvent event) {
-        DataHandling.users.get(App.CURRENT_USER_ID).setUsername(NewUsername.getText());
-        System.out.println(DataHandling.users.get(App.CURRENT_USER_ID).getUsername().toString());
+        //DataHandling.users.get(App.CURRENT_USER_ID).setUsername(NewUsername.getText());
+        //System.out.println(DataHandling.users.get(App.CURRENT_USER_ID).getUsername().toString());
     }
+    @FXML
+    void btnReturnToMenuFromSetting(ActionEvent event) throws IOException {
+        menu.showMenu();
+        setting.closeSetting();   
+    }
+
 }
