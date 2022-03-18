@@ -28,7 +28,7 @@ public class App extends Application {
     static Parent root;
     static Scene scene;
     public static int CURRENT_USER_ID = -1;
-
+//sad
     public static void main(String[] args) throws IOException {
         DataHandling.main(args);
         launch(args);
