@@ -67,7 +67,6 @@ public class ControllerForSetting {
     void goToTerm(ActionEvent event) throws IOException{
         SettingBorderPane.setCenter(FXMLLoader.load(getClass().getResource("Term.fxml")));
     }
-//////////////////////Change Profile
     @FXML
     private Button BtnChangeProfile;
 
@@ -116,6 +115,13 @@ public class ControllerForSetting {
         System.out.println(DataHandling.users.get(App.CURRENT_USER_ID).getBio().toString());
         System.out.println(DataHandling.users.get(App.CURRENT_USER_ID).getEmail().toString());
         System.out.println(DataHandling.users.get(App.CURRENT_USER_ID).getSex().toString());
+
+        //clear input
+        NewName.clear();
+        NewUsername.clear();
+        NewBio.clear();
+        NewEmail.clear();
+        NewSex.clear(); 
     }
 
 }
