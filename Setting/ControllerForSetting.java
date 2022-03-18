@@ -5,11 +5,13 @@ import java.io.IOException;
 import App.App;
 import Data.Data_Handling.DataHandling;
 import Menu.Menu;
+import Registration.ControllerForRegistration;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
@@ -19,6 +21,7 @@ public class ControllerForSetting {
     App app = new App();
     Menu menu = new Menu();
     DataHandling dataHandling = new DataHandling();
+    ControllerForRegistration registrationController = new ControllerForRegistration();
 
     //new cshanges
     @FXML
@@ -82,6 +85,10 @@ public class ControllerForSetting {
 
     @FXML
     private TextField NewUsername;
+
+    @FXML
+    private Label InvalidUpdate;
+
     
     @FXML
     void btnReturnToMenuFromSetting(ActionEvent event) throws IOException {
@@ -90,8 +97,15 @@ public class ControllerForSetting {
     }
 
     @FXML
-    void btnSubmitChangeProfile(ActionEvent event) {
-        DataHandling.users.get(App.CURRENT_USER_ID).setUsername(NewUsername.getText());
+    void btnSubmitChangeProfile(ActionEvent event) throws IOException {
+        
+        if(registrationController.checkUsernameAcceptable(NewName.getText())) {
+            DataHandling.users.get(App.CURRENT_USER_ID).setUsername(NewUsername.getText());
+        }
+        else {
+            InvalidUpdate.setText("Try Again!!");
+        }
+
         DataHandling.users.get(App.CURRENT_USER_ID).setName(NewName.getText());
         DataHandling.users.get(App.CURRENT_USER_ID).setBio(NewBio.getText());
         DataHandling.users.get(App.CURRENT_USER_ID).setEmail(NewEmail.getText());

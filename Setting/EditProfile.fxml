@@ -9,6 +9,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
@@ -93,9 +94,16 @@
                      </font></TextField>
                </children>
             </HBox>
-            <HBox prefHeight="100.0" prefWidth="200.0">
+            <HBox prefHeight="100.0" prefWidth="579.0">
                <children>
-                  <ButtonBar prefHeight="100.0" prefWidth="700.0">
+                  <Pane prefHeight="100.0" prefWidth="307.0" />
+                  <Label fx:id="InvalidUpdate" prefHeight="100.0" prefWidth="101.0">
+                     <styleClass>
+                        <String fx:value="invalid" />
+                        <String fx:value="fixed-size-18" />
+                     </styleClass>
+                  </Label>
+                  <ButtonBar prefHeight="100.0" prefWidth="307.0">
                      <buttons>
                         <Button fx:id="btnSubmitChangeProfile" mnemonicParsing="false" onAction="#btnSubmitChangeProfile" prefHeight="47.0" prefWidth="121.0" text="Submit">
                            <font>
