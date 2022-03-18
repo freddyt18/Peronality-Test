@@ -63,7 +63,7 @@ public class ControllerForRegistration {
         if(usernameContainsWhiteSpace.find())
             return false;
         
-        return true
+        return true;
     }
 
     @FXML
