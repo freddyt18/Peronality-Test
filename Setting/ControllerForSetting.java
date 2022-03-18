@@ -99,7 +99,7 @@ public class ControllerForSetting {
     @FXML
     void btnSubmitChangeProfile(ActionEvent event) throws IOException {
         
-        if(registrationController.checkUsernameAcceptable(NewName.getText())) {
+        if(registrationController.checkUsernameAcceptable(NewUsername.getText())) {
             DataHandling.users.get(App.CURRENT_USER_ID).setUsername(NewUsername.getText());
         }
         else {
