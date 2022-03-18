@@ -36,7 +36,7 @@ public class App extends Application {
         /* 
         Best practice for storing data to info.dat file and prevent data loss after user exits / accidentally close
         the program.
-         */ //
+         */
         System.out.println("ALL PROGRAM EXITS");
         DataHandling.listToData();
     }
