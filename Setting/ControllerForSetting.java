@@ -37,6 +37,8 @@ public class ControllerForSetting {
 
     @FXML
     private Button TermButton;
+    @FXML
+    private Button btnSubmitChangeProfile;
 
     @FXML
     void goToAbout(ActionEvent event) throws IOException {
@@ -80,15 +82,26 @@ public class ControllerForSetting {
 
     @FXML
     private TextField NewUsername;
-    @FXML
-    void btnSubmitChangeProfile(ActionEvent event) {
-        //DataHandling.users.get(App.CURRENT_USER_ID).setUsername(NewUsername.getText());
-        //System.out.println(DataHandling.users.get(App.CURRENT_USER_ID).getUsername().toString());
-    }
+    
     @FXML
     void btnReturnToMenuFromSetting(ActionEvent event) throws IOException {
         menu.showMenu();
         setting.closeSetting();   
+    }
+
+    @FXML
+    void btnSubmitChangeProfile(ActionEvent event) {
+        DataHandling.users.get(App.CURRENT_USER_ID).setUsername(NewUsername.getText());
+        DataHandling.users.get(App.CURRENT_USER_ID).setName(NewName.getText());
+        DataHandling.users.get(App.CURRENT_USER_ID).setBio(NewBio.getText());
+        DataHandling.users.get(App.CURRENT_USER_ID).setEmail(NewEmail.getText());
+        DataHandling.users.get(App.CURRENT_USER_ID).setSex(NewSex.getText());
+
+        System.out.println(DataHandling.users.get(App.CURRENT_USER_ID).getUsername().toString());
+        System.out.println(DataHandling.users.get(App.CURRENT_USER_ID).getName().toString());
+        System.out.println(DataHandling.users.get(App.CURRENT_USER_ID).getBio().toString());
+        System.out.println(DataHandling.users.get(App.CURRENT_USER_ID).getEmail().toString());
+        System.out.println(DataHandling.users.get(App.CURRENT_USER_ID).getSex().toString());
     }
 
 }
