@@ -59,11 +59,11 @@ public class ControllerForRegistration {
         Matcher usernameContainsNonCharacter = W.matcher(username);
 
         if(usernameContainsNonCharacter.find())
-            return true;
+            return false;
         if(usernameContainsWhiteSpace.find())
-            return true;
+            return false;
         
-        return false;
+        return true
     }
 
     @FXML
