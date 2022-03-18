@@ -1,0 +1,141 @@
+/* @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+ */
+ * {
+    -fx-font-family: sans-serif;
+}
+
+#button1:hover {
+    -fx-background-color:  #254950; /* main when hover */
+    -fx-text-fill: rgb(202, 202, 202);
+}
+
+.fixed-size-18 {
+    -fx-font-size: 18px;
+}
+
+.fixed-size-14 {
+    -fx-font-size: 14px;
+}
+
+.fixed-size-28 {
+    -fx-font-size: 28px;
+}
+
+
+#register {
+    -fx-text-fill: #fff
+}
+
+#register:hover {
+    -fx-text-fill: rgb(202, 202, 202);
+}
+
+#pic1, #pic2 {
+    -fx-arc-width: 25;
+    -fx-arc-height: 25;
+}
+
+
+.maincolor {
+    -fx-background-color: #3f7c88;
+}
+.secondaryColor {
+    -fx-background-color: #a5dbdc;
+}
+.menu-main-alt {
+    -fx-background-color: #256572;
+}
+
+.fill-main {
+    -fx-fill: #3f7c88;
+}
+.fill-secondary {
+    -fx-fill: #a5dbdc;
+}
+
+.fill-menu-main-alt {
+    -fx-fill: #256572;
+}
+
+.loginContainer {
+    -fx-fill: #a5dbdc;
+}
+
+.loginText {
+    -fx-text-fill: #fff;
+}
+.loginTextBlack {
+    -fx-text-fill: #000000;
+}
+
+.fillWhite {
+    -fx-fill: #fff;
+}
+
+.weightBold {
+    -fx-font-weight: bold;
+}
+
+.radiusMedium {
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-background-radius: 5px 5px 5px 5px;
+}
+
+.radiusBig {
+    -fx-border-radius: 10px 10px 10px 10px;
+    -fx-background-radius: 10px 10px 10px 10px;
+}
+
+.radiusVERYBig {
+    -fx-border-radius: 50px 50px 50px 50px;
+    -fx-background-radius: 50px 50px 50px 50px;
+}
+
+#signUp:hover {
+    -fx-background-color: #8eadad; /* Secondary when hover */
+}
+
+#hasAccount:hover {
+    -fx-text-fill: rgb(202, 202, 202); 
+}
+
+#invalid:hover {
+    -fx-background-color:  #254950; /* main when hover */
+    -fx-text-fill: rgb(202, 202, 202);
+}
+
+#passwordNotMatched:hover {
+    -fx-background-color:  #254950; /* main when hover */
+    -fx-text-fill: rgb(202, 202, 202);
+}
+
+.hyperlink {
+    -fx-border-color: transparent;
+    -fx-padding: 4 0 4 0;
+}
+
+.invalid {
+    -fx-text-fill: red;
+}
+
+.stroke {
+    -fx-border-color: #5eced0;
+}
+
+.hover:hover {
+    -fx-background-color: #275a62;
+    -fx-border-color: #275a62;
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+}
+
+.hover-small:hover {
+    -fx-background-color: #275a62;
+    -fx-border-color: #275a62;
+    -fx-scale-x: 1.07;
+    -fx-scale-y: 1.07;
+}
+
+.noBorderColorMenu {
+    -fx-border-color: #3f7c88;
+}

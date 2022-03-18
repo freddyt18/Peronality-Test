@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.53" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Setting.ControllerForSetting">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="169.0" prefWidth="900.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="126.0" prefWidth="423.0" text="Privacy">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1. IntroductionThese Website Standard Terms and Conditions written on this webpage shall manage your use of this website. These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.Minors or people below 18 years old are not allowed to use this Website.2. Intellectual Property RightsOther than the content you own, under these Terms, Infinity Loop Capital and/or its licensors own all the intellectual property rights and materials contained in this Website.You are granted limited license only for purposes of viewing the material contained on this Website.3. RestrictionsYou are specifically restricted from all of the following:publishing any Website material in any other media;selling, sublicensing and/or otherwise commercializing any Website material;publicly performing and/or showing any Website material;using this Website in any way that is or may be damaging to this Website;using this Website in any way that impacts user access to this Website;using this Website contrary to applicable laws and regulations, or in any way may cause harm to the Website, or to any person or business entity;engaging in any data mining, data harvesting, data extracting or any other similar activity in relation to this Website;using this Website to engage in any advertising or marketing.Certain areas of this Website are restricted from being access by you and Infinity Loop Capital may further restrict access by you to any areas of this Website, at any time, in absolute discretion. Any user ID and password you may have for this Website are confidential and you must maintain confidentiality as well.4. Your ContentIn these Website Standard Terms and Conditions, &quot;Your Content&quot; shall mean any audio, video text, images or other material you choose to display on this Website. By displaying Your Content, you grant Infinity Loop Capital a non-exclusive, worldwide irrevocable, sub licensable license to use, reproduce, adapt, publish, translate and distribute it in any and all media.Your Content must be your own and must not be invading any third-party's rights. Infinity Loop Capital reserves the right to remove any of Your Content from this Website at any time without notice.\" wrappingWidth="714.136697769165" />
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.53" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Setting.ControllerForSetting">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="900.0" stylesheets="@../Design/CSS/main.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="126.0" prefWidth="900.0">
+               <children>
+                  <ImageView fitHeight="67.0" fitWidth="386.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label prefHeight="133.0" prefWidth="514.0" styleClass="loginText" text="Username">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="78.0" prefHeight="71.0" prefWidth="900.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="55.0" prefWidth="436.0" styleClass="loginText" text="Name">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="NewName" alignment="CENTER" prefHeight="55.0" prefWidth="269.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="78.0" prefHeight="71.0" prefWidth="900.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="55.0" prefWidth="436.0" styleClass="loginText" text="Username">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="NewUsername" alignment="CENTER" prefHeight="55.0" prefWidth="269.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="249.0" prefHeight="71.0" prefWidth="900.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="55.0" prefWidth="436.0" styleClass="loginText" text="Bio">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Label>
+                  <TextField fx:id="NewBio" alignment="CENTER" prefHeight="55.0" prefWidth="269.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="220.0" prefHeight="71.0" prefWidth="900.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="55.0" prefWidth="436.0" styleClass="loginText" text="Email">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="NewEmail" alignment="CENTER" prefHeight="55.0" prefWidth="269.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="291.0" prefHeight="71.0" prefWidth="900.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="55.0" prefWidth="436.0" styleClass="loginText" text="Sex">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="NewSex" alignment="CENTER" prefHeight="55.0" prefWidth="269.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="579.0">
+               <children>
+                  <Pane prefHeight="100.0" prefWidth="307.0" />
+                  <Label fx:id="InvalidUpdate" prefHeight="100.0" prefWidth="101.0">
+                     <styleClass>
+                        <String fx:value="invalid" />
+                        <String fx:value="fixed-size-18" />
+                     </styleClass>
+                  </Label>
+                  <ButtonBar prefHeight="100.0" prefWidth="307.0">
+                     <buttons>
+                        <Button fx:id="btnSubmitChangeProfile" mnemonicParsing="false" onAction="#btnSubmitChangeProfile" prefHeight="47.0" prefWidth="121.0" text="Submit">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="radiusVERYBig" />
+                              <String fx:value="secondaryColor" />
+                           </styleClass>
+                        </Button>
+                     </buttons>
+                  </ButtonBar>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
