@@ -27,7 +27,7 @@ public class App extends Application {
     private static Stage current;
     static Parent root;
     static Scene scene;
-    public static int CURRENT_USER_ID = -1;
+    public static int CURRENT_USER_ID = -1; //
 
     public static void main(String[] args) throws IOException {
         DataHandling.main(args);
