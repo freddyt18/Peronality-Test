@@ -106,10 +106,10 @@ public class ControllerForSetting {
             InvalidUpdate.setText("Try Again!!");
         }
 
-        DataHandling.users.get(App.CURRENT_USER_ID).setName(NewName.getText());
-        DataHandling.users.get(App.CURRENT_USER_ID).setBio(NewBio.getText());
-        DataHandling.users.get(App.CURRENT_USER_ID).setEmail(NewEmail.getText());
-        DataHandling.users.get(App.CURRENT_USER_ID).setSex(NewSex.getText());
+        DataHandling.users.get(App.CURRENT_USER_ID).setName(NewName.getText()); //use the checkUsernameAcceptable() method
+        DataHandling.users.get(App.CURRENT_USER_ID).setBio(NewBio.getText()); //not yet
+        DataHandling.users.get(App.CURRENT_USER_ID).setEmail(NewEmail.getText()); //not yet
+        DataHandling.users.get(App.CURRENT_USER_ID).setSex(NewSex.getText()); //not yet
 
         System.out.println(DataHandling.users.get(App.CURRENT_USER_ID).getUsername().toString());
         System.out.println(DataHandling.users.get(App.CURRENT_USER_ID).getName().toString());
