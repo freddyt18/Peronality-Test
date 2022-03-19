@@ -86,6 +86,6 @@
       </VBox>
    </left>
    <center>
-      <ScrollPane fx:id="scene" prefHeight="200.0" prefWidth="250.0" BorderPane.alignment="CENTER" />
+      <ScrollPane fx:id="scene" hbarPolicy="NEVER" prefHeight="658.0" prefWidth="918.0" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

@@ -14,7 +14,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1350.0" prefWidth="937.0" styleClass="test-background" stylesheets="@../Design/CSS/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Test.ControllerForTest">
    <children>
-      <VBox alignment="CENTER" layoutX="8.0" layoutY="-28.0" prefHeight="658.0" prefWidth="907.0" styleClass="test-background" stylesheets="@../Design/CSS/main.css" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="-28.0">
+      <VBox alignment="CENTER" layoutX="8.0" layoutY="-8.0" prefHeight="1330.0" prefWidth="907.0" styleClass="test-background" stylesheets="@../Design/CSS/main.css" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="-8.0">
          <children>
             <HBox prefHeight="100.0" prefWidth="907.0" styleClass="test-hbox" stylesheets="@../Design/CSS/main.css">
                <VBox.margin>
