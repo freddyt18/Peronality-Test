@@ -139,3 +139,18 @@
 .noBorderColorMenu {
     -fx-border-color: #3f7c88;
 }
+
+.test-label {
+    -fx-text-fill: white;   
+    -fx-background-color: #3f7c88;
+    -fx-background-radius:20px;
+}
+
+.test-hbox{
+    -fx-background-color:#275a62;
+    -fx-background-radius:50px;
+}
+
+.test-background {
+    -fx-background-color:#3f7c88;
+}
