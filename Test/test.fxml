@@ -2,8 +2,10 @@
 
 <?import java.lang.String?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
@@ -12,20 +14,21 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1350.0" prefWidth="937.0" styleClass="test-background" stylesheets="@../Design/CSS/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Test.ControllerForTest">
    <children>
-      <VBox layoutX="8.0" layoutY="-28.0" prefHeight="658.0" prefWidth="907.0" styleClass="test-background" stylesheets="@../Design/CSS/main.css" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="-28.0">
+      <VBox alignment="CENTER" layoutX="8.0" layoutY="-28.0" prefHeight="658.0" prefWidth="907.0" styleClass="test-background" stylesheets="@../Design/CSS/main.css" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="-28.0">
          <children>
             <HBox prefHeight="100.0" prefWidth="907.0" styleClass="test-hbox" stylesheets="@../Design/CSS/main.css">
                <VBox.margin>
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="80.0" prefWidth="102.0" text="I see myself as">
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="80.0" prefWidth="102.0" text="I see myself as" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets bottom="10.0" left="25.0" right="10.0" top="10.0" />
                      </HBox.margin>
                      <styleClass>
                         <String fx:value="test-label" />
                         <String fx:value="weightBold" />
+                        <String fx:value="fixed-size-18" />
                      </styleClass>
                   </Label>
                   <Pane prefHeight="100.0" prefWidth="3.0" />
@@ -34,32 +37,32 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
                   </Label>
-                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" text="Disagree Moder" textAlignment="CENTER" wrapText="true">
+                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" text="Disagree Moderately" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
                   </Label>
-                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" text="I see myself as">
+                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" text="Disagree A little" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
                   </Label>
-                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" text="I see myself as">
+                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" text="Neither Agree Nor Disagree" wrapText="true">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
                   </Label>
-                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" text="I see myself as">
+                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" text=" Agree A little" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
                   </Label>
-                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" stylesheets="@../Design/CSS/main.css" text="I see myself as">
+                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" stylesheets="@../Design/CSS/main.css" text="Agree Moderately" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
                   </Label>
-                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" text="I see myself as">
+                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" text="Agree Strongly" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
@@ -68,7 +71,7 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
                <children>
-                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                  <Label prefHeight="83.0" prefWidth="136.0" text="1. The life of the party" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin>
@@ -78,7 +81,7 @@
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q11" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="1">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -87,8 +90,11 @@
                         <String fx:value="fixed-size-46" />
                         <String fx:value="loginText" />
                      </styleClass>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q1" />
+                     </toggleGroup>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q12" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="2" toggleGroup="$q1">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -101,7 +107,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q13" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="3" toggleGroup="$q1">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -111,7 +117,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q14" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="4" toggleGroup="$q1">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -121,7 +127,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q15" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="5" toggleGroup="$q1">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -131,7 +137,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q16" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="6" toggleGroup="$q1">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -141,7 +147,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q17" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="7" toggleGroup="$q1">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -158,7 +164,7 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
                <children>
-                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                  <Label prefHeight="83.0" prefWidth="136.0" text="2. Feeling little concern for others" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin>
@@ -168,7 +174,7 @@
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q27" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -177,8 +183,11 @@
                         <String fx:value="fixed-size-46" />
                         <String fx:value="loginText" />
                      </styleClass>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q2" />
+                     </toggleGroup>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q26" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="6" toggleGroup="$q2">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -191,7 +200,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q25" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="5" toggleGroup="$q2">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -201,7 +210,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q24" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q2">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -211,7 +220,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q23" mnemonicParsing="false" prefWidth="110.0" text="3" toggleGroup="$q2">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -221,7 +230,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q22" mnemonicParsing="false" prefWidth="110.0" text="2" toggleGroup="$q2">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -231,7 +240,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q21" mnemonicParsing="false" prefWidth="110.0" text="1" toggleGroup="$q2">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -248,7 +257,7 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
                <children>
-                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                  <Label prefHeight="83.0" prefWidth="136.0" text="3. Always prepared" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin>
@@ -258,7 +267,7 @@
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q31" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -267,8 +276,11 @@
                         <String fx:value="fixed-size-46" />
                         <String fx:value="loginText" />
                      </styleClass>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q3" />
+                     </toggleGroup>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q32" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="2" toggleGroup="$q3">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -281,7 +293,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q33" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="3" toggleGroup="$q3">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -291,7 +303,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q34" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q3">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -301,7 +313,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q35" mnemonicParsing="false" prefWidth="110.0" text="5" toggleGroup="$q3">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -311,7 +323,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q36" mnemonicParsing="false" prefWidth="110.0" text="6" toggleGroup="$q3">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -321,7 +333,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q37" mnemonicParsing="false" prefWidth="110.0" text="7" toggleGroup="$q3">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -338,7 +350,7 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
                <children>
-                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                  <Label prefHeight="83.0" prefWidth="136.0" text="4. Getting stressed-out easily" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin>
@@ -348,7 +360,7 @@
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q41" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -357,8 +369,11 @@
                         <String fx:value="fixed-size-46" />
                         <String fx:value="loginText" />
                      </styleClass>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q4" />
+                     </toggleGroup>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q42" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="2" toggleGroup="$q4">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -371,7 +386,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q43" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="3" toggleGroup="$q4">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -381,7 +396,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q44" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q4">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -391,7 +406,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q45" mnemonicParsing="false" prefWidth="110.0" text="5" toggleGroup="$q4">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -401,7 +416,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q46" mnemonicParsing="false" prefWidth="110.0" text="6" toggleGroup="$q4">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -411,7 +426,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q47" mnemonicParsing="false" prefWidth="110.0" text="7" toggleGroup="$q4">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -428,7 +443,7 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
                <children>
-                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                  <Label prefHeight="83.0" prefWidth="136.0" text="5. Having excellent ideas" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin>
@@ -438,7 +453,7 @@
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q51" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -447,8 +462,11 @@
                         <String fx:value="fixed-size-46" />
                         <String fx:value="loginText" />
                      </styleClass>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q5" />
+                     </toggleGroup>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q52" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="2" toggleGroup="$q5">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -461,7 +479,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q53" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="3" toggleGroup="$q5">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -471,7 +489,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q54" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q5">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -481,7 +499,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q55" mnemonicParsing="false" prefWidth="110.0" text="5" toggleGroup="$q5">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -491,7 +509,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q56" mnemonicParsing="false" prefWidth="110.0" text="6" toggleGroup="$q5">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -501,7 +519,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q57" mnemonicParsing="false" prefWidth="110.0" text="7" toggleGroup="$q5">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -518,7 +536,7 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
                <children>
-                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                  <Label prefHeight="83.0" prefWidth="136.0" text="6. Not talking a lot" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin>
@@ -528,7 +546,7 @@
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q67" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -537,8 +555,11 @@
                         <String fx:value="fixed-size-46" />
                         <String fx:value="loginText" />
                      </styleClass>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q6" />
+                     </toggleGroup>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q66" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="6" toggleGroup="$q6">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -551,7 +572,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q65" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="5" toggleGroup="$q6">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -561,7 +582,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q64" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q6">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -571,7 +592,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q63" mnemonicParsing="false" prefWidth="110.0" text="3" toggleGroup="$q6">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -581,7 +602,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q62" mnemonicParsing="false" prefWidth="110.0" text="2" toggleGroup="$q6">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -591,7 +612,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q61" mnemonicParsing="false" prefWidth="110.0" text="1" toggleGroup="$q6">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -608,7 +629,7 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
                <children>
-                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                  <Label prefHeight="83.0" prefWidth="136.0" text="7. Interested in people" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin>
@@ -618,7 +639,7 @@
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q71" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -627,8 +648,11 @@
                         <String fx:value="fixed-size-46" />
                         <String fx:value="loginText" />
                      </styleClass>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q7" />
+                     </toggleGroup>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q72" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="2" toggleGroup="$q7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -641,7 +665,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q73" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="3" toggleGroup="$q7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -651,7 +675,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q74" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -661,7 +685,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q75" mnemonicParsing="false" prefWidth="110.0" text="5" toggleGroup="$q7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -671,7 +695,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q76" mnemonicParsing="false" prefWidth="110.0" text="6" toggleGroup="$q7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -681,7 +705,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q77" mnemonicParsing="false" prefWidth="110.0" text="7" toggleGroup="$q7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -698,17 +722,17 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
                <children>
-                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                  <Label prefHeight="83.0" prefWidth="136.0" text="8. Often forgetting to put things back in their proper place" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin>
                      <styleClass>
-                        <String fx:value="fixed-size-18" />
+                        <String fx:value="fixed-size-14" />
                         <String fx:value="loginText" />
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q87" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -717,8 +741,11 @@
                         <String fx:value="fixed-size-46" />
                         <String fx:value="loginText" />
                      </styleClass>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q8" />
+                     </toggleGroup>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q86" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="6" toggleGroup="$q8">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -731,7 +758,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q85" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="5" toggleGroup="$q8">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -741,7 +768,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q84" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q8">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -751,7 +778,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q83" mnemonicParsing="false" prefWidth="110.0" text="3" toggleGroup="$q8">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -761,7 +788,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q82" mnemonicParsing="false" prefWidth="110.0" text="2" toggleGroup="$q8">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -771,7 +798,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q81" mnemonicParsing="false" prefWidth="110.0" text="1" toggleGroup="$q8">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -788,7 +815,7 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
                <children>
-                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                  <Label prefHeight="83.0" prefWidth="136.0" text="9. Relaxed most of the time" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin>
@@ -798,7 +825,7 @@
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q97" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -807,8 +834,11 @@
                         <String fx:value="fixed-size-46" />
                         <String fx:value="loginText" />
                      </styleClass>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q9" />
+                     </toggleGroup>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q96" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="6" toggleGroup="$q9">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -821,7 +851,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q95" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="5" toggleGroup="$q9">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -831,7 +861,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q94" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q9">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -841,7 +871,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q93" mnemonicParsing="false" prefWidth="110.0" text="3" toggleGroup="$q9">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -851,7 +881,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q92" mnemonicParsing="false" prefWidth="110.0" text="2" toggleGroup="$q9">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -861,7 +891,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q91" mnemonicParsing="false" prefWidth="110.0" text="1" toggleGroup="$q9">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -876,19 +906,19 @@
                   <Insets left="25.0" right="25.0" top="15.0" />
                </VBox.margin>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
+            <HBox fx:id="q107" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
                <children>
-                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                  <Label prefHeight="83.0" prefWidth="136.0" text="10. Having difficulties understanding abstract ideas" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin>
                      <styleClass>
-                        <String fx:value="fixed-size-18" />
+                        <String fx:value="fixed-size-14" />
                         <String fx:value="loginText" />
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q107" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -897,8 +927,11 @@
                         <String fx:value="fixed-size-46" />
                         <String fx:value="loginText" />
                      </styleClass>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q10" />
+                     </toggleGroup>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q106" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="6" toggleGroup="$q10">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -911,7 +944,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q105" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="5" toggleGroup="$q10">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -921,7 +954,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q104" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q10">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -931,7 +964,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q103" mnemonicParsing="false" prefWidth="110.0" text="3" toggleGroup="$q10">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -941,7 +974,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q102" mnemonicParsing="false" prefWidth="110.0" text="2" toggleGroup="$q10">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -951,7 +984,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q101" mnemonicParsing="false" prefWidth="110.0" text="1" toggleGroup="$q10">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -966,6 +999,17 @@
                   <Insets left="25.0" right="25.0" top="15.0" />
                </VBox.margin>
             </HBox>
+            <Button mnemonicParsing="false" text="Submit">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="secondaryColor" />
+                  <String fx:value="weightBold" />
+                  <String fx:value="radiusBig" />
+                  <String fx:value="fixed-size-28" />
+               </styleClass>
+            </Button>
          </children>
       </VBox>
    </children>
