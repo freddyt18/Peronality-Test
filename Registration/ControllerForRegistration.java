@@ -62,7 +62,30 @@ public class ControllerForRegistration {
             return false;
         if(usernameContainsWhiteSpace.find())
             return false;
-        
+        return true;
+    }
+
+    public boolean checkPasswordAcceptable(String password) throws IOException {
+        Pattern W = Pattern.compile("\\W");
+        Pattern s = Pattern.compile("\\s");
+
+        Matcher passwordContainsNonCharacter = W.matcher(passwordTemp);
+        Matcher passwordContainsWhiteSpace = s.matcher(passwordTemp);
+
+        if(passwordContainsNonCharacter.find())
+            return false;
+        if(passwordContainsWhiteSpace.find())
+            return false;
+        return true;
+    }
+
+    public boolean checkEmailAcceptable(String email) throws IOException {
+        Pattern e = Pattern.compile("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$");
+
+        Matcher emailValidator = e.matcher(email); 
+
+        if(!emailValidator.find())
+            return false;
         return true;
     }
 
