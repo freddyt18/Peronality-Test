@@ -62,20 +62,20 @@ public class resultGenerator {
         }
 
 
-        String oHigh = "\nHigh scorers tend to be imaginative and creative but also prone to boredom, and so strive to continually feed their mind with new ideas and experiences. Low scorers are more down-to-earth, and so tend\n";
-        String oLow = "\nLow scorers are more down-to-earth, and so tend to seek out situations in which they have to turn an existing idea into reality, take small steps rather  initiate radical change, and follow well-established patterns and rules.\n";
+        String oHigh = "\n You tend to be imaginative and creative but also prone to boredom, and so strive to continually feed their mind with new ideas and experiences. Low scorers are more down-to-earth, and so tend\n";
+        String oLow = "\nYou are more down-to-earth, and so tend to seek out situations in which they have to turn an existing idea into reality, take small steps rather  initiate radical change, and follow well-established patterns and rules.\n";
 
-        String cHigh = "\nHigh scorers are methodical, well organized, and dutiful, and perform best in highly structured and predictable environments where there is a place for everything and everything is in its place.\n";
-        String cLow = "\nLow scorers are far more laid-back and find it easy to enjoy life, but may well need a helping hand when it comes to self-discipline.\n";
+        String cHigh = "\n You are methodical, well organized, and dutiful, and perform best in highly structured and predictable environments where there is a place for everything and everything is in its place.\n";
+        String cLow = "\nYou are far more laid-back and find it easy to enjoy life, but may well need a helping hand when it comes to self-discipline.\n";
 
-        String eHigh = "\nHigh scorers are energized by the company of others, are evening types, and are motivated more by carrots than sticks.\n";
-        String eLow = "\nLow scorers tend to be happiest working alone and in quiet surroundings, are most alert in the morning, and are motivated more by fear of punishment than promise of rewards.\n";
+        String eHigh = "\n You are energized by the company of others, are evening types, and are motivated more by carrots than sticks.\n";
+        String eLow = "\nYou tend to be happiest working alone and in quiet surroundings, are most alert in the morning, and are motivated more by fear of punishment than promise of rewards.\n";
 
-        String aHigh = "\nHigh scorers tend to be trusting, friendly, and cooperative, but have to be careful to avoid situations in which others might take advantage of their overly giving nature.\n";
-        String aLow = "\nLow scorers tend to be more aggressive and competitive, and bloom in situations that require tough thinking and straight talking.\n";
+        String aHigh = "\n You tend to be trusting, friendly, and cooperative, but have to be careful to avoid situations in which others might take advantage of their overly giving nature.\n";
+        String aLow = "\nYou tend to be more aggressive and competitive, and bloom in situations that require tough thinking and straight talking.\n";
 
-        String nHigh = "\nHigh scorers are prone to insecurity and emotional distress, and avoid situations that they find upsetting because those negative feelings take some time to fade away.\n";
-        String nLow = "\nLow scorers tend to be more relaxed, less emotional and less prone to distress, and they operate well in situations that others find stressful.\n";
+        String nHigh = "\n You are prone to insecurity and emotional distress, and avoid situations that they find upsetting because those negative feelings take some time to fade away.\n";
+        String nLow = "\nYou tend to be more relaxed, less emotional and less prone to distress, and they operate well in situations that others find stressful.\n";
 
         for(int i = 0; i < personality_type.size(); i++){
             String temp = "";
