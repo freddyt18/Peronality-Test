@@ -20,10 +20,12 @@ public class Menu {
         if(firstTime){
             loader.setLocation(Menu.class.getResource("menu.fxml"));
             root = loader.load();
-            scene = new Scene(root, 1200, 687.53);
+            scene = new Scene(root, 1200, 700);
             current.setScene(scene);
             firstTime = false;
         }
+        current.setMaxHeight(700);
+        current.setMaxWidth(1200);
         current.setTitle("Test");
         current.getIcons().add(new Image("https://cdn.iconscout.com/icon/premium/png-64-thumb/personality-disorder-2708518-2248491.png"));
         current.show();
