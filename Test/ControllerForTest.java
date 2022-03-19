@@ -4,6 +4,7 @@ import java.beans.EventHandler;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 
@@ -14,6 +15,9 @@ public class ControllerForTest {
     public int extroversion = 0;
     public int agreeableness = 0;
     public int neroticism = 0;
+
+    @FXML
+    private Button submit;
 
     @FXML
     private RadioButton q11, q12, q13, q14, q15, q16, q17;
@@ -46,10 +50,20 @@ public class ControllerForTest {
     private RadioButton q101, q102, q103, q104, q105, q106, q107;
 
     public void submitButtonPressed(){
+        getQ1();
+        getQ2();
+        getQ3();
+        getQ4();
+        getQ5();
+        getQ6();
+        getQ7();
+        getQ8();
+        getQ9();
+        getQ10();
         System.out.println("extro: "+extroversion);
     }
 
-    public void getQ1(ActionEvent event){
+    public void getQ1(){
         if(q11.isSelected()){
             extroversion += 1;
         }
@@ -73,7 +87,7 @@ public class ControllerForTest {
         }
     }
 
-    public void getQ2(ActionEvent event){
+    public void getQ2(){
         if(q21.isSelected()){
             extroversion += 1;
             agreeableness += 1;
@@ -104,7 +118,7 @@ public class ControllerForTest {
         }
     }
 
-    public void getQ3(ActionEvent event){
+    public void getQ3(){
         if(q31.isSelected()){
             extroversion += 1;
             agreeableness += 1;
@@ -142,7 +156,7 @@ public class ControllerForTest {
         }
     }
 
-    public void getQ4(ActionEvent event){
+    public void getQ4(){
         if(q41.isSelected()){
             extroversion += 1;
             agreeableness += 1;
@@ -187,7 +201,7 @@ public class ControllerForTest {
         }
     }
 
-    public void getQ5(ActionEvent event){
+    public void getQ5(){
         if(q51.isSelected()){
             extroversion += 1;
             agreeableness += 1;
@@ -239,7 +253,7 @@ public class ControllerForTest {
         }
     }
 
-    public void getQ6(ActionEvent event){
+    public void getQ6(){
         if(q61.isSelected()){
             extroversion += 1;
             agreeableness += 1;
@@ -291,7 +305,7 @@ public class ControllerForTest {
         }
     }
 
-    public void getQ7(ActionEvent event){
+    public void getQ7(){
         if(q71.isSelected()){
             agreeableness += 1;
             conscientiousness += 1;
@@ -336,7 +350,7 @@ public class ControllerForTest {
         }
     }
 
-    public void getQ8(ActionEvent event){
+    public void getQ8(){
         if(q81.isSelected()){
             conscientiousness += 1;
             neroticism += 1;
@@ -374,7 +388,7 @@ public class ControllerForTest {
         }
     }
 
-    public void getQ9(ActionEvent event){
+    public void getQ9(){
         if(q91.isSelected()){
             neroticism += 1;
             openness += 1;
@@ -405,7 +419,7 @@ public class ControllerForTest {
         }
     }
 
-    public void getQ10(ActionEvent event){
+    public void getQ10(){
         if(q101.isSelected()){
             openness += 1;
         }

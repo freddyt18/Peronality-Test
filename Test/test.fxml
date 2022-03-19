@@ -174,7 +174,7 @@
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton fx:id="q27" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="7">
+                  <RadioButton fx:id="q27" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -187,7 +187,7 @@
                         <ToggleGroup fx:id="q2" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton fx:id="q26" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="6" toggleGroup="$q2">
+                  <RadioButton fx:id="q26" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="6" toggleGroup="$q2">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -200,7 +200,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q25" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="5" toggleGroup="$q2">
+                  <RadioButton fx:id="q25" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="5" toggleGroup="$q2">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -210,7 +210,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q24" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q2">
+                  <RadioButton fx:id="q24" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="4" toggleGroup="$q2">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -220,7 +220,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q23" mnemonicParsing="false" prefWidth="110.0" text="3" toggleGroup="$q2">
+                  <RadioButton fx:id="q23" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="3" toggleGroup="$q2">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -230,7 +230,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q22" mnemonicParsing="false" prefWidth="110.0" text="2" toggleGroup="$q2">
+                  <RadioButton fx:id="q22" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="2" toggleGroup="$q2">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -240,7 +240,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q21" mnemonicParsing="false" prefWidth="110.0" text="1" toggleGroup="$q2">
+                  <RadioButton fx:id="q21" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="1" toggleGroup="$q2">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -267,7 +267,7 @@
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton fx:id="q31" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q31" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="1">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -280,7 +280,7 @@
                         <ToggleGroup fx:id="q3" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton fx:id="q32" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="2" toggleGroup="$q3">
+                  <RadioButton fx:id="q32" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="2" toggleGroup="$q3">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -293,7 +293,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q33" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="3" toggleGroup="$q3">
+                  <RadioButton fx:id="q33" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="3" toggleGroup="$q3">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -303,7 +303,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q34" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q3">
+                  <RadioButton fx:id="q34" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="4" toggleGroup="$q3">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -313,7 +313,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q35" mnemonicParsing="false" prefWidth="110.0" text="5" toggleGroup="$q3">
+                  <RadioButton fx:id="q35" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="5" toggleGroup="$q3">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -323,7 +323,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q36" mnemonicParsing="false" prefWidth="110.0" text="6" toggleGroup="$q3">
+                  <RadioButton fx:id="q36" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="6" toggleGroup="$q3">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -333,7 +333,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q37" mnemonicParsing="false" prefWidth="110.0" text="7" toggleGroup="$q3">
+                  <RadioButton fx:id="q37" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="7" toggleGroup="$q3">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -360,7 +360,7 @@
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton fx:id="q41" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q41" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="1">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -373,7 +373,7 @@
                         <ToggleGroup fx:id="q4" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton fx:id="q42" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="2" toggleGroup="$q4">
+                  <RadioButton fx:id="q42" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="2" toggleGroup="$q4">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -386,7 +386,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q43" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="3" toggleGroup="$q4">
+                  <RadioButton fx:id="q43" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="3" toggleGroup="$q4">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -396,7 +396,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q44" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q4">
+                  <RadioButton fx:id="q44" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="4" toggleGroup="$q4">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -406,7 +406,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q45" mnemonicParsing="false" prefWidth="110.0" text="5" toggleGroup="$q4">
+                  <RadioButton fx:id="q45" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="5" toggleGroup="$q4">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -416,7 +416,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q46" mnemonicParsing="false" prefWidth="110.0" text="6" toggleGroup="$q4">
+                  <RadioButton fx:id="q46" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="6" toggleGroup="$q4">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -426,7 +426,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q47" mnemonicParsing="false" prefWidth="110.0" text="7" toggleGroup="$q4">
+                  <RadioButton fx:id="q47" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="7" toggleGroup="$q4">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -453,7 +453,7 @@
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton fx:id="q51" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q51" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="1">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -466,7 +466,7 @@
                         <ToggleGroup fx:id="q5" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton fx:id="q52" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="2" toggleGroup="$q5">
+                  <RadioButton fx:id="q52" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="2" toggleGroup="$q5">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -479,7 +479,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q53" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="3" toggleGroup="$q5">
+                  <RadioButton fx:id="q53" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="3" toggleGroup="$q5">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -489,7 +489,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q54" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q5">
+                  <RadioButton fx:id="q54" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="4" toggleGroup="$q5">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -499,7 +499,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q55" mnemonicParsing="false" prefWidth="110.0" text="5" toggleGroup="$q5">
+                  <RadioButton fx:id="q55" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="5" toggleGroup="$q5">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -509,7 +509,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q56" mnemonicParsing="false" prefWidth="110.0" text="6" toggleGroup="$q5">
+                  <RadioButton fx:id="q56" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="6" toggleGroup="$q5">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -519,7 +519,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q57" mnemonicParsing="false" prefWidth="110.0" text="7" toggleGroup="$q5">
+                  <RadioButton fx:id="q57" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="7" toggleGroup="$q5">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -546,7 +546,7 @@
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton fx:id="q67" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="7">
+                  <RadioButton fx:id="q67" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -559,7 +559,7 @@
                         <ToggleGroup fx:id="q6" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton fx:id="q66" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="6" toggleGroup="$q6">
+                  <RadioButton fx:id="q66" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="6" toggleGroup="$q6">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -572,7 +572,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q65" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="5" toggleGroup="$q6">
+                  <RadioButton fx:id="q65" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="5" toggleGroup="$q6">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -582,7 +582,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q64" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q6">
+                  <RadioButton fx:id="q64" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="4" toggleGroup="$q6">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -592,7 +592,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q63" mnemonicParsing="false" prefWidth="110.0" text="3" toggleGroup="$q6">
+                  <RadioButton fx:id="q63" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="3" toggleGroup="$q6">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -602,7 +602,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q62" mnemonicParsing="false" prefWidth="110.0" text="2" toggleGroup="$q6">
+                  <RadioButton fx:id="q62" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="2" toggleGroup="$q6">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -612,7 +612,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q61" mnemonicParsing="false" prefWidth="110.0" text="1" toggleGroup="$q6">
+                  <RadioButton fx:id="q61" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="1" toggleGroup="$q6">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -639,7 +639,7 @@
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton fx:id="q71" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                  <RadioButton fx:id="q71" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="1">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -652,7 +652,7 @@
                         <ToggleGroup fx:id="q7" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton fx:id="q72" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="2" toggleGroup="$q7">
+                  <RadioButton fx:id="q72" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="2" toggleGroup="$q7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -665,7 +665,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q73" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="3" toggleGroup="$q7">
+                  <RadioButton fx:id="q73" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="3" toggleGroup="$q7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -675,7 +675,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q74" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q7">
+                  <RadioButton fx:id="q74" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="4" toggleGroup="$q7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -685,7 +685,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q75" mnemonicParsing="false" prefWidth="110.0" text="5" toggleGroup="$q7">
+                  <RadioButton fx:id="q75" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="5" toggleGroup="$q7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -695,7 +695,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q76" mnemonicParsing="false" prefWidth="110.0" text="6" toggleGroup="$q7">
+                  <RadioButton fx:id="q76" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="6" toggleGroup="$q7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -705,7 +705,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q77" mnemonicParsing="false" prefWidth="110.0" text="7" toggleGroup="$q7">
+                  <RadioButton fx:id="q77" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="7" toggleGroup="$q7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -732,7 +732,7 @@
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton fx:id="q87" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="7">
+                  <RadioButton fx:id="q87" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -745,7 +745,7 @@
                         <ToggleGroup fx:id="q8" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton fx:id="q86" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="6" toggleGroup="$q8">
+                  <RadioButton fx:id="q86" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="6" toggleGroup="$q8">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -758,7 +758,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q85" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="5" toggleGroup="$q8">
+                  <RadioButton fx:id="q85" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="5" toggleGroup="$q8">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -768,7 +768,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q84" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q8">
+                  <RadioButton fx:id="q84" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="4" toggleGroup="$q8">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -778,7 +778,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q83" mnemonicParsing="false" prefWidth="110.0" text="3" toggleGroup="$q8">
+                  <RadioButton fx:id="q83" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="3" toggleGroup="$q8">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -788,7 +788,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q82" mnemonicParsing="false" prefWidth="110.0" text="2" toggleGroup="$q8">
+                  <RadioButton fx:id="q82" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="2" toggleGroup="$q8">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -798,7 +798,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q81" mnemonicParsing="false" prefWidth="110.0" text="1" toggleGroup="$q8">
+                  <RadioButton fx:id="q81" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="1" toggleGroup="$q8">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -825,7 +825,7 @@
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton fx:id="q97" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="7">
+                  <RadioButton fx:id="q97" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -838,7 +838,7 @@
                         <ToggleGroup fx:id="q9" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton fx:id="q96" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="6" toggleGroup="$q9">
+                  <RadioButton fx:id="q96" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="6" toggleGroup="$q9">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -851,7 +851,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q95" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="5" toggleGroup="$q9">
+                  <RadioButton fx:id="q95" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="5" toggleGroup="$q9">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -861,7 +861,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q94" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q9">
+                  <RadioButton fx:id="q94" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="4" toggleGroup="$q9">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -871,7 +871,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q93" mnemonicParsing="false" prefWidth="110.0" text="3" toggleGroup="$q9">
+                  <RadioButton fx:id="q93" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="3" toggleGroup="$q9">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -881,7 +881,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q92" mnemonicParsing="false" prefWidth="110.0" text="2" toggleGroup="$q9">
+                  <RadioButton fx:id="q92" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="2" toggleGroup="$q9">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -891,7 +891,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q91" mnemonicParsing="false" prefWidth="110.0" text="1" toggleGroup="$q9">
+                  <RadioButton fx:id="q91" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="1" toggleGroup="$q9">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -918,7 +918,7 @@
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
-                  <RadioButton fx:id="q107" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="7">
+                  <RadioButton fx:id="q107" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="7">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -931,7 +931,7 @@
                         <ToggleGroup fx:id="q10" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton fx:id="q106" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="6" toggleGroup="$q10">
+                  <RadioButton fx:id="q106" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="6" toggleGroup="$q10">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -944,7 +944,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q105" mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="5" toggleGroup="$q10">
+                  <RadioButton fx:id="q105" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="53.0" prefWidth="110.0" text="5" toggleGroup="$q10">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -954,7 +954,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q104" mnemonicParsing="false" prefWidth="110.0" text="4" toggleGroup="$q10">
+                  <RadioButton fx:id="q104" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="4" toggleGroup="$q10">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -964,7 +964,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q103" mnemonicParsing="false" prefWidth="110.0" text="3" toggleGroup="$q10">
+                  <RadioButton fx:id="q103" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="3" toggleGroup="$q10">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -974,7 +974,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q102" mnemonicParsing="false" prefWidth="110.0" text="2" toggleGroup="$q10">
+                  <RadioButton fx:id="q102" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="2" toggleGroup="$q10">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -984,7 +984,7 @@
                         <String fx:value="loginText" />
                      </styleClass>
                   </RadioButton>
-                  <RadioButton fx:id="q101" mnemonicParsing="false" prefWidth="110.0" text="1" toggleGroup="$q10">
+                  <RadioButton fx:id="q101" mnemonicParsing="false" onAction="#submitButtonPressed" prefWidth="110.0" text="1" toggleGroup="$q10">
                      <font>
                         <Font size="46.0" />
                      </font>
@@ -999,7 +999,7 @@
                   <Insets left="25.0" right="25.0" top="15.0" />
                </VBox.margin>
             </HBox>
-            <Button mnemonicParsing="false" text="Submit">
+            <Button fx:id="submit" mnemonicParsing="false" onAction="#submitButtonPressed" text="Submit">
                <VBox.margin>
                   <Insets top="15.0" />
                </VBox.margin>
