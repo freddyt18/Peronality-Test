@@ -154,3 +154,12 @@
 .test-background {
     -fx-background-color:#3f7c88;
 }
+
+.radio-button .radio {
+    -fx-border-width: 2px;
+    -fx-border-color: #000;
+    -fx-background-color:#3f7c88;
+    -fx-background-image: null;
+    -fx-border-radius: 0px;
+    -fx-padding: 4px;
+}

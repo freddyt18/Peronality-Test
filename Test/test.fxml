@@ -3,12 +3,14 @@
 <?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="907.0" styleClass="test-background" stylesheets="@../Design/CSS/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Test.ControllerForTest">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1200.0" prefWidth="907.0" styleClass="test-background" stylesheets="@../Design/CSS/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Test.ControllerForTest">
    <children>
       <VBox layoutY="-14.0" prefHeight="658.0" prefWidth="907.0" styleClass="test-background" stylesheets="@../Design/CSS/main.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="-14.0">
          <children>
@@ -17,7 +19,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="80.0" prefWidth="102.0" stylesheets="@../Design/CSS/main.css" text="I see myself as">
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="80.0" prefWidth="102.0" text="I see myself as">
                      <HBox.margin>
                         <Insets bottom="10.0" left="25.0" right="10.0" top="10.0" />
                      </HBox.margin>
@@ -27,42 +29,88 @@
                      </styleClass>
                   </Label>
                   <Pane prefHeight="100.0" prefWidth="3.0" />
-                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" stylesheets="@../Design/CSS/main.css" text="Disagree Strongly">
+                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" text="Disagree Strongly" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
                   </Label>
-                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" stylesheets="@../Design/CSS/main.css" text="Disagree Moder">
+                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" text="Disagree Moder" textAlignment="CENTER" wrapText="true">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
                   </Label>
-                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" stylesheets="@../Design/CSS/main.css" text="I see myself as">
+                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" text="I see myself as">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
                   </Label>
-                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" stylesheets="@../Design/CSS/main.css" text="I see myself as">
+                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" text="I see myself as">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
                   </Label>
-                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" stylesheets="@../Design/CSS/main.css" text="I see myself as">
-                     <HBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                     </HBox.margin>
-                  </Label>
-                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" stylesheets="@../Design/CSS/main.css" text="I see myself as">
+                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" text="I see myself as">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
                   </Label>
                   <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" stylesheets="@../Design/CSS/main.css" text="I see myself as">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="80.0" styleClass="test-label" text="I see myself as">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
                   </Label>
                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
+               <children>
+                  <Label text="Label" />
+                  <RadioButton mnemonicParsing="false" styleClass="radio" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" styleClass="radio" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" styleClass="radio" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" styleClass="radio" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" styleClass="radio" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" styleClass="radio" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" styleClass="radio" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
             </HBox>
          </children>
       </VBox>
