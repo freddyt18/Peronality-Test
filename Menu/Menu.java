@@ -20,7 +20,7 @@ public class Menu {
         if(firstTime){
             loader.setLocation(Menu.class.getResource("menu.fxml"));
             root = loader.load();
-            scene = new Scene(root, 1200, 657.53);
+            scene = new Scene(root, 1200, 687.53);
             current.setScene(scene);
             firstTime = false;
         }
