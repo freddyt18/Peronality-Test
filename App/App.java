@@ -4,6 +4,7 @@ import java.util.Currency;
 import java.util.LinkedList;
 
 import Data.Data_Handling.DataHandling;
+import Result_Generator.resultGenerator;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -28,9 +29,11 @@ public class App extends Application {
     static Parent root;
     static Scene scene;
     public static int CURRENT_USER_ID = -1;
+    public static resultGenerator rg = new resultGenerator();
 
     public static void main(String[] args) throws IOException {
         DataHandling.main(args);
+        rg.generateResult();
         launch(args);
         // if all of the windows are closed, the program will output this
         /* 

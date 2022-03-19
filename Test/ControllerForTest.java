@@ -4,7 +4,10 @@ import java.beans.EventHandler;
 import java.security.spec.ECField;
 import java.util.concurrent.atomic.AtomicLong;
 
+import App.App;
+import Data.Data_Handling.DataHandling;
 import Profile.profile;
+import Result_Generator.resultGenerator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -13,12 +16,12 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.effect.Effect;
 
 public class ControllerForTest {
-    
-    public int openness = 0;
-    public int conscientiousness = 0;
-    public int extroversion = 0;
-    public int agreeableness = 0;
-    public int neroticism = 0;
+    private int openness = 0;
+    private int conscientiousness = 0;
+    private int extroversion = 0;
+    private int agreeableness = 0;
+    private int neroticism = 0;
+    private String result = "";
 
     @FXML
     private Button submit;
@@ -59,7 +62,50 @@ public class ControllerForTest {
         extroversion = eForQ1 + eForQ6;
         agreeableness = aForQ2 + aForQ7;
         neroticism = nForQ4 + nForQ9;
-        System.err.println("O: " + openness + "\nC: " + conscientiousness + "\nE: " + extroversion + "\nA: " + agreeableness + "\nN: " + neroticism );
+
+        if(neroticism>=9){
+            result = result.concat("N - high |");
+        } else {
+            result = result.concat("n - low |");
+        }
+
+        if(agreeableness>=10){
+            result = result.concat(" A - high | ");
+        } else {
+            result = result.concat(" a - low | ");
+        }
+
+        if(extroversion>=9){
+            result = result.concat(" E - high | ");
+        } else {
+            result = result.concat(" e - low | ");
+        }
+
+        if(conscientiousness>=11){
+            result = result.concat(" C - high | ");
+        } else {
+            result = result.concat(" c - low | ");
+        }
+
+        if(openness>=10){
+            result = result.concat(" O - high | ");
+        } else {
+            result = result.concat(" o - low | ");
+        }
+
+
+
+        for(int i = 0; i < App.rg.personality_type.size(); i++){
+            if(App.rg.personality_type.get(i).contains(result)){
+                DataHandling.users.get(App.CURRENT_USER_ID).setPersonality("#" + i);
+                break;
+            }
+        }
+
+        System.out.println(App.rg.personality_type_result.get(Integer.parseInt(DataHandling.users.get(App.CURRENT_USER_ID).getPersonality().replace("#", ""))));
+
+        System.out.println("O: " + openness + "\nC: " + conscientiousness + "\nE: " + extroversion + "\nA: " + agreeableness + "\nN: " + neroticism );
+        System.out.println("");
     }
 
     int eForQ1 = 0;
