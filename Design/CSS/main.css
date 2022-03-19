@@ -9,6 +9,10 @@
     -fx-text-fill: rgb(202, 202, 202);
 }
 
+.fixed-size-46 {
+    -fx-font-size: 42px;
+}
+
 .fixed-size-18 {
     -fx-font-size: 18px;
 }
@@ -156,8 +160,6 @@
 }
 
 .radio-button .radio {
-    -fx-border-width: 2px;
-    -fx-border-color: #000;
     -fx-background-color:#3f7c88;
     -fx-background-image: null;
     -fx-border-radius: 0px;

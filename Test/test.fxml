@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1200.0" prefWidth="907.0" styleClass="test-background" stylesheets="@../Design/CSS/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Test.ControllerForTest">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1350.0" prefWidth="907.0" styleClass="test-background" stylesheets="@../Design/CSS/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Test.ControllerForTest">
    <children>
-      <VBox layoutY="-14.0" prefHeight="658.0" prefWidth="907.0" styleClass="test-background" stylesheets="@../Design/CSS/main.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="-14.0">
+      <VBox layoutX="8.0" layoutY="-28.0" prefHeight="658.0" prefWidth="907.0" styleClass="test-background" stylesheets="@../Design/CSS/main.css" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="-28.0">
          <children>
             <HBox prefHeight="100.0" prefWidth="907.0" styleClass="test-hbox" stylesheets="@../Design/CSS/main.css">
                <VBox.margin>
@@ -68,48 +68,902 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
                <children>
-                  <Label text="Label" />
-                  <RadioButton mnemonicParsing="false" styleClass="radio" text="1">
+                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="fixed-size-18" />
+                        <String fx:value="loginText" />
+                        <String fx:value="test-label" />
+                     </styleClass>
+                  </Label>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
                      <font>
                         <Font size="46.0" />
                      </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" styleClass="radio" text="1">
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
                      <font>
                         <Font size="46.0" />
                      </font>
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" styleClass="radio" text="1">
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
                      <font>
                         <Font size="46.0" />
                      </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" styleClass="radio" text="1">
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
                      <font>
                         <Font size="46.0" />
                      </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" styleClass="radio" text="1">
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
                      <font>
                         <Font size="46.0" />
                      </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" styleClass="radio" text="1">
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
                      <font>
                         <Font size="46.0" />
                      </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" styleClass="radio" text="1">
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
                      <font>
                         <Font size="46.0" />
                      </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
                   </RadioButton>
                </children>
                <VBox.margin>
-                  <Insets left="50.0" />
+                  <Insets left="25.0" right="25.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
+               <children>
+                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="fixed-size-18" />
+                        <String fx:value="loginText" />
+                        <String fx:value="test-label" />
+                     </styleClass>
+                  </Label>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
+               <children>
+                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="fixed-size-18" />
+                        <String fx:value="loginText" />
+                        <String fx:value="test-label" />
+                     </styleClass>
+                  </Label>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
+               <children>
+                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="fixed-size-18" />
+                        <String fx:value="loginText" />
+                        <String fx:value="test-label" />
+                     </styleClass>
+                  </Label>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
+               <children>
+                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="fixed-size-18" />
+                        <String fx:value="loginText" />
+                        <String fx:value="test-label" />
+                     </styleClass>
+                  </Label>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
+               <children>
+                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="fixed-size-18" />
+                        <String fx:value="loginText" />
+                        <String fx:value="test-label" />
+                     </styleClass>
+                  </Label>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
+               <children>
+                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="fixed-size-18" />
+                        <String fx:value="loginText" />
+                        <String fx:value="test-label" />
+                     </styleClass>
+                  </Label>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
+               <children>
+                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="fixed-size-18" />
+                        <String fx:value="loginText" />
+                        <String fx:value="test-label" />
+                     </styleClass>
+                  </Label>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
+               <children>
+                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="fixed-size-18" />
+                        <String fx:value="loginText" />
+                        <String fx:value="test-label" />
+                     </styleClass>
+                  </Label>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="test-hbox">
+               <children>
+                  <Label prefHeight="83.0" prefWidth="136.0" text="The life of the party" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="fixed-size-18" />
+                        <String fx:value="loginText" />
+                        <String fx:value="test-label" />
+                     </styleClass>
+                  </Label>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="53.0" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefWidth="110.0" text="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radio" />
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="loginText" />
+                     </styleClass>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="15.0" />
                </VBox.margin>
             </HBox>
          </children>
