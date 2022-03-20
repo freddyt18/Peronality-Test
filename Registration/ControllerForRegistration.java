@@ -65,6 +65,16 @@ public class ControllerForRegistration {
         return true;
     }
 
+    public boolean checkNameAcceptable(String name) throws IOException {
+        Pattern W = Pattern.compile("\\W");
+
+        Matcher nameContainsNonCharacter = W.matcher(name);
+
+        if(nameContainsNonCharacter.find())
+            return false;
+        return true;
+    }
+
     public boolean checkPasswordAcceptable(String password) throws IOException {
         Pattern W = Pattern.compile("\\W");
         Pattern s = Pattern.compile("\\s");
