@@ -34,7 +34,6 @@ public class App extends Application {
     public static void main(String[] args) throws IOException {
         DataHandling.main(args);
         rg.generateResult();
-        System.out.println(rg.personality_type_result.get(8));
         launch(args);
         // if all of the windows are closed, the program will output this
         /* 
