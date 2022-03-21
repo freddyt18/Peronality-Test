@@ -1,5 +1,7 @@
 package Profile;
 
+import App.App;
+import Data.Data_Handling.DataHandling;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -15,20 +17,19 @@ public class ControllerForProfile {
     private Button editProfile;
 
     @FXML
-    public Label fullName;
-
+    public static Label fullName;
 
     @FXML
     private AnchorPane mainScreen;
 
     @FXML
-    public TextArea userEmail;
+    public static TextArea userEmail;
 
     @FXML
-    public Label userName;
+    public static Label userName;
 
     @FXML
-    public TextArea userPersonalityType;
+    public static TextArea userPersonalityType;
 
     @FXML
     private void editProfile(){}
@@ -37,6 +38,12 @@ public class ControllerForProfile {
     private void deleteAcc(){}
 
 
+    /* public void displayUser(){
+        fullName.setText("ABC");
+        userName.setText(DataHandling.users.get(App.CURRENT_USER_ID).getUsername());
+        userPersonalityType.setText(App.rg.personality_type_result.get(Integer.parseInt(DataHandling.users.get(App.CURRENT_USER_ID).getPersonality().replace("#", ""))));
+        userEmail.setText(DataHandling.users.get(App.CURRENT_USER_ID).getEmail());
+    } */
 
     
 }

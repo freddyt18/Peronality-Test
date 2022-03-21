@@ -8,10 +8,13 @@ import Setting.Setting;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.PopupWindow.AnchorLocation;
+import Profile.ControllerForProfile;
 
 public class ControllerForMenu {
     Setting settingObject = new Setting();
@@ -65,6 +68,11 @@ public class ControllerForMenu {
 
     @FXML
     private void whenProfilePressed() throws IOException {
+        ControllerForProfile.fullName = new Label("ANBC");
+        ControllerForProfile.userEmail = new TextArea();
+        ControllerForProfile.userName = new Label();
+        ControllerForProfile.userPersonalityType = new TextArea();
+
         scene.setContent(FXMLLoader.load(getClass().getResource("../Profile/scene.fxml")));
         if(containsMain(explore) || containsMain(setting) || containsMain(test)){
             if(containsMain(explore)){
@@ -76,8 +84,6 @@ public class ControllerForMenu {
             }
         }
         altToMain(profile);
-
-        
     }
 
     @FXML
