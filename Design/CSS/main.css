@@ -208,3 +208,11 @@
     -fx-control-inner-background: #5ECED0;
     /* -fx-box-sizing: border-box; */
 }
+
+#mainScreen {
+    -fx-background-color: #3F7C88;
+}
+
+#sidebar {
+    -fx-background-color: #256572;
+}
