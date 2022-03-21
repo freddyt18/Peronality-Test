@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="937.0" styleClass="maincolor" stylesheets="@../Design/CSS/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="maincolor" stylesheets="@../Design/CSS/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox alignment="TOP_CENTER" prefHeight="658.0" prefWidth="937.0">
+      <VBox alignment="TOP_CENTER" prefHeight="700.0" prefWidth="1200.0">
          <children>
             <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
@@ -27,9 +27,9 @@
             </HBox>
             <HBox alignment="TOP_CENTER" prefHeight="250.0" prefWidth="907.0">
                <children>
-                  <Label prefWidth="700.0" text="These individuals have simillar / the same typeof personalit as you do-Connect with them" textAlignment="CENTER" wrapText="true">
+                  <Label prefHeight="269.0" prefWidth="1049.0" text="These individuals have simillar / the same typeof personalit as you do-Connect with them" textAlignment="CENTER" wrapText="true">
                      <styleClass>
-                        <String fx:value="fixed-size-24" />
+                        <String fx:value="fixed-size-28" />
                         <String fx:value="test-label" />
                      </styleClass>
                   </Label>
@@ -38,16 +38,16 @@
                   <Insets />
                </VBox.margin>
             </HBox>
-            <HBox prefWidth="937.0">
+            <HBox alignment="CENTER" prefWidth="937.0">
                <children>
-                  <VBox alignment="CENTER" prefHeight="220.0" prefWidth="288.0">
+                  <VBox alignment="CENTER" prefHeight="220.0" prefWidth="553.0">
                      <children>
-                        <Label prefWidth="201.0" text="These individuals have simillar / the same type of personality as you do" textAlignment="CENTER" wrapText="true">
+                        <Label prefHeight="109.0" prefWidth="340.0" text="These individuals have simillar / the same type of personality as you do" textAlignment="CENTER" wrapText="true">
                            <padding>
                               <Insets left="30.0" right="30.0" />
                            </padding>
                            <styleClass>
-                              <String fx:value="fixed-size-18" />
+                              <String fx:value="fixed-size-24" />
                               <String fx:value="loginText" />
                            </styleClass>
                         </Label>
@@ -57,13 +57,13 @@
                            </VBox.margin>
                            <styleClass>
                               <String fx:value="loginText" />
-                              <String fx:value="fixed-size-18" />
+                              <String fx:value="fixed-size-24" />
                            </styleClass>
                         </Label>
-                        <Label text="Connect with them">
+                        <Label alignment="CENTER" prefHeight="21.0" prefWidth="224.0" text="Connect with them" textAlignment="CENTER" wrapText="true">
                            <styleClass>
                               <String fx:value="loginText" />
-                              <String fx:value="fixed-size-18" />
+                              <String fx:value="fixed-size-24" />
                            </styleClass>
                         </Label>
                      </children>
@@ -75,7 +75,7 @@
                               <Insets bottom="20.0" />
                            </VBox.margin>
                            <styleClass>
-                              <String fx:value="fixed-size-18" />
+                              <String fx:value="fixed-size-24" />
                               <String fx:value="loginText" />
                            </styleClass>
                         </Label>
@@ -85,7 +85,7 @@
                            </VBox.margin>
                            <styleClass>
                               <String fx:value="loginText" />
-                              <String fx:value="fixed-size-18" />
+                              <String fx:value="fixed-size-24" />
                            </styleClass>
                         </Label>
                         <Label fx:id="u3" text="3">
@@ -94,7 +94,7 @@
                            </VBox.margin>
                            <styleClass>
                               <String fx:value="loginText" />
-                              <String fx:value="fixed-size-18" />
+                              <String fx:value="fixed-size-24" />
                            </styleClass>
                         </Label>
                         <Label fx:id="u4" text="4">
@@ -102,7 +102,7 @@
                               <Insets bottom="20.0" />
                            </VBox.margin>
                            <styleClass>
-                              <String fx:value="fixed-size-18" />
+                              <String fx:value="fixed-size-24" />
                               <String fx:value="loginText" />
                            </styleClass>
                         </Label>
