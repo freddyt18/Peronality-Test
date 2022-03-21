@@ -72,7 +72,6 @@ public class ControllerForMenu {
     private void whenProfilePressed() throws IOException {
         FXMLLoader loader = new FXMLLoader();
         Parent root;
-        Scene s = new Scene;
         
         loader.setLocation(App.class.getResource("../Menu/Profile/scene.fxml"));
         root = loader.load();
