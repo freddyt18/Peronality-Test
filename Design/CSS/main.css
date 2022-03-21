@@ -9,6 +9,10 @@
     -fx-text-fill: rgb(202, 202, 202);
 }
 
+.fixed-size-46 {
+    -fx-font-size: 42px;
+}
+
 .fixed-size-18 {
     -fx-font-size: 18px;
 }
@@ -138,4 +142,26 @@
 
 .noBorderColorMenu {
     -fx-border-color: #3f7c88;
+}
+
+.test-label {
+    -fx-text-fill: white;   
+    -fx-background-color: #3f7c88;
+    -fx-background-radius:20px;
+}
+
+.test-hbox{
+    -fx-background-color:#275a62;
+    -fx-background-radius:50px;
+}
+
+.test-background {
+    -fx-background-color:#3f7c88;
+}
+
+.radio-button .radio {
+    -fx-background-color:#3f7c88;
+    -fx-background-image: null;
+    -fx-border-radius: 0px;
+    -fx-padding: 4px;
 }

@@ -7,7 +7,10 @@ import Setting.Setting;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.PopupWindow.AnchorLocation;
 
 public class ControllerForMenu {
     Setting settingObject = new Setting();
@@ -27,11 +30,11 @@ public class ControllerForMenu {
     private Button setting;
 
     @FXML
-    private BorderPane scene;
+    private ScrollPane scene;
 
     @FXML
     private void whenExplorePressed() throws IOException {
-        scene.setCenter(FXMLLoader.load(getClass().getResource("../App/LOGIN_FORM.fxml")));
+        scene.setContent(FXMLLoader.load(getClass().getResource("../App/LOGIN_FORM.fxml")));
         if(containsMain(test) || containsMain(setting) || containsMain(profile)){
             if(containsMain(test)){
                 mainToAlt(test);
@@ -46,7 +49,7 @@ public class ControllerForMenu {
 
     @FXML
     private void whenTestPressed() throws IOException {
-        scene.setCenter(FXMLLoader.load(getClass().getResource("../App/LOGIN_FORM.fxml")));
+        scene.setContent(FXMLLoader.load(getClass().getResource("../Test/test.fxml")));
         if(containsMain(explore) || containsMain(setting) || containsMain(profile)){
             if(containsMain(explore)){
                 mainToAlt(explore);
@@ -61,7 +64,7 @@ public class ControllerForMenu {
 
     @FXML
     private void whenProfilePressed() throws IOException {
-        scene.setCenter(FXMLLoader.load(getClass().getResource("../App/LOGIN_FORM.fxml")));
+        scene.setContent(FXMLLoader.load(getClass().getResource("../App/LOGIN_FORM.fxml")));
         if(containsMain(explore) || containsMain(setting) || containsMain(test)){
             if(containsMain(explore)){
                 mainToAlt(explore);
@@ -80,7 +83,7 @@ public class ControllerForMenu {
          menu.closeMenu();
          settingObject.showSetting();
          
-        //scene.setCenter(FXMLLoader.load(getClass().getResource("../App/LOGIN_FORM.fxml")));
+        //scene.setContent(FXMLLoader.load(getClass().getResource("../App/LOGIN_FORM.fxml")));
         if(containsMain(explore) || containsMain(test) || containsMain(profile)){
             if(containsMain(explore)){
                 mainToAlt(explore);

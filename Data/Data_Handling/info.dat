@@ -1,4 +1,4 @@
-21
+24
 
 1
 Username: Vortey
@@ -14,7 +14,7 @@ Bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequu
 Username: Pitou
 Password: $2a$10$BZ5ZX6dUOmlftq.QH5BCQ.W2SY3vPVryZuEpSDDCLwGNWK7pDm.Ai
 Email: keopitou.doung@student.cadt.edu.kh
-Personality: #1
+Personality: #9
 Name: Freddy
 Age: 18
 Sex: M
@@ -94,7 +94,7 @@ Bio:
 Username: aA1
 Password: $2a$10$OTU9CUqOvVQYw6YRAkRFI.l.bruxfabjVGKT7nWn0UEhGiHgvrklG
 Email: adasd@test.com
-Personality:  
+Personality: #11
 Name:  
 Age: 0
 Sex:  
@@ -161,24 +161,24 @@ Sex:
 Bio:  
 
 17
-Username: nak123
+Username: 
 Password: $2a$10$1g/vvf9HkLFhcLy9Op7q8O9buGrzIgbDPn38lfZ68AO3GHORJfIlu
-Email: naknaknak@yahoo.com
-Personality:  
-Name:  
+Email: 
+Personality: #0
+Name: 
 Age: 0
-Sex:  
-Bio:  
+Sex: 
+Bio: 
 
 18
-Username: nak
+Username: nak123
 Password: $2a$10$93Opmf/T3T9i4kNYqfGCheGWJvupeZFmr3p.6GDV1Zj0z81YC25Ta
-Email: abc@gmail.com
+Email: 
 Personality:  
-Name: Kean Whatanak
+Name: 
 Age: 0
-Sex: Male
-Bio: abc
+Sex: 
+Bio: 
 
 19
 Username: beksloyer
@@ -194,7 +194,7 @@ Bio:
 Username: beksloyerr
 Password: $2a$10$erRzV2lYtprtA6hCKB8MAe1Qna64LjHUIlOfNQzoeF4qL5ZW5j4Xy
 Email: beksloyerr@gmai.com
-Personality:  
+Personality: #14
 Name:  
 Age: 0
 Sex:  
@@ -205,6 +205,36 @@ Username: chandara
 Password: $2a$10$VWmSY2YEekdcjKNxuB5hKewfBPqCXsk/Mtgp11qTnnFaCdKws8nK6
 Email: chandara@gmail.com
 Personality:  
+Name:  
+Age: 0
+Sex:  
+Bio:  
+
+22
+Username: vathanak
+Password: $2a$10$MYocWx2tUACwjUGrIqOkquLTuw6QJD.6GyhRT/7tfyKRQmHIT/fXi
+Email: vathanak.ouk@gmail.com
+Personality:  
+Name:  
+Age: 0
+Sex:  
+Bio:  
+
+23
+Username: chandara123
+Password: $2a$10$fJ3SlsrNThqjhb83GatOP.6NIsn5b/dkrRv/jzMJ8AIPU7LsTMIeC
+Email: chandara@gmail.com
+Personality: #22
+Name:  
+Age: 0
+Sex:  
+Bio:  
+
+24
+Username: yuki
+Password: $2a$10$AUryXYqo6XqN8E.f/7IOB.ymq5cyN8o63Fqa3g9w1pJSfDGaUzsy6
+Email: meily.phuy@gmail.com
+Personality: #30
 Name:  
 Age: 0
 Sex:  

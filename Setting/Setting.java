@@ -20,7 +20,7 @@ public class Setting {
     public void showSetting() throws IOException { 
         if(firstTime){
             //root.setLeft(FXMLLoader.load(getClass().getResource("SettingSideBar.fxml")));
-
+            
             loader.setLocation(Setting.class.getResource("SettingSideBar.fxml"));
             root = loader.load();
             scene = new Scene(root, 1200, 657.53);

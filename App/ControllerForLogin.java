@@ -86,6 +86,11 @@ public class ControllerForLogin {
             App.CURRENT_USER_ID = DataHandling.TEMPORARY_USER;
             System.out.println(App.CURRENT_USER_ID);
             System.out.println(DataHandling.users.get(App.CURRENT_USER_ID).getUsername().toString());
+            
+            if(DataHandling.users.get(App.CURRENT_USER_ID).getPersonality().contains("#")){
+                System.out.println(App.rg.personality_type_result.get(Integer.parseInt(DataHandling.users.get(App.CURRENT_USER_ID).getPersonality().replace("#", ""))));
+            }
+
             main.exit();
             menu.showMenu();
 
