@@ -40,9 +40,9 @@
             </HBox>
             <HBox prefWidth="937.0">
                <children>
-                  <VBox alignment="CENTER" prefHeight="220.0" prefWidth="185.0">
+                  <VBox alignment="CENTER" prefHeight="220.0" prefWidth="288.0">
                      <children>
-                        <Label prefWidth="185.0" text="These individuals have simillar / the same type of personality as you do" textAlignment="CENTER" wrapText="true">
+                        <Label prefWidth="201.0" text="These individuals have simillar / the same type of personality as you do" textAlignment="CENTER" wrapText="true">
                            <padding>
                               <Insets left="30.0" right="30.0" />
                            </padding>
@@ -68,7 +68,46 @@
                         </Label>
                      </children>
                   </VBox>
-                  <VBox prefHeight="220.0" prefWidth="783.0" />
+                  <VBox alignment="CENTER" prefHeight="220.0" prefWidth="653.0">
+                     <children>
+                        <Label fx:id="u1">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                           <styleClass>
+                              <String fx:value="fixed-size-18" />
+                              <String fx:value="loginText" />
+                           </styleClass>
+                        </Label>
+                        <Label fx:id="u2">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                           <styleClass>
+                              <String fx:value="loginText" />
+                              <String fx:value="fixed-size-18" />
+                           </styleClass>
+                        </Label>
+                        <Label fx:id="u3">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                           <styleClass>
+                              <String fx:value="loginText" />
+                              <String fx:value="fixed-size-18" />
+                           </styleClass>
+                        </Label>
+                        <Label fx:id="u4">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                           <styleClass>
+                              <String fx:value="fixed-size-18" />
+                              <String fx:value="loginText" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </VBox>
                </children>
                <VBox.margin>
                   <Insets top="30.0" />
