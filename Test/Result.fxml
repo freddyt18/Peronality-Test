@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="937.0" styleClass="maincolor" stylesheets="@main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="937.0" styleClass="maincolor" stylesheets="@../Design/CSS/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox alignment="TOP_CENTER" prefHeight="658.0" prefWidth="937.0">
          <children>
@@ -70,7 +70,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="220.0" prefWidth="653.0">
                      <children>
-                        <Label fx:id="u1">
+                        <Label fx:id="u1" text="1">
                            <VBox.margin>
                               <Insets bottom="20.0" />
                            </VBox.margin>
@@ -79,7 +79,7 @@
                               <String fx:value="loginText" />
                            </styleClass>
                         </Label>
-                        <Label fx:id="u2">
+                        <Label fx:id="u2" text="2">
                            <VBox.margin>
                               <Insets bottom="20.0" />
                            </VBox.margin>
@@ -88,7 +88,7 @@
                               <String fx:value="fixed-size-18" />
                            </styleClass>
                         </Label>
-                        <Label fx:id="u3">
+                        <Label fx:id="u3" text="3">
                            <VBox.margin>
                               <Insets bottom="20.0" />
                            </VBox.margin>
@@ -97,7 +97,7 @@
                               <String fx:value="fixed-size-18" />
                            </styleClass>
                         </Label>
-                        <Label fx:id="u4">
+                        <Label fx:id="u4" text="4">
                            <VBox.margin>
                               <Insets bottom="20.0" />
                            </VBox.margin>
