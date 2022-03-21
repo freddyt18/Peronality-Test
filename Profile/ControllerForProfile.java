@@ -45,5 +45,5 @@ public class ControllerForProfile {
         userEmail.setText(DataHandling.users.get(App.CURRENT_USER_ID).getEmail());
     } */
 
-    
+ 
 }
