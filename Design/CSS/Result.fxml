@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="937.0" styleClass="maincolor" stylesheets="@main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="658.0" prefWidth="937.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Personality Type #1">
+                     <styleClass>
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="test-label" />
+                        <String fx:value="weightBold" />
+                     </styleClass>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="60.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="250.0" prefWidth="907.0">
+               <children>
+                  <Label prefWidth="700.0" text="These individuals have simillar / the same typeof personality as you do-Connect with them" textAlignment="CENTER" wrapText="true">
+                     <styleClass>
+                        <String fx:value="fixed-size-24" />
+                        <String fx:value="test-label" />
+                     </styleClass>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefWidth="937.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="220.0" prefWidth="185.0">
+                     <children>
+                        <Label prefWidth="185.0" text="These individuals have simillar / the same type of personality as you do" textAlignment="CENTER" wrapText="true">
+                           <padding>
+                              <Insets left="30.0" right="30.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="fixed-size-18" />
+                              <String fx:value="loginText" />
+                           </styleClass>
+                        </Label>
+                        <Label text="-">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <styleClass>
+                              <String fx:value="loginText" />
+                              <String fx:value="fixed-size-18" />
+                           </styleClass>
+                        </Label>
+                        <Label text="Connect with them">
+                           <styleClass>
+                              <String fx:value="loginText" />
+                              <String fx:value="fixed-size-18" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="220.0" prefWidth="783.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
