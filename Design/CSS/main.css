@@ -174,7 +174,8 @@
     -fx-padding: 4px;
 }
 
-#editProfile {
+#editProfile,
+#deleteAcc {
     -fx-text-fill: black;
     -fx-border-color: #5ECED0;
     -fx-color: #5ECED0;
@@ -208,6 +209,7 @@
     -fx-control-inner-background: #5ECED0;
     /* -fx-box-sizing: border-box; */
 }
+
 #mainScreen {
     -fx-background-color: #3F7C88;
 }
