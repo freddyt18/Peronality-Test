@@ -5,9 +5,11 @@ import java.io.IOException;
 import java.security.spec.ECField;
 import java.util.concurrent.atomic.AtomicLong;
 
+import AfterTest.AfterTest;
 import App.App;
 import Data.Data_Handling.DataHandling;
 import Menu.ControllerForMenu;
+import Menu.Menu;
 import Result_Generator.resultGenerator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -19,7 +21,9 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.effect.Effect;
 
 public class ControllerForTest {
-    ControllerForMenu cmenu = new ControllerForMenu();
+    Menu m = new Menu();
+    AfterTest aft = new AfterTest();
+
     private int openness = 0;
     private int conscientiousness = 0;
     private int extroversion = 0;
@@ -110,6 +114,9 @@ public class ControllerForTest {
 
         System.out.println("O: " + openness + "\nC: " + conscientiousness + "\nE: " + extroversion + "\nA: " + agreeableness + "\nN: " + neroticism );
         System.out.println("");
+
+        m.closeMenu();
+        aft.showAfterTest();
     }
 
     int eForQ1 = 0;
