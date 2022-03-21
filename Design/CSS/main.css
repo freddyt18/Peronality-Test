@@ -186,6 +186,14 @@
     -fx-font-size: 15px;
 }
 
+#revealData:hover,
+#deleteAcc:hover {
+    -fx-border-color: #3c6a6b;
+    -fx-color: #3c6a6b;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
 #fullName,
 #userName,
 #label,
