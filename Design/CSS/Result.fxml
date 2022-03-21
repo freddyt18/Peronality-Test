@@ -27,7 +27,7 @@
             </HBox>
             <HBox alignment="TOP_CENTER" prefHeight="250.0" prefWidth="907.0">
                <children>
-                  <Label prefWidth="700.0" text="These individuals have simillar / the same typeof personality as you do-Connect with them" textAlignment="CENTER" wrapText="true">
+                  <Label prefWidth="700.0" text="These individuals have simillar / the same typeof personalit as you do-Connect with them" textAlignment="CENTER" wrapText="true">
                      <styleClass>
                         <String fx:value="fixed-size-24" />
                         <String fx:value="test-label" />
