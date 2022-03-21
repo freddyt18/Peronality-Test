@@ -1,11 +1,13 @@
 /* @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
  */
- * {
+
+* {
     -fx-font-family: sans-serif;
 }
 
 #button1:hover {
-    -fx-background-color:  #254950; /* main when hover */
+    -fx-background-color: #254950;
+    /* main when hover */
     -fx-text-fill: rgb(202, 202, 202);
 }
 
@@ -25,7 +27,6 @@
     -fx-font-size: 28px;
 }
 
-
 #register {
     -fx-text-fill: #fff
 }
@@ -34,18 +35,20 @@
     -fx-text-fill: rgb(202, 202, 202);
 }
 
-#pic1, #pic2 {
+#pic1,
+#pic2 {
     -fx-arc-width: 25;
     -fx-arc-height: 25;
 }
 
-
 .maincolor {
     -fx-background-color: #3f7c88;
 }
+
 .secondaryColor {
     -fx-background-color: #a5dbdc;
 }
+
 .menu-main-alt {
     -fx-background-color: #256572;
 }
@@ -53,6 +56,7 @@
 .fill-main {
     -fx-fill: #3f7c88;
 }
+
 .fill-secondary {
     -fx-fill: #a5dbdc;
 }
@@ -68,6 +72,7 @@
 .loginText {
     -fx-text-fill: #fff;
 }
+
 .loginTextBlack {
     -fx-text-fill: #000000;
 }
@@ -96,20 +101,23 @@
 }
 
 #signUp:hover {
-    -fx-background-color: #8eadad; /* Secondary when hover */
+    -fx-background-color: #8eadad;
+    /* Secondary when hover */
 }
 
 #hasAccount:hover {
-    -fx-text-fill: rgb(202, 202, 202); 
+    -fx-text-fill: rgb(202, 202, 202);
 }
 
 #invalid:hover {
-    -fx-background-color:  #254950; /* main when hover */
+    -fx-background-color: #254950;
+    /* main when hover */
     -fx-text-fill: rgb(202, 202, 202);
 }
 
 #passwordNotMatched:hover {
-    -fx-background-color:  #254950; /* main when hover */
+    -fx-background-color: #254950;
+    /* main when hover */
     -fx-text-fill: rgb(202, 202, 202);
 }
 
@@ -145,23 +153,61 @@
 }
 
 .test-label {
-    -fx-text-fill: white;   
+    -fx-text-fill: white;
     -fx-background-color: #3f7c88;
-    -fx-background-radius:20px;
+    -fx-background-radius: 20px;
 }
 
-.test-hbox{
-    -fx-background-color:#275a62;
-    -fx-background-radius:50px;
+.test-hbox {
+    -fx-background-color: #275a62;
+    -fx-background-radius: 50px;
 }
 
 .test-background {
-    -fx-background-color:#3f7c88;
+    -fx-background-color: #3f7c88;
 }
 
 .radio-button .radio {
-    -fx-background-color:#3f7c88;
+    -fx-background-color: #3f7c88;
     -fx-background-image: null;
     -fx-border-radius: 0px;
     -fx-padding: 4px;
+}
+
+#editProfile {
+    -fx-text-fill: black;
+    -fx-border-color: #5ECED0;
+    -fx-color: #5ECED0;
+    -fx-letter-spacing: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-insets: 0;
+    -fx-border: 5px solid;
+    -fx-border-radius: 10px;
+    -fx-font-size: 15px;
+}
+
+#fullName,
+#userName,
+#label,
+#label1 {
+    -fx-font-family: 'Fredoka', sans-serif;
+    -fx-font-size: 20px;
+    -fx-font-weight: 15px;
+}
+
+#label2 {
+    -fx-font-family: 'Fredoka', sans-serif;
+    -fx-font-size: 18px;
+    -fx-font-weight: 10px;
+    -fx-color: white;
+}
+
+#userPersonalityType,
+#userEmail {
+    -fx-font-family: 'Fredoka', sans-serif;
+    -fx-background-color: #5ECED0;
+    -fx-color: #5ECED0;
+    -fx-font-color: black;
+    -fx-control-inner-background: #5ECED0;
+    /* -fx-box-sizing: border-box; */
 }
