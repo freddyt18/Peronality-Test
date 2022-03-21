@@ -7,6 +7,8 @@ import Data.Data_Handling.DataHandling;
 import Setting.Setting;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
@@ -14,13 +16,13 @@ import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.PopupWindow.AnchorLocation;
-import Profile.ControllerForProfile;
 
 public class ControllerForMenu {
     Setting settingObject = new Setting();
     Menu menu = new Menu();
     App main = new App();
     
+    /* MENU */
     @FXML
     private Button explore;
 
@@ -53,7 +55,7 @@ public class ControllerForMenu {
 
     @FXML
     private void whenTestPressed() throws IOException {
-        scene.setContent(FXMLLoader.load(getClass().getResource("../Test/test.fxml")));
+        scene.setContent(FXMLLoader.load(getClass().getResource("../Test/test.fxml")));        
         if(containsMain(explore) || containsMain(setting) || containsMain(profile)){
             if(containsMain(explore)){
                 mainToAlt(explore);
@@ -68,12 +70,15 @@ public class ControllerForMenu {
 
     @FXML
     private void whenProfilePressed() throws IOException {
-        ControllerForProfile.fullName = new Label("ANBC");
-        ControllerForProfile.userEmail = new TextArea();
-        ControllerForProfile.userName = new Label();
-        ControllerForProfile.userPersonalityType = new TextArea();
-
-        scene.setContent(FXMLLoader.load(getClass().getResource("../Profile/scene.fxml")));
+        FXMLLoader loader = new FXMLLoader();
+        Parent root;
+        Scene s = new Scene;
+        
+        loader.setLocation(App.class.getResource("../Menu/Profile/scene.fxml"));
+        root = loader.load();
+        
+        scene.setContent(root);
+        
         if(containsMain(explore) || containsMain(setting) || containsMain(test)){
             if(containsMain(explore)){
                 mainToAlt(explore);
@@ -128,4 +133,28 @@ public class ControllerForMenu {
         }
         return false;
     }
+
+
+
+    /* Profile */
+    @FXML
+    private Button deleteAcc;
+
+    @FXML
+    private Button editProfile;
+
+    @FXML
+    public static Label fullName;
+
+    @FXML
+    private AnchorPane mainScreen;
+
+    @FXML
+    public static TextArea userEmail;
+
+    @FXML
+    public static Label userName;
+
+    @FXML
+    public static TextArea userPersonalityType;
 }

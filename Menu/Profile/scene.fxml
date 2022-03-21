@@ -10,20 +10,20 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="688.0" prefWidth="937.0" style="-fx-border-radius: 100;" stylesheets="@../Design/CSS/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Profile.ControllerForProfile">
+<BorderPane fx:id="whole" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="688.0" prefWidth="937.0" style="-fx-border-radius: 100;" stylesheets="@../../Design/CSS/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu.ControllerForMenu">
    <center>
       <AnchorPane fx:id="mainScreen" prefHeight="200.0" prefWidth="200.0">
          <children>
             <ImageView fitHeight="64.0" fitWidth="65.0" layoutX="23.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Design/Img/circle-user-solid.png" />
+                  <Image url="@../../Design/Img/circle-user-solid.png" />
                </image>
             </ImageView>
-            <Label fx:id="fullName" alignment="CENTER" layoutX="101.0" layoutY="34.0" prefHeight="36.0" prefWidth="155.0" style="-fx-font-weight: bold; -fx-font-size: 30px;" text="Full Name" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="101.0">
+            <Label fx:id="fullName" alignment="CENTER" layoutX="101.0" layoutY="34.0" prefHeight="36.0" prefWidth="155.0" style="-fx-font-weight: bold; -fx-font-size: 30px;" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="101.0">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font></Label>
-            <Label fx:id="userName" alignment="CENTER" layoutX="106.0" layoutY="76.0" prefHeight="24.0" prefWidth="100.0" style="-fx-font-weight: bold;" text="username" textFill="WHITE" AnchorPane.leftAnchor="106.0">
+            <Label fx:id="userName" alignment="CENTER" layoutX="106.0" layoutY="76.0" prefHeight="24.0" prefWidth="100.0" style="-fx-font-weight: bold;" textFill="WHITE" AnchorPane.leftAnchor="106.0">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font></Label>
