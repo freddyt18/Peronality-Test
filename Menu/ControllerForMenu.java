@@ -2,6 +2,7 @@ package Menu;
 
 import java.io.IOException;
 
+import AfterTest.AfterTest;
 import App.App;
 import Data.Data_Handling.DataHandling;
 import Menu.Profile.ControllerForProfile;
@@ -22,6 +23,7 @@ import javafx.stage.PopupWindow.AnchorLocation;
 public class ControllerForMenu {
     public static int currentUser = App.CURRENT_USER_ID;
     public static resultGenerator tempRg = App.rg;
+    AfterTest af = new AfterTest();
     Setting settingObject = new Setting();
     Menu menu = new Menu();
     App main = new App();
@@ -59,17 +61,23 @@ public class ControllerForMenu {
 
     @FXML
     private void whenTestPressed() throws IOException {
-        scene.setContent(FXMLLoader.load(getClass().getResource("../Test/test.fxml")));        
-        if(containsMain(explore) || containsMain(setting) || containsMain(profile)){
-            if(containsMain(explore)){
-                mainToAlt(explore);
-            } else if(containsMain(profile)){
-                mainToAlt(profile);
-            } else {
-                mainToAlt(setting);
+        if(!DataHandling.users.get(App.CURRENT_USER_ID).getPersonality().contains("#")){
+            scene.setContent(FXMLLoader.load(getClass().getResource("../Test/test.fxml")));        
+            if(containsMain(explore) || containsMain(setting) || containsMain(profile)){
+                if(containsMain(explore)){
+                    mainToAlt(explore);
+                } else if(containsMain(profile)){
+                    mainToAlt(profile);
+                } else {
+                    mainToAlt(setting);
+                }
             }
+            altToMain(test);
+        } else {
+            menu.closeMenu();
+            af.showAfterTest();
         }
-        altToMain(test);
+         
     }
 
     @FXML

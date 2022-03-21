@@ -225,3 +225,8 @@
 #mainScreen {
     -fx-background-color: #3F7C88;
 }
+
+#buttonAfterTest:hover,
+#back:hover {
+    -fx-background-color: #1b4852;
+}
