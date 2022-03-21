@@ -107,7 +107,7 @@ public class ControllerForMenu {
     }
 
     @FXML
-    private void whenLogOutPressed() throws IOException {
+    public void whenLogOutPressed() throws IOException {
         /* DataHandling.users.remove(App.CURRENT_USER_ID); */
         App.CURRENT_USER_ID = -1;
         menu.closeMenu();

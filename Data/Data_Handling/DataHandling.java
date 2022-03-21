@@ -18,6 +18,7 @@ public class DataHandling {
     static FileWriter file;
     static FileReader fileRead;
     static BufferedWriter bWriter;
+    static BufferedWriter b;
     static Scanner readFile;
     static BufferedReader bReader;
     static List<String> line;
@@ -68,8 +69,10 @@ public class DataHandling {
         fileRead = new FileReader(path);
         bWriter = new BufferedWriter(file);
         bReader = new BufferedReader(fileRead);
-        line = Files.readAllLines(path.toPath()); //n*10 + 2
+        line = Files.readAllLines(path.toPath()); //n*10 + 2 //size (actual id)*10 + 2
+
     }
+
     public static void resetDealWithFile() throws IOException {
         readFile.close();
         file.close();
@@ -79,6 +82,11 @@ public class DataHandling {
         line.clear();
 
         dealWithFile();
+    }
+
+    public static void resetEverything(){
+        users = null;
+        users = new LinkedList<>();
     }
 
     //read data from .dat file to temporary linked list
@@ -184,14 +192,37 @@ public class DataHandling {
     //BETA
     public static void listToData() throws IOException {
         resetDealWithFile();
-        line.set(0, Integer.toString(users.size()));
+        b = new BufferedWriter(new FileWriter("src/Data/Data_Handling/info.dat"));
+        System.out.println("User size: " + users.size());
+        b.write(Integer.toString(users.size()) + "\n\n");
+        for(int i = 0; i < users.size(); i++){
+            b.write(Integer.toString(DataHandling.users.get(i).getID()) + "\n");
+            b.write("Username: " + DataHandling.users.get(i).getUsername() + "\n");
+            if(!DataHandling.users.get(i).getPassword().contains("$2a$10$")){
+                b.write("Password: " + BCrypt.hashpw(DataHandling.users.get(i).getPassword(), BCrypt.gensalt()));
+            } else {
+                b.write("Password: " + DataHandling.users.get(i).getPassword() + "\n");
+            }
+            b.write("Email: " + DataHandling.users.get(i).getEmail() + "\n");
+            b.write("Personality: " + DataHandling.users.get(i).getPersonality() + "\n");
+            b.write("Name: " + DataHandling.users.get(i).getName() + "\n");
+            b.write("Age: " + DataHandling.users.get(i).getAge() + "\n");
+            b.write("Sex: " + DataHandling.users.get(i).getSex() + "\n");
+            b.write("Bio: " + DataHandling.users.get(i).getBio() + "\n");
+            if(i!=(users.size()-1)){b.write("\n");}
+        }
+        bWriter.close();
+        file.close();
+        b.close();
+
+        /* line.set(0, Integer.toString(users.size()));
         Files.write(path.toPath(), line);
 
         //Password Hashing
-        /* String hash = BCrypt.hashpw("123", BCrypt.gensalt(12));
+        String hash = BCrypt.hashpw("123", BCrypt.gensalt(12));
         if(BCrypt.checkpw("123", hash)){
             System.out.println(hash);
-        } else System.out.println("False"); */
+        } else System.out.println("False");
         
         for(int i = 0; i < users.size(); i++){
             int tempLine = i*10 + 2;
@@ -225,8 +256,19 @@ public class DataHandling {
             Files.write(path.toPath(), line);
             
         }
-
         bWriter.close();
         file.close();
+        b.close(); */
+
+    }
+
+    public static void deleteAccount(int id) throws IOException {
+        int temp = id + 1;
+        for(int i = 0; i < users.size(); i++){
+            if(i>=id){
+                users.get(i).setID(temp); 
+                if(!(i==id)) {temp++;}
+            }
+        }
     }
 }

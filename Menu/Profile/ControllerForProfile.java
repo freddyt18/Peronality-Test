@@ -2,6 +2,7 @@ package Menu.Profile;
 
 import java.io.IOException;
 
+import App.App;
 import Data.Data_Handling.DataHandling;
 import Data.Data_Handling.Person;
 import Menu.ControllerForMenu;
@@ -13,6 +14,8 @@ import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
 
 public class ControllerForProfile {
+    ControllerForMenu cmenu = new ControllerForMenu();
+    App main = new App();
     /* Profile */
     @FXML
     private Button deleteAcc;
@@ -38,6 +41,17 @@ public class ControllerForProfile {
     @FXML
     private void revealDataWhenPressed() throws IOException {
         setContent();
+    }
+
+    @FXML
+    private void deleteAcc() throws IOException {
+        DataHandling.deleteAccount(ControllerForMenu.currentUser);
+        DataHandling.users.remove(ControllerForMenu.currentUser);
+        System.out.println(DataHandling.users.size());
+        DataHandling.listToData();
+        DataHandling.resetEverything();
+        DataHandling.dataToList();
+        cmenu.whenLogOutPressed();
     }
 
     public void setContent(){        
