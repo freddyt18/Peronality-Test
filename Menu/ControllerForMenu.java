@@ -3,6 +3,7 @@ package Menu;
 import java.io.IOException;
 
 import App.App;
+import Data.Data_Handling.DataHandling;
 import Setting.Setting;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -75,6 +76,8 @@ public class ControllerForMenu {
             }
         }
         altToMain(profile);
+
+        
     }
 
     @FXML
@@ -98,6 +101,7 @@ public class ControllerForMenu {
 
     @FXML
     private void whenLogOutPressed() throws IOException {
+        /* DataHandling.users.remove(App.CURRENT_USER_ID); */
         App.CURRENT_USER_ID = -1;
         menu.closeMenu();
         main.showLogin();
