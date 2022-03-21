@@ -15,7 +15,7 @@
          <children>
             <ImageView fitHeight="64.0" fitWidth="65.0" layoutX="24.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../Downloads/circle-user-solid.png" />
+                  <Image url="@../Design/Img/circle-user-solid.png" />
                </image>
             </ImageView>
             <Label fx:id="fullName" alignment="CENTER" layoutX="125.0" layoutY="32.0" prefHeight="17.0" prefWidth="101.0" text="Full Name" textFill="WHITE" AnchorPane.leftAnchor="125.0">
