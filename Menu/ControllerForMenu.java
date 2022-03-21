@@ -64,7 +64,7 @@ public class ControllerForMenu {
 
     @FXML
     private void whenProfilePressed() throws IOException {
-        scene.setContent(FXMLLoader.load(getClass().getResource("../App/LOGIN_FORM.fxml")));
+        scene.setContent(FXMLLoader.load(getClass().getResource("../Profile/scene.fxml")));
         if(containsMain(explore) || containsMain(setting) || containsMain(test)){
             if(containsMain(explore)){
                 mainToAlt(explore);
