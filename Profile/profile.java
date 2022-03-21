@@ -1,5 +1,7 @@
 package Profile;
 
 public class profile {
-    public static void method(){}
+    public static void method(){
+
+    }
 }
