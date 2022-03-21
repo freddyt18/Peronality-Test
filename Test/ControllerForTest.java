@@ -1,20 +1,25 @@
 package Test;
 
 import java.beans.EventHandler;
+import java.io.IOException;
 import java.security.spec.ECField;
 import java.util.concurrent.atomic.AtomicLong;
 
 import App.App;
 import Data.Data_Handling.DataHandling;
+import Menu.ControllerForMenu;
 import Result_Generator.resultGenerator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.effect.Effect;
 
 public class ControllerForTest {
+    ControllerForMenu cmenu = new ControllerForMenu();
     private int openness = 0;
     private int conscientiousness = 0;
     private int extroversion = 0;
@@ -55,7 +60,7 @@ public class ControllerForTest {
     @FXML
     private RadioButton q101, q102, q103, q104, q105, q106, q107;
 
-    public void submitButtonPressed(){
+    public void submitButtonPressed() throws IOException {
         openness = oForQ5 + oForQ10;
         conscientiousness = cForQ3 + cForQ8;
         extroversion = eForQ1 + eForQ6;
