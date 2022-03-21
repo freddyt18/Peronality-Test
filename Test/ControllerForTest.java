@@ -6,7 +6,6 @@ import java.util.concurrent.atomic.AtomicLong;
 
 import App.App;
 import Data.Data_Handling.DataHandling;
-import Profile.profile;
 import Result_Generator.resultGenerator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
