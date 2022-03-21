@@ -105,6 +105,7 @@ public class ControllerForTest {
 
         System.out.println("O: " + openness + "\nC: " + conscientiousness + "\nE: " + extroversion + "\nA: " + agreeableness + "\nN: " + neroticism );
         System.out.println("");
+        
     }
 
     int eForQ1 = 0;
