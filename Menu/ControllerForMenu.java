@@ -36,7 +36,7 @@ public class ControllerForMenu {
     private Button setting;
 
     @FXML
-    private ScrollPane scene;
+    public ScrollPane scene;
 
     @FXML
     private void whenExplorePressed() throws IOException {
@@ -70,13 +70,7 @@ public class ControllerForMenu {
 
     @FXML
     private void whenProfilePressed() throws IOException {
-        FXMLLoader loader = new FXMLLoader();
-        Parent root;
-        
-        loader.setLocation(App.class.getResource("../Menu/Profile/scene.fxml"));
-        root = loader.load();
-        
-        scene.setContent(root);
+        scene.setContent(FXMLLoader.load(getClass().getResource("../Menu/Profile/scene.fxml")));
         
         if(containsMain(explore) || containsMain(setting) || containsMain(test)){
             if(containsMain(explore)){
@@ -132,28 +126,4 @@ public class ControllerForMenu {
         }
         return false;
     }
-
-
-
-    /* Profile */
-    @FXML
-    private Button deleteAcc;
-
-    @FXML
-    private Button editProfile;
-
-    @FXML
-    public static Label fullName;
-
-    @FXML
-    private AnchorPane mainScreen;
-
-    @FXML
-    public static TextArea userEmail;
-
-    @FXML
-    public static Label userName;
-
-    @FXML
-    public static TextArea userPersonalityType;
 }
