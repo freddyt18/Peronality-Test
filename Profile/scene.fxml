@@ -40,10 +40,11 @@
                </font>
             </Label>
             <Label fx:id="label2" layoutX="65.0" layoutY="590.0" style="-fx-font-weight: bold;" text="Email" textFill="WHITE" />
-            <TextArea fx:id="userEmail" editable="false" layoutX="127.0" layoutY="579.0" prefHeight="38.0" prefWidth="300.0" promptText="your email">
+            <TextArea fx:id="userEmail" editable="false" layoutX="127.0" layoutY="579.0" prefHeight="41.0" prefWidth="394.0" promptText="your email">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets></TextArea>
+            <Button fx:id="deleteAcc" layoutX="695.0" layoutY="580.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="157.0" style="-fx-font-weight: bold;" text="Delete Account" />
          </children></AnchorPane>
    </center>
 </BorderPane>
