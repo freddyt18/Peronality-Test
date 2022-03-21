@@ -4,6 +4,7 @@ import java.util.Currency;
 import java.util.LinkedList;
 
 import Data.Data_Handling.DataHandling;
+import Menu.Profile.ControllerForProfile;
 import Result_Generator.resultGenerator;
 import javafx.application.Application;
 import javafx.event.ActionEvent;

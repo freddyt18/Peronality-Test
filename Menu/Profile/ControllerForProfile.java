@@ -2,6 +2,8 @@ package Menu.Profile;
 
 import java.io.IOException;
 
+import Data.Data_Handling.DataHandling;
+import Data.Data_Handling.Person;
 import Menu.ControllerForMenu;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -34,9 +36,14 @@ public class ControllerForProfile {
     private TextArea userPersonalityType;
 
     @FXML
-    private void editProfileWhenPressed() throws IOException {
-        fullName = new Label();
-        fullName.setText("arg0");
-        System.out.println(fullName.getText());
+    private void revealDataWhenPressed() throws IOException {
+        setContent();
+    }
+
+    public void setContent(){        
+        fullName.setText("Name");
+        userName.setText(DataHandling.users.get(ControllerForMenu.currentUser).getUsername());
+        userEmail.setText(DataHandling.users.get(ControllerForMenu.currentUser).getEmail());
+        userPersonalityType.setText(ControllerForMenu.tempRg.personality_type_result.get(Integer.parseInt(DataHandling.users.get(ControllerForMenu.currentUser).getPersonality().replace("#", ""))));
     }
 }

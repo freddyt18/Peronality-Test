@@ -174,7 +174,7 @@
     -fx-padding: 4px;
 }
 
-#editProfile,
+#revealData,
 #deleteAcc {
     -fx-text-fill: black;
     -fx-border-color: #5ECED0;

@@ -27,20 +27,20 @@
                <font>
                   <Font name="System Bold" size="20.0" />
                </font></Label>
-            <Button fx:id="editProfile" layoutX="696.0" layoutY="76.0" mnemonicParsing="false" onAction="#editProfileWhenPressed" prefHeight="41.0" prefWidth="129.0" style="-fx-font-weight: bold;" text="Edit Profile" AnchorPane.rightAnchor="82.0" />
+            <Button fx:id="revealData" layoutX="696.0" layoutY="76.0" mnemonicParsing="false" onAction="#revealDataWhenPressed" prefHeight="41.0" prefWidth="165.0" style="-fx-font-weight: bold;" text="Reveal Your Data" AnchorPane.rightAnchor="82.0" />
             <Label fx:id="label" alignment="CENTER" layoutX="47.0" layoutY="144.0" prefHeight="36.0" prefWidth="168.0" style="-fx-font-weight: bold;" text="Personality Type" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <TextArea fx:id="userPersonalityType" editable="false" layoutX="47.0" layoutY="189.0" maxWidth="813.0" prefHeight="325.0" prefWidth="813.0" promptText="This is your personality" style="-fx-background-color: #5ECED0;" />
+            <TextArea fx:id="userPersonalityType" editable="false" layoutX="47.0" layoutY="189.0" maxWidth="813.0" prefHeight="325.0" prefWidth="813.0" promptText="This is your personality" style="-fx-background-color: #5ECED0;" styleClass="fixed-size-18" wrapText="true" />
             <Label fx:id="label1" alignment="CENTER" layoutX="60.0" layoutY="538.0" prefHeight="26.0" prefWidth="123.0" style="-fx-font-weight: bold;" text="Contact Info" textFill="WHITE">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="label2" layoutX="65.0" layoutY="590.0" style="-fx-font-weight: bold;" text="Email" textFill="WHITE" />
-            <TextArea fx:id="userEmail" editable="false" layoutX="127.0" layoutY="579.0" prefHeight="41.0" prefWidth="394.0" promptText="your email">
+            <Label fx:id="label2" layoutX="63.0" layoutY="580.0" style="-fx-font-weight: bold;" text="Email" textFill="WHITE" />
+            <TextArea fx:id="userEmail" editable="false" layoutX="127.0" layoutY="579.0" prefHeight="41.0" prefWidth="394.0" promptText="your email" styleClass="fixed-size-18">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets></TextArea>

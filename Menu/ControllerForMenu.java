@@ -4,6 +4,8 @@ import java.io.IOException;
 
 import App.App;
 import Data.Data_Handling.DataHandling;
+import Menu.Profile.ControllerForProfile;
+import Result_Generator.resultGenerator;
 import Setting.Setting;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -18,6 +20,8 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.PopupWindow.AnchorLocation;
 
 public class ControllerForMenu {
+    public static int currentUser = App.CURRENT_USER_ID;
+    public static resultGenerator tempRg = App.rg;
     Setting settingObject = new Setting();
     Menu menu = new Menu();
     App main = new App();
@@ -71,7 +75,6 @@ public class ControllerForMenu {
     @FXML
     private void whenProfilePressed() throws IOException {
         scene.setContent(FXMLLoader.load(getClass().getResource("../Menu/Profile/scene.fxml")));
-        
         if(containsMain(explore) || containsMain(setting) || containsMain(test)){
             if(containsMain(explore)){
                 mainToAlt(explore);

@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 import Data.BCrypt.BCrypt;
 import Data.Data_Handling.DataHandling;
+import Menu.ControllerForMenu;
 import Menu.Menu;
 import Registration.Registration;
 import javafx.fxml.FXML;
@@ -90,7 +91,7 @@ public class ControllerForLogin {
             if(DataHandling.users.get(App.CURRENT_USER_ID).getPersonality().contains("#")){
                 System.out.println(App.rg.personality_type_result.get(Integer.parseInt(DataHandling.users.get(App.CURRENT_USER_ID).getPersonality().replace("#", ""))));
             }
-
+            ControllerForMenu.currentUser = App.CURRENT_USER_ID;
             main.exit();
             menu.showMenu();
 
