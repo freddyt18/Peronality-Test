@@ -88,9 +88,6 @@ public class ControllerForLogin {
             System.out.println(App.CURRENT_USER_ID);
             System.out.println(DataHandling.users.get(App.CURRENT_USER_ID).getUsername().toString());
             
-            if(DataHandling.users.get(App.CURRENT_USER_ID).getPersonality().contains("#")){
-                System.out.println(App.rg.personality_type_result.get(Integer.parseInt(DataHandling.users.get(App.CURRENT_USER_ID).getPersonality().replace("#", ""))));
-            }
             ControllerForMenu.currentUser = App.CURRENT_USER_ID;
             main.exit();
             menu.showMenu();
