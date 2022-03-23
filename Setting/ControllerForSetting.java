@@ -77,6 +77,9 @@ public class ControllerForSetting {
     private Button btnChangePassword;
 
     @FXML
+    private Button BackButton;
+
+    @FXML
     private TextField NewBio;
 
     @FXML
