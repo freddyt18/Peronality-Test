@@ -90,6 +90,16 @@ public class ControllerForRegistration {
         return true;
     }
 
+    public boolean checkAgeAcceptable(String age) throws IOException {
+        Pattern e = Pattern.compile("\\d");
+
+        Matcher ageValidator = e.matcher(age); 
+
+        if(!ageValidator.find())
+            return false;
+        return true;
+    }
+
     @FXML
     private void signUpWhenPressed() throws IOException{
         //Pattern.matches() DOES NOT WORK!!!!! ughhh
