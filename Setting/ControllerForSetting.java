@@ -86,9 +86,6 @@ public class ControllerForSetting {
     private TextField NewName;
 
     @FXML
-    private TextField NewSex;
-
-    @FXML
     private TextField NewUsername;
 
     @FXML
@@ -113,30 +110,37 @@ public class ControllerForSetting {
     @FXML
     void btnSubmitChangeProfile(ActionEvent event) throws IOException {
         
-        if(registrationController.checkUsernameAcceptable(NewUsername.getText())) {
-            currentUser.setUsername(NewUsername.getText());
+        if(registrationController.checkNameAcceptable(NewName.getText())) {
+            currentUser.setEmail(NewName.getText());
+
+            if(registrationController.checkUsernameAcceptable(NewUsername.getText())) {
+                currentUser.setUsername(NewUsername.getText());
+    
+                if(registrationController.checkEmailAcceptable(NewEmail.getText())) {
+                    currentUser.setEmail(NewEmail.getText());
+                }
+                else {
+                    InvalidUpdate.setText("Invalid Email! Try Again!!");
+                }
+            }
+            else {
+                InvalidUpdate.setText("Invalid Username! Try Again!!");
+            }
         }
         else {
-            InvalidUpdate.setText("Try Again!!");
-        }
-
-        currentUser.setName(NewName.getText()); //use the checkUsernameAcceptable() method
-        currentUser.setBio(NewBio.getText()); //not yet
-        currentUser.setEmail(NewEmail.getText()); //not yet
-        currentUser.setSex(NewSex.getText()); //not yet
+            InvalidUpdate.setText("Invalid Name! Try Again!!");
+        }   
 
         System.out.println(currentUser.getUsername().toString());
         System.out.println(currentUser.getName().toString());
         System.out.println(currentUser.getBio().toString());
         System.out.println(currentUser.getEmail().toString());
-        System.out.println(currentUser.getSex().toString());
 
         //clear input
         NewName.clear();
         NewUsername.clear();
         NewBio.clear();
-        NewEmail.clear();
-        NewSex.clear(); 
+        NewEmail.clear(); 
     }
 
     @FXML
