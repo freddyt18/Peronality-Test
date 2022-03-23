@@ -199,7 +199,7 @@ public class DataHandling {
             b.write(Integer.toString(DataHandling.users.get(i).getID()) + "\n");
             b.write("Username: " + DataHandling.users.get(i).getUsername() + "\n");
             if(!DataHandling.users.get(i).getPassword().contains("$2a$10$")){
-                b.write("Password: " + BCrypt.hashpw(DataHandling.users.get(i).getPassword(), BCrypt.gensalt()));
+                b.write("Password: " + BCrypt.hashpw(DataHandling.users.get(i).getPassword(), BCrypt.gensalt()) + "\n");
             } else {
                 b.write("Password: " + DataHandling.users.get(i).getPassword() + "\n");
             }
