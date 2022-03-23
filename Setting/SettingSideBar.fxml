@@ -81,16 +81,7 @@
                   <String fx:value="hover-small" />
                </styleClass>
             </Button>
-            <Button mnemonicParsing="false" onAction="#btnReturnToMenuFromSetting" prefHeight="68.0" prefWidth="300.0" text="Personality Test">
-               <font>
-                  <Font size="24.0" />
-               </font>
-               <styleClass>
-                  <String fx:value="fixed-size-28" />
-                  <String fx:value="menu-main-alt" />
-                  <String fx:value="loginText" />
-               </styleClass>
-            </Button>
+            <Pane layoutX="10.0" layoutY="452.0" prefHeight="15.0" prefWidth="300.0" />
             <Button fx:id="BackButton" alignment="CENTER" mnemonicParsing="false" onAction="#btnReturnToMenuFromSetting" prefHeight="60.0" prefWidth="160.0" stylesheets="@../Design/CSS/main.css" text="Back" textFill="WHITE">
                <font>
                   <Font size="18.0" />
