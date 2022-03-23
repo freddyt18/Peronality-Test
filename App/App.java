@@ -33,7 +33,6 @@ public class App extends Application {
     public static resultGenerator rg = new resultGenerator();
 
     public static void main(String[] args) throws IOException {
-        //t
         DataHandling.main(args);
         rg.generateResult();
         launch(args);
