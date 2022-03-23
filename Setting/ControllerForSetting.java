@@ -87,6 +87,8 @@ public class ControllerForSetting {
 
     @FXML
     private TextField NewName;
+    @FXML
+    private TextField NewAge;
 
     @FXML
     private TextField NewUsername;
@@ -102,6 +104,7 @@ public class ControllerForSetting {
 
     @FXML
     private TextField ReEnterNewPassword;
+
 
 
     @FXML
@@ -124,7 +127,21 @@ public class ControllerForSetting {
                     
                     if(true) {
                         currentUser.setBio(NewBio.getText());
-                        flag = true;
+
+                        if(registrationController.checkAgeAcceptable(NewAge.getText())) {
+                            int tempAge = Integer.parseInt(NewAge.getText());
+                            
+                            if(tempAge > 0) {
+                                currentUser.setAge(tempAge);
+                                flag = true;
+                            }
+                            else {
+                                InvalidUpdate.setText("Invalid age!! Try again");
+                            }
+                        }
+                        else {
+                            InvalidUpdate.setText("Invalid age!! Try again");
+                        }
                     }
                 }
                 else {
