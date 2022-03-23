@@ -121,6 +121,13 @@ public class ControllerForSetting {
     
                 if(registrationController.checkEmailAcceptable(NewEmail.getText())) {
                     currentUser.setEmail(NewEmail.getText());
+                    
+                    if(registrationController.checkNameAcceptable(NewBio.getText())) {
+                        currentUser.setEmail(NewBio.getText());
+                    }
+                    else {
+                        InvalidUpdate.setText("Bio cannot contain non characters! Try Again!!");
+                    }
                 }
                 else {
                     InvalidUpdate.setText("Invalid Email! Try Again!!");
@@ -134,11 +141,14 @@ public class ControllerForSetting {
             InvalidUpdate.setText("Invalid Name! Try Again!!");
         }   
 
+<<<<<<< HEAD
+=======
         /* System.out.println(currentUser.getUsername().toString());
         System.out.println(currentUser.getName().toString());
         System.out.println(currentUser.getBio().toString());
         System.out.println(currentUser.getEmail().toString()); */
 
+>>>>>>> 56400c68f6a583701e773647ac762612945649cd
         //clear input
         NewName.clear();
         NewUsername.clear();
