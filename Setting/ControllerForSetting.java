@@ -149,7 +149,7 @@ public class ControllerForSetting {
             String temp = NewPassword.getText();
             if(temp.equals(ReEnterNewPassword.getText())) {
                 if(registrationController.checkPasswordAcceptable(temp)) {
-                    currentUser.setPassword(BCrypt.hashpw(temp, BCrypt.gensalt(12)));
+                    currentUser.setPassword(BCrypt.hashpw(temp, BCrypt.gensalt()));
                     InvalidUpdate.setText("Success!");
                     System.out.println(currentUser.getPassword().toString());
                 }
@@ -169,7 +169,7 @@ public class ControllerForSetting {
         DataHandling.resetEverything();
         DataHandling.dataToList();
 
-        menu.closeMenu();
+        setting.closeSetting();
         app.showLogin();
     }
 }
