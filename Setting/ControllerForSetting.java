@@ -114,8 +114,8 @@ public class ControllerForSetting {
     void btnSubmitChangeProfile(ActionEvent event) throws IOException {
         
         if(registrationController.checkNameAcceptable(NewName.getText())) {
-            currentUser.setEmail(NewName.getText());
-
+            currentUser.setName(NewName.getText());
+            System.out.println(NewName.getText());
             if(registrationController.checkUsernameAcceptable(NewUsername.getText())) {
                 currentUser.setUsername(NewUsername.getText());
     
@@ -123,7 +123,7 @@ public class ControllerForSetting {
                     currentUser.setEmail(NewEmail.getText());
                     
                     if(registrationController.checkNameAcceptable(NewBio.getText())) {
-                        currentUser.setEmail(NewBio.getText());
+                        currentUser.setBio(NewBio.getText());
                     }
                     else {
                         InvalidUpdate.setText("Bio cannot contain non characters! Try Again!!");
