@@ -113,7 +113,7 @@ public class ControllerForSetting {
     @FXML
     void btnSubmitChangeProfile(ActionEvent event) throws IOException {
         
-        if(registrationController.checkNameAcceptable(NewName.getText())) {
+        if(true) {
             currentUser.setEmail(NewName.getText());
 
             if(registrationController.checkUsernameAcceptable(NewUsername.getText())) {
@@ -122,11 +122,8 @@ public class ControllerForSetting {
                 if(registrationController.checkEmailAcceptable(NewEmail.getText())) {
                     currentUser.setEmail(NewEmail.getText());
                     
-                    if(registrationController.checkNameAcceptable(NewBio.getText())) {
+                    if(true) {
                         currentUser.setEmail(NewBio.getText());
-                    }
-                    else {
-                        InvalidUpdate.setText("Bio cannot contain non characters! Try Again!!");
                     }
                 }
                 else {
@@ -136,9 +133,6 @@ public class ControllerForSetting {
             else {
                 InvalidUpdate.setText("Invalid Username! Try Again!!");
             }
-        }
-        else {
-            InvalidUpdate.setText("Invalid Name! Try Again!!");
         }   
 
         //clear input
