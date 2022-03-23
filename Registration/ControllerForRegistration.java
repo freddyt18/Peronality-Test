@@ -79,8 +79,8 @@ public class ControllerForRegistration {
         Pattern W = Pattern.compile("\\W");
         Pattern s = Pattern.compile("\\s");
 
-        Matcher passwordContainsNonCharacter = W.matcher(passwordTemp);
-        Matcher passwordContainsWhiteSpace = s.matcher(passwordTemp);
+        Matcher passwordContainsNonCharacter = W.matcher(password);
+        Matcher passwordContainsWhiteSpace = s.matcher(password);
 
         if(passwordContainsNonCharacter.find())
             return false;

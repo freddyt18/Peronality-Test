@@ -3,6 +3,7 @@ package Setting;
 import java.io.IOException;
 
 import App.App;
+import Data.BCrypt.BCrypt;
 import Data.Data_Handling.DataHandling;
 import Data.Data_Handling.Person;
 import Menu.Menu;
@@ -16,6 +17,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import Data.BCrypt.*;
 
 public class ControllerForSetting {
     Setting setting = new Setting();
@@ -139,12 +141,15 @@ public class ControllerForSetting {
 
     @FXML
     void btnSubmitChangePassword(ActionEvent event) throws IOException {
-        if(currentUser.getPassword().equals(OldPassword.getText())) {
+
+        //hash
+        System.out.println(currentUser.getPassword());
+        if(BCrypt.checkpw(OldPassword.getText(), currentUser.getPassword())) {
             System.out.println(currentUser.getPassword().toString());
-            if(NewPassword.getText().equals(ReEnterNewPassword.getText())) {
-                System.out.println(currentUser.getPassword().toString());
-                if(registrationController.checkPasswordAcceptable(NewPassword.getText())) {
-                    currentUser.setPassword(NewPassword.getText());
+            String temp = NewPassword.getText();
+            if(temp.equals(ReEnterNewPassword.getText())) {
+                if(registrationController.checkPasswordAcceptable(temp)) {
+                    currentUser.setPassword(BCrypt.hashpw(temp, BCrypt.gensalt(12)).toString());
                     InvalidUpdate.setText("Success!");
                     System.out.println(currentUser.getPassword().toString());
                 }
