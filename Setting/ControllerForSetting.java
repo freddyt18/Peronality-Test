@@ -157,7 +157,7 @@ public class ControllerForSetting {
 
     @FXML
     void btnSubmitChangePassword(ActionEvent event) throws IOException {
-
+        boolean flag = false;
         //hash
         System.out.println(currentUser.getPassword());
         if(BCrypt.checkpw(OldPassword.getText(), currentUser.getPassword())) {
@@ -168,6 +168,7 @@ public class ControllerForSetting {
                     currentUser.setPassword(BCrypt.hashpw(temp, BCrypt.gensalt()));
                     InvalidUpdate.setText("Success!");
                     System.out.println(currentUser.getPassword().toString());
+                    flag = true;
                 }
                 else {
                     InvalidUpdate.setText("New password is not acceptable");
@@ -181,11 +182,13 @@ public class ControllerForSetting {
             InvalidUpdate.setText("Old password does not match");
         }
 
-        DataHandling.listToData();
-        DataHandling.resetEverything();
-        DataHandling.dataToList();
-
-        setting.closeSetting();
-        app.showLogin();
+        if(flag){
+            DataHandling.listToData();
+            DataHandling.resetEverything();
+            DataHandling.dataToList();
+    
+            setting.closeSetting();
+            app.showLogin();
+        }
     }
 }
