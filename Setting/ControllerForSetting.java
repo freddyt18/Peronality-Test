@@ -112,29 +112,19 @@ public class ControllerForSetting {
 
     @FXML
     void btnSubmitChangeProfile(ActionEvent event) throws IOException {
-        
-<<<<<<< HEAD
+        boolean flag = false;
         if(true) {
-            currentUser.setEmail(NewName.getText());
-
-=======
-        if(registrationController.checkNameAcceptable(NewName.getText())) {
             currentUser.setName(NewName.getText());
             System.out.println(NewName.getText());
->>>>>>> 420416389a0f1a7c9314fa439e167132fa7da9dd
             if(registrationController.checkUsernameAcceptable(NewUsername.getText())) {
                 currentUser.setUsername(NewUsername.getText());
     
                 if(registrationController.checkEmailAcceptable(NewEmail.getText())) {
                     currentUser.setEmail(NewEmail.getText());
                     
-<<<<<<< HEAD
                     if(true) {
-                        currentUser.setEmail(NewBio.getText());
-=======
-                    if(registrationController.checkNameAcceptable(NewBio.getText())) {
                         currentUser.setBio(NewBio.getText());
->>>>>>> 420416389a0f1a7c9314fa439e167132fa7da9dd
+                        flag = true;
                     }
                 }
                 else {
@@ -150,14 +140,19 @@ public class ControllerForSetting {
         NewName.clear();
         NewUsername.clear();
         NewBio.clear();
-        NewEmail.clear(); 
+        NewEmail.clear();
+        
+        if(flag) {
+            DataHandling.listToData();
+            DataHandling.resetEverything();
+            DataHandling.dataToList();
+    
+            setting.closeSetting();
+            app.showLogin();
+        }
+ 
 
-        DataHandling.listToData();
-        DataHandling.resetEverything();
-        DataHandling.dataToList();
-
-        setting.closeSetting();
-        app.showLogin();
+        
     }
 
     @FXML
