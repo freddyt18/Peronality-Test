@@ -107,7 +107,7 @@
             </HBox>
             <HBox layoutX="10.0" layoutY="249.0" prefHeight="163.0" prefWidth="900.0">
                <children>
-                  <Label alignment="CENTER" prefHeight="55.0" prefWidth="436.0" styleClass="loginText" text="Bio">
+                  <Label alignment="CENTER" prefHeight="150.0" prefWidth="436.0" styleClass="loginText" text="Bio">
                      <font>
                         <Font size="24.0" />
                      </font>
