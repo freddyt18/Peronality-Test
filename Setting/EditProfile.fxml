@@ -16,7 +16,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.53" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Setting.ControllerForSetting">
    <center>
-      <VBox prefHeight="200.0" prefWidth="900.0" stylesheets="@../Design/CSS/main.css" BorderPane.alignment="CENTER">
+      <VBox prefHeight="200.0" prefWidth="900.0" styleClass="maincolor" stylesheets="@../Design/CSS/main.css" BorderPane.alignment="CENTER">
          <children>
             <HBox prefHeight="126.0" prefWidth="900.0">
                <children>
@@ -61,26 +61,6 @@
                      </styleClass></TextField>
                </children>
             </HBox>
-            <HBox layoutX="10.0" layoutY="249.0" prefHeight="71.0" prefWidth="900.0">
-               <children>
-                  <Label alignment="CENTER" prefHeight="55.0" prefWidth="436.0" styleClass="loginText" text="Bio">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                  </Label>
-                  <TextField fx:id="NewBio" alignment="CENTER" prefHeight="55.0" prefWidth="269.0">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                     <styleClass>
-                        <String fx:value="radiusVERYBig" />
-                        <String fx:value="fixed-size-18" />
-                     </styleClass></TextField>
-               </children>
-            </HBox>
             <HBox layoutX="10.0" layoutY="220.0" prefHeight="71.0" prefWidth="900.0">
                <children>
                   <Label alignment="CENTER" prefHeight="55.0" prefWidth="436.0" styleClass="loginText" text="Email">
@@ -112,7 +92,27 @@
                   <RadioButton layoutX="552.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="57.0" text="Other" />
                </children>
             </HBox>
-            <HBox prefHeight="100.0" prefWidth="579.0">
+            <HBox layoutX="10.0" layoutY="249.0" prefHeight="163.0" prefWidth="900.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="55.0" prefWidth="436.0" styleClass="loginText" text="Bio">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Label>
+                  <TextField fx:id="NewBio" alignment="CENTER" prefHeight="162.0" prefWidth="269.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radiusVERYBig" />
+                        <String fx:value="fixed-size-18" />
+                     </styleClass></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="75.0" prefWidth="900.0">
                <children>
                   <Pane prefHeight="100.0" prefWidth="170.0" />
                   <Label fx:id="InvalidUpdate" prefHeight="100.0" prefWidth="384.0">
