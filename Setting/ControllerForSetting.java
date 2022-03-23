@@ -113,11 +113,7 @@ public class ControllerForSetting {
     @FXML
     void btnSubmitChangeProfile(ActionEvent event) throws IOException {
         boolean flag = false;
-<<<<<<< HEAD
-        if(registrationController.checkNameAcceptable(NewName.getText())) {
-=======
         if(true) {
->>>>>>> 006f4015d58b1acc0ed61c77cfe56da362eae151
             currentUser.setName(NewName.getText());
             System.out.println(NewName.getText());
             if(registrationController.checkUsernameAcceptable(NewUsername.getText())) {
@@ -129,12 +125,6 @@ public class ControllerForSetting {
                     if(true) {
                         currentUser.setBio(NewBio.getText());
                         flag = true;
-<<<<<<< HEAD
-                    }
-                    else {
-                        InvalidUpdate.setText("Bio cannot contain non characters! Try Again!!");
-=======
->>>>>>> 006f4015d58b1acc0ed61c77cfe56da362eae151
                     }
                 }
                 else {
@@ -162,7 +152,6 @@ public class ControllerForSetting {
         }
  
 
-<<<<<<< HEAD
         if(flag) {
             DataHandling.listToData();
             DataHandling.resetEverything();
@@ -174,9 +163,6 @@ public class ControllerForSetting {
 
 
 
-=======
-        
->>>>>>> 006f4015d58b1acc0ed61c77cfe56da362eae151
     }
 
     @FXML
