@@ -113,7 +113,11 @@ public class ControllerForSetting {
     @FXML
     void btnSubmitChangeProfile(ActionEvent event) throws IOException {
         boolean flag = false;
+<<<<<<< HEAD
         if(registrationController.checkNameAcceptable(NewName.getText())) {
+=======
+        if(true) {
+>>>>>>> 006f4015d58b1acc0ed61c77cfe56da362eae151
             currentUser.setName(NewName.getText());
             System.out.println(NewName.getText());
             if(registrationController.checkUsernameAcceptable(NewUsername.getText())) {
@@ -122,12 +126,15 @@ public class ControllerForSetting {
                 if(registrationController.checkEmailAcceptable(NewEmail.getText())) {
                     currentUser.setEmail(NewEmail.getText());
                     
-                    if(registrationController.checkNameAcceptable(NewBio.getText())) {
+                    if(true) {
                         currentUser.setBio(NewBio.getText());
                         flag = true;
+<<<<<<< HEAD
                     }
                     else {
                         InvalidUpdate.setText("Bio cannot contain non characters! Try Again!!");
+=======
+>>>>>>> 006f4015d58b1acc0ed61c77cfe56da362eae151
                     }
                 }
                 else {
@@ -137,17 +144,25 @@ public class ControllerForSetting {
             else {
                 InvalidUpdate.setText("Invalid Username! Try Again!!");
             }
-        }
-        else {
-            InvalidUpdate.setText("Invalid Name! Try Again!!");
         }   
 
        //clear input
         NewName.clear();
        NewUsername.clear();
         NewBio.clear();
-        NewEmail.clear(); 
+        NewEmail.clear();
+        
+        if(flag) {
+            DataHandling.listToData();
+            DataHandling.resetEverything();
+            DataHandling.dataToList();
+    
+            setting.closeSetting();
+            app.showLogin();
+        }
+ 
 
+<<<<<<< HEAD
         if(flag) {
             DataHandling.listToData();
             DataHandling.resetEverything();
@@ -159,6 +174,9 @@ public class ControllerForSetting {
 
 
 
+=======
+        
+>>>>>>> 006f4015d58b1acc0ed61c77cfe56da362eae151
     }
 
     @FXML
