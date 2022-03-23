@@ -54,8 +54,8 @@ public class ControllerForProfile {
         cmenu.whenLogOutPressed();
     }
 
-    public void setContent(){        
-        fullName.setText("Name");
+    public void setContent(){
+        fullName.setText(DataHandling.users.get(ControllerForMenu.currentUser).getName());
         userName.setText(DataHandling.users.get(ControllerForMenu.currentUser).getUsername());
         userEmail.setText(DataHandling.users.get(ControllerForMenu.currentUser).getEmail());
         userPersonalityType.setText(ControllerForMenu.tempRg.personality_type_result.get(Integer.parseInt(DataHandling.users.get(ControllerForMenu.currentUser).getPersonality().replace("#", ""))));
