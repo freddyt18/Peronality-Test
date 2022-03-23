@@ -141,11 +141,26 @@ public class ControllerForSetting {
             InvalidUpdate.setText("Invalid Name! Try Again!!");
         }   
 
+<<<<<<< HEAD
+=======
+        /* System.out.println(currentUser.getUsername().toString());
+        System.out.println(currentUser.getName().toString());
+        System.out.println(currentUser.getBio().toString());
+        System.out.println(currentUser.getEmail().toString()); */
+
+>>>>>>> 56400c68f6a583701e773647ac762612945649cd
         //clear input
         NewName.clear();
         NewUsername.clear();
         NewBio.clear();
         NewEmail.clear(); 
+
+        DataHandling.listToData();
+        DataHandling.resetEverything();
+        DataHandling.dataToList();
+
+        setting.closeSetting();
+        app.showLogin();
     }
 
     @FXML
