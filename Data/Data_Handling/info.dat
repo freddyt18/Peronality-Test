@@ -12,7 +12,11 @@ Bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequu
 
 2
 Username: Pitou
+<<<<<<< HEAD
 Password: $2a$10$fyxO.d3f4.QyaIMRs0OR5.PwOvh.z0eMGPIJz.qRGR5WyKmm3QywG
+=======
+Password: $2a$10$8PaxVFI6wFSyUPzM8it.UOKxrbmnNT2sYO9wh9W.dFpDmWbq2HljC
+>>>>>>> 5a51140dcbfbb82e331e48e422c81c301c48b931
 Email: keopitou.doung@student.cadt.edu.kh
 Personality: #9
 Name: Freddy

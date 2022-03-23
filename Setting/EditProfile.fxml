@@ -7,6 +7,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -85,11 +86,23 @@
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <RadioButton mnemonicParsing="false" prefHeight="59.0" prefWidth="67.0" text="Female" />
+                  <RadioButton mnemonicParsing="false" prefHeight="59.0" prefWidth="73.0" text="Female">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="s1" />
+                     </toggleGroup>
+                     <font>
+                        <Font size="14.0" />
+                     </font></RadioButton>
                   <Pane prefHeight="59.0" prefWidth="44.0" />
-                  <RadioButton mnemonicParsing="false" prefHeight="59.0" prefWidth="55.0" text="Male" />
+                  <RadioButton mnemonicParsing="false" prefHeight="59.0" prefWidth="55.0" text="Male" toggleGroup="$s1">
+                     <font>
+                        <Font size="14.0" />
+                     </font></RadioButton>
                   <Pane prefHeight="59.0" prefWidth="44.0" />
-                  <RadioButton layoutX="552.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="57.0" text="Other" />
+                  <RadioButton layoutX="552.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="67.0" text="Other" toggleGroup="$s1">
+                     <font>
+                        <Font size="14.0" />
+                     </font></RadioButton>
                </children>
             </HBox>
             <HBox layoutX="10.0" layoutY="249.0" prefHeight="163.0" prefWidth="900.0">
