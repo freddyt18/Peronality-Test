@@ -14,6 +14,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
@@ -105,7 +106,15 @@ public class ControllerForSetting {
     @FXML
     private TextField ReEnterNewPassword;
 
+    
+    @FXML
+    private RadioButton btnFemale;
 
+    @FXML
+    private RadioButton btnOther;
+    
+    @FXML
+    private RadioButton btnMale;
 
     @FXML
     void btnReturnToMenuFromSetting(ActionEvent event) throws IOException {
@@ -194,7 +203,6 @@ public class ControllerForSetting {
                 if(registrationController.checkPasswordAcceptable(temp)) {
                     currentUser.setPassword(BCrypt.hashpw(temp, BCrypt.gensalt()));
                     InvalidUpdate.setText("Success!");
-                    System.out.println(currentUser.getPassword().toString());
                     flag = true;
                 }
                 else {
@@ -216,6 +224,22 @@ public class ControllerForSetting {
     
             setting.closeSetting();
             app.showLogin();
+        }
+    }
+
+    @FXML
+    void getSex(ActionEvent event) {      
+        if(btnFemale.isSelected()) {
+            currentUser.setSex("Female");
+        } 
+        else if(btnMale.isSelected()) {
+            currentUser.setSex("Male");
+        }
+        else if(btnOther.isSelected()) {
+            currentUser.setSex("Other");
+        }
+        else {
+            currentUser.setSex("Not specified");
         }
     }
 }

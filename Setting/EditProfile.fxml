@@ -104,7 +104,7 @@
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <RadioButton mnemonicParsing="false" prefHeight="59.0" prefWidth="73.0" text="Female">
+                  <RadioButton fx:id="btnFemale" mnemonicParsing="false" onAction="#getSex" prefHeight="59.0" prefWidth="73.0" text="Female">
                      <toggleGroup>
                         <ToggleGroup fx:id="s1" />
                      </toggleGroup>
@@ -112,12 +112,12 @@
                         <Font size="14.0" />
                      </font></RadioButton>
                   <Pane prefHeight="59.0" prefWidth="44.0" />
-                  <RadioButton mnemonicParsing="false" prefHeight="59.0" prefWidth="55.0" text="Male" toggleGroup="$s1">
+                  <RadioButton fx:id="btnMale" mnemonicParsing="false" onAction="#getSex" prefHeight="59.0" prefWidth="55.0" text="Male" toggleGroup="$s1">
                      <font>
                         <Font size="14.0" />
                      </font></RadioButton>
                   <Pane prefHeight="59.0" prefWidth="44.0" />
-                  <RadioButton layoutX="552.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="67.0" text="Other" toggleGroup="$s1">
+                  <RadioButton fx:id="btnOther" layoutX="552.0" layoutY="10.0" mnemonicParsing="false" onAction="#getSex" prefHeight="59.0" prefWidth="67.0" text="Other" toggleGroup="$s1">
                      <font>
                         <Font size="14.0" />
                      </font></RadioButton>
