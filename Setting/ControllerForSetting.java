@@ -14,6 +14,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
@@ -98,13 +99,13 @@ public class ControllerForSetting {
     private Label InvalidUpdate;
 
     @FXML
-    private TextField NewPassword;
+    private PasswordField NewPassword;
 
     @FXML
-    private TextField OldPassword;
+    private PasswordField OldPassword;
 
     @FXML
-    private TextField ReEnterNewPassword;
+    private PasswordField ReEnterNewPassword;
 
     
     @FXML
