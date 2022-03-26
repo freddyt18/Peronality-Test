@@ -61,7 +61,7 @@ public class ControllerForAfterTest {
                 continue;
             }
             if(DataHandling.users.get(i).getPersonality().contains("#")){
-                if(Integer.parseInt(DataHandling.users.get(i).getPersonality().replace("#", ""))>=p-5&&Integer.parseInt(DataHandling.users.get(i).getPersonality().replace("#", ""))<=p+5){
+                if(Integer.parseInt(DataHandling.users.get(i).getPersonality().replace("#", ""))>=p-2&&Integer.parseInt(DataHandling.users.get(i).getPersonality().replace("#", ""))<=p+2){
                     if(u==0){
                         u++;
                         u1.setText(DataHandling.users.get(i).getEmail());
