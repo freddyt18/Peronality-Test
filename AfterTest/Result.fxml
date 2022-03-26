@@ -45,12 +45,22 @@
             </Button>
             <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Label text="Personality Type #1">
+                  <Label text="Personality Type">
                      <styleClass>
                         <String fx:value="fixed-size-46" />
                         <String fx:value="test-label" />
                         <String fx:value="weightBold" />
                      </styleClass>
+                  </Label>
+                  <Label fx:id="ptype">
+                     <styleClass>
+                        <String fx:value="fixed-size-46" />
+                        <String fx:value="test-label" />
+                        <String fx:value="weightBold" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
                   </Label>
                </children>
                <VBox.margin>
@@ -102,7 +112,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="220.0" prefWidth="653.0">
                      <children>
-                        <Label fx:id="u1" text="1">
+                        <Label fx:id="u1" alignment="CENTER" prefHeight="27.0" prefWidth="426.0">
                            <VBox.margin>
                               <Insets bottom="20.0" />
                            </VBox.margin>
@@ -111,7 +121,7 @@
                               <String fx:value="loginText" />
                            </styleClass>
                         </Label>
-                        <Label fx:id="u2" text="2">
+                        <Label fx:id="u2" alignment="CENTER" prefWidth="426.0">
                            <VBox.margin>
                               <Insets bottom="20.0" />
                            </VBox.margin>
@@ -120,7 +130,7 @@
                               <String fx:value="fixed-size-24" />
                            </styleClass>
                         </Label>
-                        <Label fx:id="u3" text="3">
+                        <Label fx:id="u3" alignment="CENTER" prefWidth="426.0">
                            <VBox.margin>
                               <Insets bottom="20.0" />
                            </VBox.margin>
@@ -129,7 +139,7 @@
                               <String fx:value="fixed-size-24" />
                            </styleClass>
                         </Label>
-                        <Label fx:id="u4" text="4">
+                        <Label fx:id="u4" alignment="CENTER" prefWidth="426.0">
                            <VBox.margin>
                               <Insets bottom="20.0" />
                            </VBox.margin>
