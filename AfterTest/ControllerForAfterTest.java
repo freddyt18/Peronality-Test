@@ -55,23 +55,26 @@ public class ControllerForAfterTest {
     private void setEmailForMatch() throws IOException {
         int u = 0;
         String temp = DataHandling.users.get(App.CURRENT_USER_ID).getPersonality();
+        int p = Integer.parseInt(temp.replace("#", ""));
         for(int i = 0; i < DataHandling.users.size(); i++){
             if(i==App.CURRENT_USER_ID){
                 continue;
             }
-            if(DataHandling.users.get(i).getPersonality().equals(temp)){
-                if(u==0){
-                    u++;
-                    u1.setText(DataHandling.users.get(i).getEmail());
-                } else if(u==1){
-                    u++;
-                    u2.setText(DataHandling.users.get(i).getEmail());
-                } else if(u==2){
-                    u++;
-                    u3.setText(DataHandling.users.get(i).getEmail());
-                } else {
-                    u++;
-                    u4.setText(DataHandling.users.get(i).getEmail());
+            if(DataHandling.users.get(i).getPersonality().contains("#")){
+                if(Integer.parseInt(DataHandling.users.get(i).getPersonality().replace("#", ""))>=p-5&&Integer.parseInt(DataHandling.users.get(i).getPersonality().replace("#", ""))<=p+5){
+                    if(u==0){
+                        u++;
+                        u1.setText(DataHandling.users.get(i).getEmail());
+                    } else if(u==1){
+                        u++;
+                        u2.setText(DataHandling.users.get(i).getEmail());
+                    } else if(u==2){
+                        u++;
+                        u3.setText(DataHandling.users.get(i).getEmail());
+                    } else {
+                        u++;
+                        u4.setText(DataHandling.users.get(i).getEmail());
+                    }
                 }
             }
         }
