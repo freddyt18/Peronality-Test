@@ -227,6 +227,7 @@
 }
 
 #buttonAfterTest:hover,
-#back:hover {
+#back:hover,
+#retakeTest:hover {
     -fx-background-color: #1b4852;
 }

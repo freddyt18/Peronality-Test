@@ -30,6 +30,9 @@ public class ControllerForAfterTest {
     private Label u1, u2, u3, u4;
 
     @FXML
+    private Button retakeTest;
+
+    @FXML
     private void afterPressed() throws IOException {
         details.setText(App.rg.personality_type_result.get(Integer.parseInt(DataHandling.users.get(App.CURRENT_USER_ID).getPersonality().replace("#", ""))));
         setEmailForMatch();
@@ -39,6 +42,13 @@ public class ControllerForAfterTest {
     @FXML
     private void afterBackPressed() throws IOException {
         af.closeAfterTest();
+        m.showMenu();
+    }
+
+    @FXML
+    private void afterRetakeTestPressed() throws IOException {
+        af.closeAfterTest();
+        DataHandling.users.get(App.CURRENT_USER_ID).setPersonality("");
         m.showMenu();
     }
 

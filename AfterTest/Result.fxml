@@ -27,6 +27,19 @@
                         <String fx:value="weightBold" />
                      </styleClass>
                   </Button>
+                  <Label prefHeight="15.0" prefWidth="841.0" />
+                  <Button fx:id="retakeTest" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#afterRetakeTestPressed" prefHeight="43.0" prefWidth="210.0" text="Retake Test" textAlignment="CENTER" wrapText="true">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <styleClass>
+                        <String fx:value="menu-main-alt" />
+                        <String fx:value="fixed-size-24" />
+                        <String fx:value="loginText" />
+                        <String fx:value="radiusBig" />
+                        <String fx:value="weightBold" />
+                     </styleClass>
+                  </Button>
                </children>
                <opaqueInsets>
                   <Insets />
