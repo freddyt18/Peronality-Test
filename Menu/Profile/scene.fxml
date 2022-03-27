@@ -45,6 +45,11 @@
                   <Insets />
                </opaqueInsets></TextArea>
             <Button fx:id="deleteAcc" layoutX="695.0" layoutY="580.0" mnemonicParsing="false" onAction="#deleteAcc" prefHeight="41.0" prefWidth="157.0" style="-fx-font-weight: bold;" text="Delete Account" />
+            <Label fx:id="sex" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="627.0" layoutY="30.0" prefHeight="36.0" prefWidth="228.0" style="-fx-font-weight: bold; -fx-font-size: 30px;" textAlignment="RIGHT" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
          </children></AnchorPane>
    </center>
 </BorderPane>

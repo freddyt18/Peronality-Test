@@ -39,6 +39,9 @@ public class ControllerForProfile {
     private TextArea userPersonalityType;
 
     @FXML
+    private Label sex;
+
+    @FXML
     private void revealDataWhenPressed() throws IOException {
         if(DataHandling.users.get(App.CURRENT_USER_ID).getPersonality().contains("#")){
             setContent();
@@ -62,6 +65,7 @@ public class ControllerForProfile {
         fullName.setText(DataHandling.users.get(ControllerForMenu.currentUser).getName());
         userName.setText(DataHandling.users.get(ControllerForMenu.currentUser).getUsername());
         userEmail.setText(DataHandling.users.get(ControllerForMenu.currentUser).getEmail());
+        sex.setText("Sex: " + DataHandling.users.get(ControllerForMenu.currentUser).getSex());
         userPersonalityType.setText(ControllerForMenu.tempRg.personality_type_result.get(Integer.parseInt(DataHandling.users.get(ControllerForMenu.currentUser).getPersonality().replace("#", ""))));
     }
 
@@ -69,6 +73,7 @@ public class ControllerForProfile {
         fullName.setText(DataHandling.users.get(ControllerForMenu.currentUser).getName());
         userName.setText(DataHandling.users.get(ControllerForMenu.currentUser).getUsername());
         userEmail.setText(DataHandling.users.get(ControllerForMenu.currentUser).getEmail());
+        sex.setText("Sex: " + DataHandling.users.get(ControllerForMenu.currentUser).getSex());
         userPersonalityType.setText("You can't cross a bridge if there is no bridge to begin with.\nTake the test to see the result!");
     }
 }

@@ -108,7 +108,7 @@ public class ControllerForTest {
         System.out.println("O: " + openness + "\nC: " + conscientiousness + "\nE: " + extroversion + "\nA: " + agreeableness + "\nN: " + neroticism );
         System.out.println("");
 
-        if((openness<=7)||(conscientiousness<=7)||(extroversion<=7)||(agreeableness<=7)||(neroticism<=7)){
+        if((oForQ5==0)||(oForQ10==0)||(cForQ3==0)||(cForQ8==0)||(eForQ1==0)||(eForQ6==0)||(aForQ2==0)||(aForQ7==0)||(nForQ4==0)||(nForQ9==0)){
             invalid.setText("Missing Question(s)");
             invalid.getStyleClass().add("invalid");
         } else {
