@@ -46,7 +46,7 @@ public class ControllerForMenu {
 
     @FXML
     private void whenExplorePressed() throws IOException {
-        scene.setContent(FXMLLoader.load(getClass().getResource("../App/LOGIN_FORM.fxml")));
+        scene.setContent(FXMLLoader.load(getClass().getResource("Explore/explore.fxml")));
         if(containsMain(test) || containsMain(setting) || containsMain(profile)){
             if(containsMain(test)){
                 mainToAlt(test);

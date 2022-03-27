@@ -40,7 +40,11 @@ public class ControllerForProfile {
 
     @FXML
     private void revealDataWhenPressed() throws IOException {
-        setContent();
+        if(DataHandling.users.get(App.CURRENT_USER_ID).getPersonality().contains("#")){
+            setContent();
+        } else {
+            setNullContent();
+        }
     }
 
     @FXML
@@ -59,5 +63,12 @@ public class ControllerForProfile {
         userName.setText(DataHandling.users.get(ControllerForMenu.currentUser).getUsername());
         userEmail.setText(DataHandling.users.get(ControllerForMenu.currentUser).getEmail());
         userPersonalityType.setText(ControllerForMenu.tempRg.personality_type_result.get(Integer.parseInt(DataHandling.users.get(ControllerForMenu.currentUser).getPersonality().replace("#", ""))));
+    }
+
+    public void setNullContent(){
+        fullName.setText(DataHandling.users.get(ControllerForMenu.currentUser).getName());
+        userName.setText(DataHandling.users.get(ControllerForMenu.currentUser).getUsername());
+        userEmail.setText(DataHandling.users.get(ControllerForMenu.currentUser).getEmail());
+        userPersonalityType.setText("You can't cross a bridge if there is no bridge to begin with.\nTake the test to see the result!");
     }
 }

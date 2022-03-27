@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1300.0" prefWidth="930.0" styleClass="maincolor" stylesheets="@../../Design/CSS/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="937.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Openness - Q 5 &amp; 10 - High Score &gt;= 10">
+               <styleClass>
+                  <String fx:value="weightBold" />
+                  <String fx:value="loginText" />
+                  <String fx:value="fixed-size-28" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" style="-fx-control-inner-background: #5ECED0;" text="For High Scorer, You tend to be imaginative and creative but also prone to boredom, and so strive to continually feed their mind with new ideas and experiences. Whereas low scorer, You are more down-to-earth, and so tend to seek out situations in which you have to turn an existing idea into reality, take small steps rather  initiate radical change, and follow well-established patterns and rules." wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="50.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="fixed-size-24" />
+                  <String fx:value="loginTextBlack" />
+                  <String fx:value="weightBold" />
+               </styleClass>
+            </TextArea>
+            <Label text="Conscientiousness - Q 3 &amp; 8 - High Score &gt;= 11">
+               <styleClass>
+                  <String fx:value="weightBold" />
+                  <String fx:value="loginText" />
+                  <String fx:value="fixed-size-28" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" style="-fx-control-inner-background: #5ECED0;" text="For High Scorer, You are methodical, well organized, and dutiful, and perform best in highly structured and predictable environments where there is a place for everything and everything is in its place. Whereas low scorer, You are far more laid-back and find it easy to enjoy life, but may well need a helping hand when it comes to self-discipline." wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="50.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="fixed-size-24" />
+                  <String fx:value="loginTextBlack" />
+                  <String fx:value="weightBold" />
+               </styleClass>
+            </TextArea>
+            <Label text="Extroversion - Q 1 &amp; 6 - High Score &gt;= 9">
+               <styleClass>
+                  <String fx:value="weightBold" />
+                  <String fx:value="loginText" />
+                  <String fx:value="fixed-size-28" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" style="-fx-control-inner-background: #5ECED0;" text="For High Scorer, You are energized by the company of others, are evening types, and are motivated more by carrots than sticks. Whereas low scorer, You tend to be happiest working alone and in quiet surroundings, are most alert in the morning, and are motivated more by fear of punishment than promise of rewards." wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="50.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="fixed-size-24" />
+                  <String fx:value="loginTextBlack" />
+                  <String fx:value="weightBold" />
+               </styleClass>
+            </TextArea>
+            <Label text="Agreeableness - Q 2 &amp; 7 - High Score &gt;= 10">
+               <styleClass>
+                  <String fx:value="weightBold" />
+                  <String fx:value="loginText" />
+                  <String fx:value="fixed-size-28" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" style="-fx-control-inner-background: #5ECED0;" text="For High Scorer, You tend to be trusting, friendly, and cooperative, but have to be careful to avoid situations in which others might take advantage of their overly giving nature. Whereas low scorer, You tend to be more aggressive and competitive, and bloom in situations that require tough thinking and straight talking." wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="50.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="fixed-size-24" />
+                  <String fx:value="loginTextBlack" />
+                  <String fx:value="weightBold" />
+               </styleClass>
+            </TextArea>
+            <Label text="Neroticism - Q 4 &amp; 9 - High Score &gt;= 9">
+               <styleClass>
+                  <String fx:value="weightBold" />
+                  <String fx:value="loginText" />
+                  <String fx:value="fixed-size-28" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" style="-fx-control-inner-background: #5ECED0;" text="For High Scorer, You are prone to insecurity and emotional distress, and avoid situations that you find upsetting because those negative feelings take some time to fade away. Whereas low scorer, You tend to be more relaxed, less emotional and less prone to distress, and you operate well in situations that others find stressful." wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="50.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="fixed-size-24" />
+                  <String fx:value="loginTextBlack" />
+                  <String fx:value="weightBold" />
+               </styleClass>
+            </TextArea>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
