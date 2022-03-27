@@ -44,9 +44,9 @@ public class ControllerForMenu {
     @FXML
     public ScrollPane scene;
 
-    @FXML
+    @FXML 
     private void whenExplorePressed() throws IOException {
-        scene.setContent(FXMLLoader.load(getClass().getResource("Explore/explore.fxml")));
+        scene.setContent(FXMLLoader.load(getClass().getResource("explore.fxml")));        
         if(containsMain(test) || containsMain(setting) || containsMain(profile)){
             if(containsMain(test)){
                 mainToAlt(test);
