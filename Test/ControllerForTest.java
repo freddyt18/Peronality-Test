@@ -64,6 +64,9 @@ public class ControllerForTest {
     @FXML
     private RadioButton q101, q102, q103, q104, q105, q106, q107;
 
+    @FXML
+    private Label invalid;
+
     public void submitButtonPressed() throws IOException {
         openness = oForQ5 + oForQ10;
         conscientiousness = cForQ3 + cForQ8;
@@ -102,25 +105,29 @@ public class ControllerForTest {
         }
 
 
-
-        for(int i = 0; i < App.rg.personality_type.size(); i++){
-            if(App.rg.personality_type.get(i).contains(result)){
-                DataHandling.users.get(App.CURRENT_USER_ID).setPersonality("#" + i);
-                break;
-            }
-        }
-
-        System.out.println(App.rg.personality_type_result.get(Integer.parseInt(DataHandling.users.get(App.CURRENT_USER_ID).getPersonality().replace("#", ""))));
-
         System.out.println("O: " + openness + "\nC: " + conscientiousness + "\nE: " + extroversion + "\nA: " + agreeableness + "\nN: " + neroticism );
         System.out.println("");
 
-        m.closeMenu();
-        aft.showAfterTest();
+        if((openness<=7)||(conscientiousness<=7)||(extroversion<=7)||(agreeableness<=7)||(neroticism<=7)){
+            invalid.setText("Missing Question(s)");
+            invalid.getStyleClass().add("invalid");
+        } else {
+            for(int i = 0; i < App.rg.personality_type.size(); i++){
+                if(App.rg.personality_type.get(i).contains(result)){
+                    DataHandling.users.get(App.CURRENT_USER_ID).setPersonality("#" + i);
+                    break;
+                }
+            }
+            System.out.println(App.rg.personality_type_result.get(Integer.parseInt(DataHandling.users.get(App.CURRENT_USER_ID).getPersonality().replace("#", ""))));
+
+            m.closeMenu();
+            aft.showAfterTest();
+        }
     }
 
     int eForQ1 = 0;
     public void getQ1(){
+        invalid.setText("");
         eForQ1 = 0;
         int temp = 0;
         if(q11.isSelected()){
@@ -149,6 +156,7 @@ public class ControllerForTest {
 
     int aForQ2 = 0;
     public void getQ2(){
+        invalid.setText("");
         aForQ2 = 0;
 
         if(q21.isSelected()){
@@ -183,6 +191,7 @@ public class ControllerForTest {
 
     int cForQ3 = 0;
     public void getQ3(){
+        invalid.setText("");
         cForQ3 = 0;
 
         if(q31.isSelected()){
@@ -217,6 +226,7 @@ public class ControllerForTest {
 
     int nForQ4 = 0;
     public void getQ4(){
+        invalid.setText("");
         nForQ4 = 0;
 
         if(q41.isSelected()){
@@ -251,6 +261,7 @@ public class ControllerForTest {
 
     int oForQ5 = 0;
     public void getQ5(){ 
+        invalid.setText("");
         oForQ5 = 0;
 
         if(q51.isSelected()){
@@ -285,6 +296,7 @@ public class ControllerForTest {
 
     int eForQ6 = 0;
     public void getQ6(){
+        invalid.setText("");
         eForQ6 = 0;
 
         if(q61.isSelected()){
@@ -319,6 +331,7 @@ public class ControllerForTest {
 
     int aForQ7 = 0;
     public void getQ7(){
+        invalid.setText("");
         aForQ7 = 0;
 
         if(q71.isSelected()){
@@ -346,6 +359,7 @@ public class ControllerForTest {
 
     int cForQ8 = 0;
     public void getQ8(){
+        invalid.setText("");
         cForQ8 = 0;
 
         if(q81.isSelected()){
@@ -380,6 +394,7 @@ public class ControllerForTest {
 
     int nForQ9 = 0;
     public void getQ9(){
+        invalid.setText("");
         nForQ9 = 0;
 
         if(q91.isSelected()){
@@ -414,6 +429,7 @@ public class ControllerForTest {
 
     int oForQ10 = 0;
     public void getQ10(){
+        invalid.setText("");
         oForQ10 = 0;
         if(q101.isSelected()){
             oForQ10 += 1;

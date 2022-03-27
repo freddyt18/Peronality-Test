@@ -999,6 +999,15 @@
                   <Insets left="25.0" right="25.0" top="15.0" />
                </VBox.margin>
             </HBox>
+            <Label fx:id="invalid" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="220.0" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="fixed-size-18" />
+                  <String fx:value="weightBold" />
+               </styleClass>
+            </Label>
             <Button fx:id="submit" mnemonicParsing="false" onAction="#submitButtonPressed" text="Submit">
                <VBox.margin>
                   <Insets top="15.0" />
