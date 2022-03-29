@@ -30,7 +30,7 @@ This project is built using the following tools:
 
 <a name="contributors"/>
 
-## Contributors`
+## Contributors
 
 * Doung KeoPitou - Login & Sign Up & Logout
 * Keang Whatanak - Account Setting
