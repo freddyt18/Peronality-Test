@@ -38,7 +38,7 @@ public class App extends Application {
         launch(args);
         // if all of the windows are closed, the program will output this
         /* 
-        Best practice for storing data to info.dat file and prevent data loss after user exits / accidentally close
+        Best practice for storing data to info.dat file and prevent data loss after exiting / accidentally closing
         the program.
          */
         System.out.println("ALL PROGRAM EXITS");
