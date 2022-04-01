@@ -107,7 +107,7 @@ public class ControllerForTest {
 
         System.out.println("O: " + openness + "\nC: " + conscientiousness + "\nE: " + extroversion + "\nA: " + agreeableness + "\nN: " + neroticism );
         System.out.println("");
-
+        
         if((oForQ5==0)||(oForQ10==0)||(cForQ3==0)||(cForQ8==0)||(eForQ1==0)||(eForQ6==0)||(aForQ2==0)||(aForQ7==0)||(nForQ4==0)||(nForQ9==0)){
             invalid.setText("Missing Question(s)");
             invalid.getStyleClass().add("invalid");
@@ -118,8 +118,6 @@ public class ControllerForTest {
                     break;
                 }
             }
-            System.out.println(App.rg.personality_type_result.get(Integer.parseInt(DataHandling.users.get(App.CURRENT_USER_ID).getPersonality().replace("#", ""))));
-
             m.closeMenu();
             aft.showAfterTest();
         }
