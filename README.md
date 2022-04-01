@@ -44,6 +44,15 @@ The testing mechanism is really simple.
 
 <hr>
 
+<h3>But Here's a Catch</h3>
+When you answer those 10 questions, each question contains a specific score depending on which you choose, but ultimately, it comes down to <b>32 results</b>, each result has its own unique id, you guessed it, its <i>number - 1</i>, the program will then suggest up to 4 people whose personality ids are in range of -2 and +2 to your current personality id.
+
+<hr>
+Okay, Enough with the chit-chat, let's get into how it <i> actually works</i>:
+
+<div id="login-page"></div>
+## Login Page
+
 ## Built Using
 
 This project is built using the following tools:
