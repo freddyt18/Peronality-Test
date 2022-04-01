@@ -10,7 +10,7 @@ THIS PROJECT IS STILL IN PROGRESS
  
 
 ## Overview 
-
+<img src="Data/Img/login.jpg" style="width: 70%; margin-left: 10%; border-radius: 5px;">
 
 ## Built Using
 
