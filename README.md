@@ -2,6 +2,12 @@
 
 THIS PROJECT IS STILL IN PROGRESS
 
+Prerequisites :
+  * Basic Understanding of File I/O
+  * OOP Concept of Java
+  * JavaFX
+  * SceneBuilder
+
 ## Table of Contents  
 1. [Overview](#overview) 
 2. [Built Using](#built-using)
@@ -47,12 +53,6 @@ The testing mechanism is really simple.
 <h3>But Here's a Catch</h3>
 When you answer those 10 questions, each question contains a specific score depending on which you choose, but ultimately, it comes down to <b>32 results</b>, each result has its own unique id, you guessed it, its <i>number - 1</i>, the program will then suggest up to 4 people whose personality ids are in range of -2 and +2 to your current personality id.
 
-<hr>
-Okay, Enough with the chit-chat, let's get into how it <i> actually works</i>:
-
-<div id="login-page"></div>
-## Login Page
-
 ## Built Using
 
 This project is built using the following tools:
@@ -65,6 +65,57 @@ This project is built using the following tools:
 
 
 ## Project Features
+
+### Login Page
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Design/Img/loginPage.png">
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Design/Img/loginInvalid.png">
+
+### Register
+> Missing Picture
+
+
+### Explore
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Design/Img/explore.png">
+
+### Test
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Design/Img/testInMenu.png">
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Design/Img/missing.png">
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Design/Img/afterTest.png">
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Design/Img/reveal.png">
+
+### Profile
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Design/Img/profilePRE.png">
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Design/Img/profilePOST.png">
+
+### Setting
+
+- Edit Profile <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Design/Img/settingEdit.png">
+
+- Change Password <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Design/Img/settingPassword.png">
+
+
+### Log Out
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Design/Img/logout.png">
+
 
 ## Contributors
 
