@@ -111,6 +111,7 @@ public class ControllerForTest {
         if((oForQ5==0)||(oForQ10==0)||(cForQ3==0)||(cForQ8==0)||(eForQ1==0)||(eForQ6==0)||(aForQ2==0)||(aForQ7==0)||(nForQ4==0)||(nForQ9==0)){
             invalid.setText("Missing Question(s)");
             invalid.getStyleClass().add("invalid");
+            result = "";
         } else {
             for(int i = 0; i < App.rg.personality_type.size(); i++){
                 if(App.rg.personality_type.get(i).contains(result)){
