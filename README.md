@@ -7,10 +7,12 @@ THIS PROJECT IS STILL IN PROGRESS
 2. [Built Using](#built-using)
 3. [Project Features ( Explore, Test, Profiles, Setting, Log out)](#project-features)
 4. [Contributors](#contributors)
- 
+5. [Installation](#installation)
 
 ## Overview 
-<img src="Data/Img/login.jpg" style="width: 70%; margin-left: 10%; border-radius: 5px;">
+<img src="Data/Img/login.jpg" style="width: 70%;">
+
+<img src="Data/Img/test.png" style="width: 70%">
 
 ## Built Using
 
@@ -31,3 +33,6 @@ This project is built using the following tools:
 * Keang Whatanak - Account Setting
 * Ly Sovortey - Delete account & Explore
 * Ouk Vathanak - Testing & Matching
+
+
+## Installation
