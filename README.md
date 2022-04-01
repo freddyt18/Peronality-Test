@@ -26,14 +26,15 @@ The program will first show a <i><b>login form</b></i> for existing users to acc
     * If the input data verifies with the invalid information handling algorithm, an account will be created into our <i><b>[database](#database)</i></b>.
 
 <br>
-<img src="Design/Img/login.png" style="width: 80%;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Design/Img/login.png">
 
 <hr>
 
 * The test 
 
 <br>
-<img src="Design/Img/test.png" style="width: 80%">
+<img src="Design/Img/test.png">
 
 <hr>
 
@@ -52,7 +53,7 @@ This project is built using the following tools:
 
 ## Contributors
 
-* <a href="https://github.com/freddyt18" target="_blank">Doung Keopitou</a> - Login & Sign Up & Logout
+* <a href="https://github.com/freddyt18/">Doung Keopitou</a> - Login & Sign Up & Logout
 * <a href="https://github.com/whatanakKean">Kean Whatanak</a> - Account Setting
 * <a href="https://github.com/sovorteyly">Ly Sovortey</a> - Delete account & Explore
 * <a href="https://github.com/OukVathanak">Ouk Vathanak</a> - Testing & Matching 
@@ -62,22 +63,17 @@ This project is built using the following tools:
 
 ## References 
 
-<hr>
-
 <div id="invalid-information"></div>
 
-- <p style="font-size: 1.3rem;">Invalid Information</p>
+- <h3>Invalid Information</h2>
 <blockqoute>When the user inputs a specific data, say a <b>username</b> for the <b>login page</b>, the data will be processed in its <b>java controller file</b> to see if the data is <b>acceptable</b> </blockqoute>
-<hr>
 
 <div id="database"></div>
 
-- <p style="font-size: 1.3rem;">Database</p> 
+- <h3>Database</h3>
 <blockqoute>We are trying to reduce the complexity of our program as much as possible. So, We decided <b><i>not to use</i></b> any database that requires a third party app (E.g XAMPP) or additional libraries to access the data </blockqoute>
-<hr>
 
 <div id=""></div>
 
-- <p style="font-size: 1.3rem;">Database</p> 
+- <p>Database</p> 
 <blockqoute>We are trying to reduce the complexity of our program as much as possible. So, We decided <b><i>not to use</i></b> any database that requires a third party app (E.g XAMPP) or additional libraries to access the data </blockqoute>
-<hr>
