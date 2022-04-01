@@ -11,7 +11,7 @@ THIS PROJECT IS STILL IN PROGRESS
 6. [References](#references)
 
 ## Overview 
-The program will first show a <i><b>login form</b></i> for existing users to access their data.
+The program will first show a <i><b>login page</b></i> for existing users to access their data.
 * The login section handles [invalid information*](#invalid-information) given by the users.
   * If the information given is verified, the program will redirect the user to the <b>menu</b> section.
   * Else, An <b>alert</b> will pop up.
@@ -24,6 +24,7 @@ The program will first show a <i><b>login form</b></i> for existing users to acc
 
   * The registration form also handles [invalid information*](#invalid-information) given by the user.
     * If the input data verifies with the invalid information handling algorithm, an account will be created into our <i><b>[database](#database)</i></b>.
+    * The program will then redirect the user back to our login page.
 
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -31,9 +32,14 @@ The program will first show a <i><b>login form</b></i> for existing users to acc
 
 <hr>
 
-* The test 
+The testing mechanism is really simple.
+* You take a test
+* The program generates a result from those 10 questions you answered
+* Meanwhile, the program also writes your information back to the <i><b>[database](#database)</i></b>
+* The <b><i>Back</i></b> button inside the result page will return the user back to our <i>menu page</i>.
 
 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="Design/Img/test.png">
 
 <hr>
@@ -71,9 +77,4 @@ This project is built using the following tools:
 <div id="database"></div>
 
 - <h3>Database</h3>
-<blockqoute>We are trying to reduce the complexity of our program as much as possible. So, We decided <b><i>not to use</i></b> any database that requires a third party app (E.g XAMPP) or additional libraries to access the data </blockqoute>
-
-<div id=""></div>
-
-- <p>Database</p> 
 <blockqoute>We are trying to reduce the complexity of our program as much as possible. So, We decided <b><i>not to use</i></b> any database that requires a third party app (E.g XAMPP) or additional libraries to access the data </blockqoute>
