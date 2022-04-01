@@ -8,11 +8,33 @@ THIS PROJECT IS STILL IN PROGRESS
 3. [Project Features ( Explore, Test, Profiles, Setting, Log out)](#project-features)
 4. [Contributors](#contributors)
 5. [Installation](#installation)
+6. [References](#references)
 
 ## Overview 
-<img src="Design/Img/login.png" style="width: 90%;">
+The program will first show a <i><b>login form</b></i> for existing users to access their data.
+* The login section handles [invalid information*](#invalid-information) given by the users.
+  * If the information given is verified, the program will redirect the user to the <b>menu</b> section.
+  * Else, An <b>alert</b> will pop up.
+* If the user is new, meaning that they will not have any credential on our <i><b>database</i></b>, they can <b>register</b> for a new credential.
+  * The registration form will take <b><i>4 inputs</b></i>:
+    * Email
+    * Username
+    * Password
+    * Retyped Password
 
-<img src="Design/Img/test.png" style="width: 90%">
+  * The registration form also handles invalid information given by the user.
+
+<br>
+<img src="Design/Img/login.png" style="width: 80%;">
+
+<hr>
+
+* The test 
+
+<br>
+<img src="Design/Img/test.png" style="width: 80%">
+
+<hr>
 
 ## Built Using
 
@@ -36,3 +58,18 @@ This project is built using the following tools:
 
 
 ## Installation
+
+
+## References <hr>
+
+- Invalid Information <div id="invalid-information"></div>
+<blockqoute>When the user inputs a specific data, say a <b>username</b> for the <b>login page</b>, the data will be processed in its <b>java controller file</b> to see if the data is <b>acceptable</b> </blockqoute>
+<hr>
+
+- ABC AD <div></div>
+<blockqoute>When the user inputs a specific data, say a <b>username</b> for the <b>login page</b>, the data will be processed in its <b>java controller file</b> to see if the data is <b>acceptable</b> </blockqoute>
+<hr>
+
+
+- DSASD
+asdm asdmalksdj asdka sd asdkajs djsad j o
