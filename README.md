@@ -52,7 +52,7 @@ This project is built using the following tools:
 
 ## Contributors
 
-* <a href="https://github.com/freddyt18">Doung Keopitou</a> - Login & Sign Up & Logout
+* <a href="https://github.com/freddyt18" target="_blank">Doung Keopitou</a> - Login & Sign Up & Logout
 * <a href="https://github.com/whatanakKean">Kean Whatanak</a> - Account Setting
 * <a href="https://github.com/sovorteyly">Ly Sovortey</a> - Delete account & Explore
 * <a href="https://github.com/OukVathanak">Ouk Vathanak</a> - Testing & Matching 
