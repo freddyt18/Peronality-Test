@@ -1,5 +1,5 @@
 # Peronality-Test
--------------------
+
 THIS PROJECT IS STILL IN PROGRESS
 
 ## Table of Contents  
@@ -15,14 +15,15 @@ The program will first show a <i><b>login form</b></i> for existing users to acc
 * The login section handles [invalid information*](#invalid-information) given by the users.
   * If the information given is verified, the program will redirect the user to the <b>menu</b> section.
   * Else, An <b>alert</b> will pop up.
-* If the user is new, meaning that they will not have any credential on our <i><b>database</i></b>, they can <b>register</b> for a new credential.
-  * The registration form will take <b><i>4 inputs</b></i>:
+* If the user is new, meaning that they will not have any credential on our <i><b>[database](#database)</i></b>, they can <b>register</b> for a new credential.
+  * The registration form takes <b><i>4 inputs</b></i>:
     * Email
     * Username
     * Password
     * Retyped Password
 
-  * The registration form also handles invalid information given by the user.
+  * The registration form also handles [invalid information*](#invalid-information) given by the user.
+    * If the input data verifies with the invalid information handling algorithm, an account will be created into our <i><b>[database](#database)</i></b>.
 
 <br>
 <img src="Design/Img/login.png" style="width: 80%;">
@@ -51,25 +52,32 @@ This project is built using the following tools:
 
 ## Contributors
 
-* Doung KeoPitou - Login & Sign Up & Logout
-* Keang Whatanak - Account Setting
-* Ly Sovortey - Delete account & Explore
-* Ouk Vathanak - Testing & Matching
-
+* <a href="https://github.com/freddyt18">Doung Keopitou</a> - Login & Sign Up & Logout
+* <a href="https://github.com/whatanakKean">Kean Whatanak</a> - Account Setting
+* <a href="https://github.com/sovorteyly">Ly Sovortey</a> - Delete account & Explore
+* <a href="https://github.com/OukVathanak">Ouk Vathanak</a> - Testing & Matching 
 
 ## Installation
 
 
-## References <hr>
+## References 
 
-- Invalid Information <div id="invalid-information"></div>
+<hr>
+
+<div id="invalid-information"></div>
+
+- <p style="font-size: 1.3rem;">Invalid Information</p>
 <blockqoute>When the user inputs a specific data, say a <b>username</b> for the <b>login page</b>, the data will be processed in its <b>java controller file</b> to see if the data is <b>acceptable</b> </blockqoute>
 <hr>
 
-- ABC AD <div></div>
-<blockqoute>When the user inputs a specific data, say a <b>username</b> for the <b>login page</b>, the data will be processed in its <b>java controller file</b> to see if the data is <b>acceptable</b> </blockqoute>
+<div id="database"></div>
+
+- <p style="font-size: 1.3rem;">Database</p> 
+<blockqoute>We are trying to reduce the complexity of our program as much as possible. So, We decided <b><i>not to use</i></b> any database that requires a third party app (E.g XAMPP) or additional libraries to access the data </blockqoute>
 <hr>
 
+<div id=""></div>
 
-- DSASD
-asdm asdmalksdj asdka sd asdkajs djsad j o
+- <p style="font-size: 1.3rem;">Database</p> 
+<blockqoute>We are trying to reduce the complexity of our program as much as possible. So, We decided <b><i>not to use</i></b> any database that requires a third party app (E.g XAMPP) or additional libraries to access the data </blockqoute>
+<hr>
