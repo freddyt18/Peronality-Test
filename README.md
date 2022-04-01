@@ -10,9 +10,9 @@ THIS PROJECT IS STILL IN PROGRESS
 5. [Installation](#installation)
 
 ## Overview 
-<img src="Data/Img/login.jpg" style="width: 70%;">
+<img src="Design/Img/login.png" style="width: 90%;">
 
-<img src="Data/Img/test.png" style="width: 70%">
+<img src="Design/Img/test.png" style="width: 90%">
 
 ## Built Using
 
