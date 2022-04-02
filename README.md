@@ -52,7 +52,7 @@ The testing mechanism is really simple.
 
 <h3>But Here's a Catch</h3>
 
- When you answer those [<b><i>10 questions</i></b>](#how-are-the-results-generated), each question contains a specific score depending on which you choose, but ultimately, it comes down to <b>32 results</b>, each result has its own unique id, you guessed it, its <i>number - 1</i>, the program will then suggest up to 4 people whose personality ids are in range of -2 and +2 to your current personality id.
+ When you answer those [<b><i>10 questions</i></b>](#how-are-the-results-generated), each question contains a specific score depending on which you choose, but ultimately, it comes down to [<b>32 results</b>](#how-are-the-results-generated), each result has its own unique id, you guessed it, its <i>number - 1</i>, the program will then suggest up to 4 people whose personality ids are in range of -2 and +2 to your current personality id.
 
 ## Built Using
 
@@ -91,10 +91,13 @@ This project is built using the following tools:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="Design/Img/missing.png">
 <br>
+
+* After test: 
 <div id="back"></div >
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="Design/Img/afterTest.png">
 <br>
+<div id="result"></div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="Design/Img/reveal.png">
 
@@ -123,11 +126,23 @@ This project is built using the following tools:
 
 ### How are the results generated?
 
+Our [**_testing mechanism_**](#test) and [**_results_**](#result) are based on [**59 Seconds**](https://www.goodreads.com/book/show/6340948-59-seconds?msclkid=7bb0eb49b26411eca9ef60bf7de66204), a book by psychologist Professor [**Richard Wiseman**](https://en.wikipedia.org/wiki/Richard_Wiseman?msclkid=a90346a4b26411ecad0c7f8c50438eec).
+
+<div id="scoring"></div>
+
+* Scoring <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Design/Img/scoring.jpg">
 
 <div id="ocean"></div>
 
 * OCEAN <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  * Openness is high if the **total** of **question 5 and 10** is equal or bigger than **10**
+  * Conscientiousness is high if the **total** of **question 3 and 8** is equal or bigger than **11**
+  * Extroversion is high if the **total** of **question 1 and 6** is equal or bigger than **9**
+  * Agreeableness is high if the **total** of **question 2 and 7** is equal or bigger than **10**
+  * Neroticsm is high if the **total** of **question 4 and 9** is equal or bigger than **9**
+<br>
 <img src="Design/Img/ocean.jpg">
 
 ## Contributors
