@@ -52,7 +52,7 @@ The testing mechanism is really simple.
 
 <h3>But Here's a Catch</h3>
 
- When you answer those [<b><i>10 questions</i></b>](#how-are-the-results-generated), each question contains a specific score depending on which you choose, but ultimately, it comes down to [<b>32 results</b>](#how-are-the-results-generated), each result has its own unique id, you guessed it, its <i>number - 1</i>, the program will then suggest up to 4 people whose personality ids are in range of -2 and +2 to your current personality id.
+ When you answer those [<b><i>10 questions</i></b>](#how-are-the-results-generated), each question contains a specific score depending on which you choose, but ultimately, it comes down to [<b>32 results</b>](#how-are-the-results-generated), each result has its own unique id, you guessed it, its <i>number - 1</i>, the program will then [**match**](#result) up to 4 people whose personality ids are in range of -2 and +2 to your current personality id.
 
 ## Built Using
 
