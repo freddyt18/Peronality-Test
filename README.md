@@ -17,11 +17,11 @@ Prerequisites :
 6. [References](#references)
 
 ## Overview 
-The program will first show a <i><b>login page</b></i> for existing users to access their data.
+The program will first show a [<i><b>login page</b></i>](#login-page) for existing users to access their data.
 * The login section handles [invalid information*](#invalid-information) given by the users.
   * If the information given is verified, the program will redirect the user to the <b>menu</b> section.
-  * Else, An <b>alert</b> will pop up.
-* If the user is new, meaning that they will not have any credential on our <i><b>[database](#database)</i></b>, they can <b>register</b> for a new credential.
+  * Else, An [<b>alert</b>](#alert) will pop up.
+* If the user is new, meaning that they will not have any credential on our <i><b>[database](#database)</i></b>, they can [<i><b>register</b></i>](#register) for a new credential.
   * The registration form takes <b><i>4 inputs</b></i>:
     * Email
     * Username
@@ -40,9 +40,9 @@ The program will first show a <i><b>login page</b></i> for existing users to acc
 
 The testing mechanism is really simple.
 * You take a test
-* The program generates a result from those 10 questions you answered
+* The program generates a result from those [<b><i>10 questions</i></b>](#how-are-the-results-generated) you answered
 * Meanwhile, the program also writes your information back to the <i><b>[database](#database)</i></b>
-* The <b><i>Back</i></b> button inside the result page will return the user back to our <i>menu page</i>.
+* The [<b><i>Back</i></b>](#back) button inside the result page will return the user back to our <i>menu page</i>.
 
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -51,7 +51,8 @@ The testing mechanism is really simple.
 <hr>
 
 <h3>But Here's a Catch</h3>
-When you answer those 10 questions, each question contains a specific score depending on which you choose, but ultimately, it comes down to <b>32 results</b>, each result has its own unique id, you guessed it, its <i>number - 1</i>, the program will then suggest up to 4 people whose personality ids are in range of -2 and +2 to your current personality id.
+
+ When you answer those [<b><i>10 questions</i></b>](#how-are-the-results-generated), each question contains a specific score depending on which you choose, but ultimately, it comes down to <b>32 results</b>, each result has its own unique id, you guessed it, its <i>number - 1</i>, the program will then suggest up to 4 people whose personality ids are in range of -2 and +2 to your current personality id.
 
 ## Built Using
 
@@ -70,11 +71,13 @@ This project is built using the following tools:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="Design/Img/loginPage.png">
 <br>
+<div id="alert"></div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="Design/Img/loginInvalid.png">
 
 ### Register
-> Missing Picture
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Design/Img/signUp.png">
 
 
 ### Explore
@@ -88,6 +91,7 @@ This project is built using the following tools:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="Design/Img/missing.png">
 <br>
+<div id="back"></div >
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="Design/Img/afterTest.png">
 <br>
@@ -117,6 +121,15 @@ This project is built using the following tools:
 <img src="Design/Img/logout.png">
 
 
+### How are the results generated?
+
+
+<div id="ocean"></div>
+
+* OCEAN <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Design/Img/ocean.jpg">
+
 ## Contributors
 
 * <a href="https://github.com/freddyt18/">Doung Keopitou</a> - Login & Sign Up & Logout
@@ -132,7 +145,7 @@ This project is built using the following tools:
 <div id="invalid-information"></div>
 
 - <h3>Invalid Information</h2>
-<blockqoute>When the user inputs a specific data, say a <b>username</b> for the <b>login page</b>, the data will be processed in its <b>java controller file</b> to see if the data is <b>acceptable</b> </blockqoute>
+<blockqoute>When the user inputs a specific data, say a <b>username</b> for the [<b>login page</b>](#login-page), the data will be processed in its <b>java controller file</b> to see if the data is <b>acceptable</b> </blockqoute>
 
 <div id="database"></div>
 
