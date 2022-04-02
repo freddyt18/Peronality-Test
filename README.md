@@ -190,22 +190,22 @@ Ctrl + Shift + P
   ```
 * Initializing
   * Expand the **Personality-Test** folder, then expand the **App** folder <br>
-  <img src="Design/Img/Installation/expand.png">
-  * Select the **App.java** file
-  <img src="Design/Img/Installation/appJAVA.png">
+  <img src="Design/Img/Installation/expand.png"> <br>
+  * Select the **App.java** file <br>
+  <img src="Design/Img/Installation/appJAVA.png"> <br>
 * Adding Path
   * Select **Run > Add Configuration** on the top menu <br>
-  <img src="Design/Img/Installation/addCON.png">
+  <img src="Design/Img/Installation/addCON.png"> <br>
   * Add the module path <br>
   ```sh
   "vmArgs": "--module-path \"path/to/javafx-sdk/lib\" --add-modules javafx.controls,javafx.fxml"
   ```
-  <img src="Design/Img/Installation/addingCON.png">
+  <img src="Design/Img/Installation/addingCON.png"> <br>
 * Running the program
-  * Select **App.java** and run the java
-  <img src="Design/Img/Installation/runApp.png">
+  * Select **App.java** and run the java <br>
+  <img src="Design/Img/Installation/runApp.png"> <br>
   * Boom! There you go. <br>
-  <img src="Design/Img/Installation/BOOM.png">
+  <img src="Design/Img/Installation/BOOM.png"> <br>
 
 ## References 
 
