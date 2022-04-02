@@ -175,13 +175,13 @@ Ctrl + Shift + P
 
 * Referencing additional libraries
   * Select **App.java** <br>
-  <img src="Design/Img/Installation/selectApp.png">
+  <img src="Design/Img/Installation/selectApp.png"> <br>
   * Select **JAVA PROJECTS** <br>
-  <img src="Design/Img/Installation/javaprojects.png">
+  <img src="Design/Img/Installation/javaprojects.png"> <br>
   * Select **"+"** in the **Referenced Libraries** <br>
-  <img src="Design/Img/Installation/ref.png">
+  <img src="Design/Img/Installation/ref.png"> <br>
   * Navigate to the **javafx sdk libraries > lib** and select all the **jar files** <br>
-  <img src="Design/Img/Installation/lib.png">
+  <img src="Design/Img/Installation/lib.png"> <br>
 * Cloning 
   * Then, delete the **src** folder and clone this repository <br>
   <img src="Design/Img/Installation/clone.png">
