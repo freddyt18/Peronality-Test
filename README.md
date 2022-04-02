@@ -103,11 +103,11 @@ This project is built using the following tools:
 
 ### Setting
 
-- Edit Profile <br>
+- Edit Profile
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="Design/Img/settingEdit.png">
 
-- Change Password <br>
+- Change Password
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="Design/Img/settingPassword.png">
 
