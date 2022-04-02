@@ -1,6 +1,6 @@
 # Peronality-Test
 
-THIS PROJECT IS STILL IN PROGRESS
+This is not a client-server model application.
 
 Prerequisites :
   * Basic Understanding of File I/O
