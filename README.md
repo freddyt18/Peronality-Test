@@ -141,7 +141,7 @@ Our [**_testing mechanism_**](#test) and [**_results_**](#result) are based on [
   * Conscientiousness is high if the **total** of **question 3 and 8** is equal or bigger than **11**
   * Extroversion is high if the **total** of **question 1 and 6** is equal or bigger than **9**
   * Agreeableness is high if the **total** of **question 2 and 7** is equal or bigger than **10**
-  * Neroticism is high if the **total** of **question 4 and 9** is equal or bigger than **9**
+  * Neuroticism is high if the **total** of **question 4 and 9** is equal or bigger than **9**
 <br>
 <img src="Design/Img/ocean.jpg">
 
