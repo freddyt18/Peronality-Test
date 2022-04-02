@@ -184,7 +184,7 @@ Ctrl + Shift + P
   <img src="Design/Img/Installation/lib.png"> <br>
 * Cloning 
   * Then, delete the **src** folder and clone this repository <br>
-  <img src="Design/Img/Installation/clone.png">
+  <img src="Design/Img/Installation/clone.png"> <br>
   ```sh
   git clone https://github.com/freddyt18/Peronality-Test
   ```
