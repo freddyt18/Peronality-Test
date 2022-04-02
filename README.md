@@ -154,6 +154,58 @@ Our [**_testing mechanism_**](#test) and [**_results_**](#result) are based on [
 
 ## Installation
 
+### Note
+We suggest using [VS Code](https://code.visualstudio.com/) for running the program and we will only provide help for this IDE.
+This installation is for **_windows_** users.
+* Prerequisites:
+  * [Java SDK](https://www.oracle.com/java/technologies/sdk-downloads.html?msclkid=16d00d31b26a11ecba96c1bf68870aaf)
+  * [JavaFX](https://gluonhq.com/products/javafx/)
+
+* Creating Java Project in VS Code <br>
+
+```sh
+Ctrl + Shift + P
+```
+
+<img src="Design/Img/Installation/csp.png">
+<img src="Design/Img/Installation/nbt.png">
+<img src="Design/Img/Installation/sl.png">
+<img src="Design/Img/Installation/pn.png">
+<img src="Design/Img/Installation/newtab.png"> <br>
+
+* Referencing additional libraries
+  * Select **App.java** <br>
+  <img src="Design/Img/Installation/selectApp.png">
+  * Select **JAVA PROJECTS** <br>
+  <img src="Design/Img/Installation/javaprojects.png">
+  * Select **"+"** in the **Referenced Libraries** <br>
+  <img src="Design/Img/Installation/ref.png">
+  * Navigate to the **javafx sdk libraries > lib** and select all the **jar files** <br>
+  <img src="Design/Img/Installation/lib.png">
+* Cloning 
+  * Then, delete the **src** folder and clone this repository <br>
+  <img src="Design/Img/Installation/clone.png">
+  ```sh
+  git clone https://github.com/freddyt18/Peronality-Test
+  ```
+* Initializing
+  * Expand the **Personality-Test** folder, then expand the **App** folder <br>
+  <img src="Design/Img/Installation/expand.png">
+  * Select the **App.java** file
+  <img src="Design/Img/Installation/appJAVA.png">
+* Adding Path
+  * Select **Run > Add Configuration** on the top menu <br>
+  <img src="Design/Img/Installation/addCON.png">
+  * Add the module path <br>
+  ```sh
+  "vmArgs": "--module-path \"path/to/javafx-sdk/lib\" --add-modules javafx.controls,javafx.fxml"
+  ```
+  <img src="Design/Img/Installation/addingCON.png">
+* Running the program
+  * Select **App.java** and run the java
+  <img src="Design/Img/Installation/runApp.png">
+  * Boom! There you go. <br>
+  <img src="Design/Img/Installation/BOOM.png">
 
 ## References 
 
