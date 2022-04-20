@@ -1,6 +1,7 @@
 package Setting;
 
 import java.io.IOException;
+import java.net.URI;
 
 import App.App;
 import Data.BCrypt.BCrypt;
@@ -20,6 +21,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import Data.BCrypt.*;
+import java.awt.Desktop;
 
 public class ControllerForSetting {
     Setting setting = new Setting();
@@ -29,7 +31,7 @@ public class ControllerForSetting {
     ControllerForRegistration registrationController = new ControllerForRegistration();
     Person currentUser = DataHandling.users.get(App.CURRENT_USER_ID);
 
-    //new cshanges
+    //new changes
     @FXML
     private BorderPane SettingBorderPane;
     @FXML
@@ -48,6 +50,14 @@ public class ControllerForSetting {
     private Button TermButton;
     @FXML
     private Button SubmitChangeProfile;
+    @FXML
+    private Hyperlink githubLink;
+
+    @FXML
+    void goToGithubLink(ActionEvent event) {
+        Desktop.getDesktop().browse(new URI("https://github.com/freddyt18/Peronality-Test"));
+    }
+
 
     @FXML
     void goToAbout(ActionEvent event) throws IOException {
