@@ -2,6 +2,7 @@ package Setting;
 
 import java.io.IOException;
 import java.net.URI;
+import java.net.URISyntaxException;
 
 import App.App;
 import Data.BCrypt.BCrypt;
@@ -14,6 +15,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
@@ -54,7 +56,7 @@ public class ControllerForSetting {
     private Hyperlink githubLink;
 
     @FXML
-    void goToGithubLink(ActionEvent event) {
+    void goToGithubLink(ActionEvent event) throws IOException, URISyntaxException {
         Desktop.getDesktop().browse(new URI("https://github.com/freddyt18/Peronality-Test"));
     }
 
@@ -175,7 +177,7 @@ public class ControllerForSetting {
 
        //clear input
         NewName.clear();
-       NewUsername.clear();
+        NewUsername.clear();
         NewBio.clear();
         NewEmail.clear();
         
