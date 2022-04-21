@@ -191,7 +191,8 @@ Ctrl + Shift + P
 * Initializing
   * Expand the **Personality-Test** folder, then expand the **App** folder <br>
   <img src="Design/Img/Installation/expand.png"> <br>
-  * Select the **App.java** file <br>
+  * Select the **App.java** file
+  * **UPDATE**: Don't forget to rename the parent folder (Personality-Test) back to "src", otherwise, your IDE might not be able to locate required path for the program <br>
   <img src="Design/Img/Installation/appJAVA.png"> <br>
 * Adding Path
   * Select **Run > Add Configuration** on the top menu <br>
