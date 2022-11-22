@@ -1,4 +1,4 @@
-# Peronality-Test
+# Personality-Test
 
 This is not a client-server model application.
 
