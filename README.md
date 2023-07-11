@@ -62,7 +62,7 @@ This project is built using the following tools:
 1. [Figma](https://www.figma.com/): used for prototyping the project.
 2. [Screen Builder](https://www.oracle.com/java/technologies/javase/javafxscenebuilder-info.html): used for building the UI of the application.
 3. [JavaFX](https://openjfx.io/): along with screen builder, the application is built using JavaFX.  
-4. [VS Code](https://code.visualstudio.com/): IDE used while working on the project.
+4. [VS Code](https://code.visualstudio.com/): Text Editor used while working on the project.
 5. [Github](https://github.com/): used to host the project for team collaboration.
 
 
@@ -156,7 +156,7 @@ Our [**_testing mechanism_**](#test) and [**_results_**](#result) are based on [
 ## Installation
 
 ### Note
-We suggest using [VS Code](https://code.visualstudio.com/) for running the program and we will only provide help for this IDE.
+We suggest using [VS Code](https://code.visualstudio.com/) for running the program and we will only provide help for this Editor.
 This installation is for **_windows_** users.
 * Prerequisites:
   * [Java SDK](https://www.oracle.com/java/technologies/sdk-downloads.html?msclkid=16d00d31b26a11ecba96c1bf68870aaf)
@@ -193,7 +193,7 @@ Ctrl + Shift + P
   * Expand the **Personality-Test** folder, then expand the **App** folder <br>
   <img src="Design/Img/Installation/expand.png"> <br>
   * Select the **App.java** file
-  * **UPDATE**: Don't forget to rename the parent folder (Personality-Test) back to "src", otherwise, your IDE might not be able to locate required path for the program <br>
+  * **UPDATE**: Don't forget to rename the parent folder (Personality-Test) back to "src", otherwise, your Editor might not be able to locate required path for the program <br>
   <img src="Design/Img/Installation/appJAVA.png"> <br>
 * Adding Path
   * Select **Run > Add Configuration** on the top menu <br>
